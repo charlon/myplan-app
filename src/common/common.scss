@@ -1,0 +1,78 @@
+@import './mixins.scss';
+@import './variables.scss';
+
+body { min-width: 320px; }
+
+/** global elements **/
+.com-container {
+
+  margin: 0 auto;
+  padding: 0 16px;
+
+  @include breakpoint(desktop) {
+    max-width: 1200px;
+  }
+}
+
+/** header section **/
+.com-header {
+
+  .com-thin-bar { background: #444; height: 33px; line-height: 33px; font-size: 12px; color: #fff; clear: both;
+
+    ul {margin: 0; padding: 0; list-style: none; }
+
+    .com-links { float:left; width: 50%;
+        li { display: inline-block; border-right: dotted 1px #5e5e5e; padding: 0 15px;
+          &:first-child { padding: 0 15px 0 0; }
+        }
+    }
+
+    .com-user { float: right; width: 50%; text-align: right;;
+      li { display: inline-block; border-left: dotted 1px #5e5e5e; padding: 0 15px;
+        &:last-child { padding: 0 0 0 15px; }
+      }
+    }
+
+  }
+
+  .com-masthead {
+    background: #4b2e83;
+
+    .com-title-mobile {
+      display: block;
+      color: #fff;
+      font-size: 24px;
+      white-space: nowrap;
+      line-height:$nav-height;
+      height: $nav-height;
+
+      .com-title-button  { padding: 0; margin: 0; background: none; border: none; margin-right: 15px; }
+      .com-title-button-icon { font-size: 14px; color: #ccc; vertical-align: middle; margin-top: -5px;}
+
+      @include breakpoint(desktop) {
+        display: none;
+      }
+
+    }
+
+    .com-title-desktop {
+      display: none;
+
+      @include breakpoint(desktop) {
+        display: block;
+        color: #fff;
+        font-size: 40px;
+        font-weight: 400;
+        line-height:60px;
+        height: 60px;
+
+        .com-title-button  { padding: 0; margin: 0; background: none; border: none; margin-right: 15px; }
+        .com-title-button-icon { font-size: 16px; color: #ccc; vertical-align: middle; margin-top: -5px;}
+
+      }
+
+    }
+
+  }
+
+}

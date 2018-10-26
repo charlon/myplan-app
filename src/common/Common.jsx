@@ -4,7 +4,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css'
 import 'bootstrap/dist/css/bootstrap-reboot.css'
 import './common.scss';
 
-class Common extends React.Component<{}> {
+class Common extends React.Component {
 
   render() {
     return (

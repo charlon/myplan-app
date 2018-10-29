@@ -11,7 +11,7 @@ class Registration extends React.Component {
   render() {
     return (
       <div>
-        <h1>Hello, Welcome to Home!</h1>
+        <h1>Hello, Welcome to Home! Testing!</h1>
       </div>
     );
   }

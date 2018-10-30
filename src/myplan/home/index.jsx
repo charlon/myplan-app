@@ -14,7 +14,7 @@ class Registration extends React.Component {
 
       <Header as='h1'>Winter 2019</Header>
 
-      <Responsive maxWidth={768}>
+      <Responsive maxWidth={767}>
         <Step.Group size="small" unstackable fluid widths={3}>
           <Step active>
             <Step.Content>
@@ -37,7 +37,7 @@ class Registration extends React.Component {
       </Responsive>
 
       <Responsive minWidth={768}>
-        <Step.Group size="small" stackable fluid widths={3}>
+        <Step.Group size="small" fluid widths={3}>
           <Step active>
             <Icon name='truck' />
             <Step.Content>
@@ -253,7 +253,7 @@ class Registration extends React.Component {
             <p>Your priority registration date is not yet availble. Priority Registration goes from <strong>Nov. 2. 2018 - Nov. 18, 2018</strong>.</p>
           </Card.Description>
         </Card.Content>
-        <Card.Content extra="extra">
+        <Card.Content extra>
           Please refer to <a href="">P1 Registration Dates</a> to find out when you can register for classes.
         </Card.Content>
       </Card>
@@ -267,7 +267,7 @@ class Registration extends React.Component {
             <p>Your estimated priority registration date is <strong>Nov. 4, 2018</strong>.</p>
           </Card.Description>
         </Card.Content>
-        <Card.Content extra="extra">
+        <Card.Content extra>
           How is your <a href="">P1 Registration Date</a> calculated?
         </Card.Content>
       </Card>

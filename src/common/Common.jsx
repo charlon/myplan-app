@@ -52,12 +52,13 @@ class Common extends React.Component {
 
 
         <div className="com-body">
-          <div className="com-container">
 
-            <main role="main" className="com-main">
-              {this.props.children}
-            </main>
-
+          <div className="com-gray-bar">
+            <div className="com-container">
+              <main role="main" className="com-main">
+                {this.props.children}
+              </main>
+            </div>
           </div>
         </div>
 

@@ -1,10 +1,23 @@
 @import './mixins.scss';
 @import './variables.scss';
 
-body { min-width: 320px; }
+body { min-width: 320px; background: #d9d9d9; }
 
 /** global elements **/
-.com-body { margin-top: 15px; }
+.com-body { }
+
+.com-gray-bar {
+
+  background: #fff;
+  padding-top: 15px;
+  min-height: 90vh;
+
+  @include breakpoint(desktop) {
+    border-left: solid 50px #F2F2F2; height: 98vh; max-width: 1185px;
+    margin: 0 auto;
+  }
+
+}
 
 .com-container {
 

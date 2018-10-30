@@ -2,7 +2,8 @@
 
 
 import React from 'react';
-import {Responsive, Step, Icon, Button, Card, Image, Feed, Grid, Segment, Header, Placeholder, List, Divider} from 'semantic-ui-react'
+import { Panel } from 'react-bootstrap'
+import { Responsive, Step, Icon, Button, Card, Image, Feed, Grid, Segment, Header, Placeholder, List, Divider} from 'semantic-ui-react'
 
 import './registration.scss';
 
@@ -287,6 +288,12 @@ class Registration extends React.Component {
         </Card.Content>
       </Card>
 
+
+      <Panel>
+        <Panel.Heading>Panel Header</Panel.Heading>
+        <Panel.Body>Panel content</Panel.Body>
+        <Panel.Body>Panel content</Panel.Body>
+      </Panel>
 
     </div>);
   }

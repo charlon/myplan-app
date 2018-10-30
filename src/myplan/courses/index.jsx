@@ -2,7 +2,7 @@ import React from 'react';
 
 import './courses.scss';
 
-class Registration extends React.Component {
+class Courses extends React.Component {
 
   constructor(props) {
     super(props);
@@ -16,4 +16,4 @@ class Registration extends React.Component {
     );
   }
 }
-export default Registration
+export default Courses

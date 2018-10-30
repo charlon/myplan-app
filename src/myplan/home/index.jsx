@@ -62,34 +62,31 @@ class Registration extends React.Component {
       </Card>
 
       <Card fluid>
+      
         <Card.Content>
           <Card.Header>Registration</Card.Header>
-          <Card.Meta>From Nov. 2, 2018 to Nov 11, 2018</Card.Meta>
+        </Card.Content>
+
+        <Card.Content>
           <Card.Description>
-            Your priority registration date is not yet availble. Priority Registration goes from
-            <strong>Nov. 2. 2018 - Nov. 18, 2018</strong>
+            <p>Your priority registration date is not yet availble. Priority Registration goes from <strong>Nov. 2. 2018 - Nov. 18, 2018</strong>.</p>
           </Card.Description>
         </Card.Content>
-        <Card.Content extra="extra">
-          Please refer to the
-          <a href="">P1 Registration Dates</a>
-          to find out when you can register for classes.
-        </Card.Content>
-      </Card>
 
-      <Card fluid>
         <Card.Content>
-          <Card.Header>Registration</Card.Header>
-          <Card.Meta>
-            <strong>Nov. 4. 2018 @ 6:00AM</strong>
-          </Card.Meta>
-          <Card.Description></Card.Description>
+          <Card.Description>
+            <p>Your estimated priority registration date is <strong>Nov. 4, 2018</strong>.</p>
+          </Card.Description>
         </Card.Content>
+
         <Card.Content extra="extra">
-          How is your
-          <a href="">P1 Registration Dates</a>
-          calculated?
+          Please refer to <a href="">P1 Registration Dates</a> to find out when you can register for classes.
         </Card.Content>
+
+        <Card.Content extra="extra">
+          How is your <a href="">P1 Registration Date</a> calculated?
+        </Card.Content>
+
       </Card>
 
     </div>);

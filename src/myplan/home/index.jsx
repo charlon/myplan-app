@@ -149,8 +149,8 @@ class Registration extends React.Component {
           <Card.Header>Course Issues</Card.Header>
         </Card.Content>
         <Card.Content>
-          <Card.Group  itemsPerRow={2}>
 
+          <Responsive maxWidth={768} as={Card.Group} itemsPerRow={2}>
             <Card
               color="red"
               href='#card-example-link-card'
@@ -158,7 +158,6 @@ class Registration extends React.Component {
               meta='NW(5)'
               description='Jenny is a student studying Media Management at the New School'
             />
-
             <Card
               color="red"
               href='#card-example-link-card'
@@ -166,33 +165,79 @@ class Registration extends React.Component {
               meta='NW(3)'
               description='Jenny is a student studying Media Management at the New School'
             />
-
             <Card
               href='#card-example-link-card'
               header='Jenny Hess'
               meta='Friend'
               description='Jenny is a student studying Media Management at the New School'
             />
-
            <Card
              href='#card-example-link-card'
              header='Jenny Hess'
              meta='Friend'
              description='Jenny is a student studying Media Management at the New School'
            />
-
            <Card
              href='#card-example-link-card'
              header='Jenny Hess'
              meta='Friend'
              description='Jenny is a student studying Media Management at the New School'
            />
+           <Card color="red">
+             <Card.Content>
+               <Image floated='right' size='mini' src='/images/avatar/large/molly.png' />
+               <Card.Header>Molly Thomas</Card.Header>
+               <Card.Meta>New User</Card.Meta>
+               <Card.Description>
+                 Molly wants to add you to the group <strong>musicians</strong>
+               </Card.Description>
+             </Card.Content>
+            </Card>
+          </Responsive>
 
-         </Card.Group>
+          <Responsive minWidth={768} as={Card.Group} itemsPerRow={3}>
+            <Card
+              color="red"
+              href='#card-example-link-card'
+              header='CSE 142'
+              meta='NW(5)'
+              description='Jenny is a student studying Media Management at the New School'
+            />
+            <Card
+              color="red"
+              href='#card-example-link-card'
+              header='MATH 124'
+              meta='NW(3)'
+              description='Jenny is a student studying Media Management at the New School'
+            />
+            <Card
+              href='#card-example-link-card'
+              header='Jenny Hess'
+              meta='Friend'
+              description='Jenny is a student studying Media Management at the New School'
+            />
+           <Card
+             href='#card-example-link-card'
+             header='Jenny Hess'
+             meta='Friend'
+             description='Jenny is a student studying Media Management at the New School'
+           />
+           <Card color="red">
+             <Card.Content>
+               <Image floated='right' size='mini' src='/images/avatar/large/molly.png' />
+               <Card.Header>Molly Thomas</Card.Header>
+               <Card.Meta>New User</Card.Meta>
+               <Card.Description>
+                 Molly wants to add you to the group <strong>musicians</strong>
+               </Card.Description>
+             </Card.Content>
+            </Card>
+          </Responsive>
+
         </Card.Content>
       </Card>
 
-      <Card fluid>
+      <Card fluid >
         <Card.Content>
           <Card.Header>Registration</Card.Header>
         </Card.Content>

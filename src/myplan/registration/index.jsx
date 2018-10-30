@@ -2,7 +2,7 @@
 
 
 import React from 'react';
-import {Responsive, Step, Icon, Button, Card, Image, Feed, Grid, Segment, Header, Placeholder, List } from 'semantic-ui-react'
+import {Responsive, Step, Icon, Button, Card, Image, Feed, Grid, Segment, Header, Placeholder, List, Divider} from 'semantic-ui-react'
 
 import './registration.scss';
 
@@ -71,30 +71,26 @@ class Registration extends React.Component {
 
       <Segment color='red'>
         <Header as='h2'>Holds</Header>
-        <List>
+        <List relaxed>
           <List.Item>
-            <List.Icon name='exclamation triangle' />
             <List.Content>
               <List.Header>You have a hold on this.</List.Header>
               <List.Description>Contact blkajd sadflk lksadjf lk asfdlkj</List.Description>
             </List.Content>
           </List.Item>
           <List.Item>
-            <List.Icon name='exclamation triangle' />
             <List.Content>
             <List.Header>You have a hold on that.</List.Header>
             <List.Description>Contact blkajd sadflk lksadjf lk asfdlkj</List.Description>
             </List.Content>
           </List.Item>
           <List.Item>
-            <List.Icon name='exclamation triangle' />
             <List.Content>
             <List.Header>You have a hold on this and that.</List.Header>
             <List.Description>Contact blkajd sadflk lksadjf lk asfdlkj</List.Description>
             </List.Content>
           </List.Item>
           <List.Item>
-            <List.Icon name='exclamation triangle' />
             <List.Content>
             <List.Header>You have a hold over there.</List.Header>
             <List.Description>Contact blkajd sadflk lksadjf lk asfdlkj</List.Description>
@@ -106,7 +102,10 @@ class Registration extends React.Component {
 
 
       <Segment color='red'>
+
         <Header as='h2'>Issues</Header>
+        <p>The following courses/sections have issues that need to be addressed!</p>
+
         <Card.Group itemsPerRow={2}>
           <Card>
             <Card.Content>
@@ -202,48 +201,61 @@ class Registration extends React.Component {
             </Card.Group>
       </Segment>
 
-      <Segment color='green' compact>
-        <Header as='h2'>Ready</Header>
-        <List>
-          <List.Item>
-            <List.Icon name='check square outline' />
-            <List.Content>
-              <List.Header>CSE 142</List.Header>
-              <List.Description>NW 5 credits</List.Description>
-            </List.Content>
-          </List.Item>
-          <List.Item>
-            <List.Icon name='check square outline' />
-            <List.Content>
-              <List.Header>MATH 124</List.Header>
-              <List.Description>NW 5 credits</List.Description>
-            </List.Content>
-          </List.Item>
-          <List.Item>
-            <List.Icon name='check square outline' />
-            <List.Content>
-              <List.Header>BIO 200</List.Header>
-              <List.Description>NW 5 credits</List.Description>
-            </List.Content>
-          </List.Item>
-          <List.Item>
-            <List.Icon name='check square outline' />
-            <List.Content>
-              <List.Header>ENG 401</List.Header>
-              <List.Description>NW 5 credits</List.Description>
-            </List.Content>
-          </List.Item>
-        </List>
-      </Segment>
-
       <Segment.Group>
+
         <Segment>
           <Header as='h2'>Registration</Header>
           <p>Your estimated priority registration date is <strong>Nov. 4, 2018</strong>.</p>
         </Segment>
-         <Segment>
-         <Button basic color='green'>Submit</Button>
-         </Segment>
+
+        <Segment>
+
+            <List relaxed>
+              <List.Item>
+                <List.Content floated="left">
+                  <List.Header>CSE 142</List.Header>
+                  <List.Description>NW 5 credits</List.Description>
+                </List.Content>
+                <Button disabled size='mini'floated="right">Submit</Button>
+              </List.Item>
+              <List.Item>
+                <List.Content floated="left">
+                  <List.Header>MATH 124</List.Header>
+                  <List.Description>NW 5 credits</List.Description>
+                </List.Content>
+                <Button disabled size='mini' floated="right">Submit</Button>
+              </List.Item>
+              <List.Item>
+                <List.Content floated="left">
+                  <List.Header>BIO 200</List.Header>
+                  <List.Description>NW 5 credits</List.Description>
+                </List.Content>
+                <Button disabled size='mini' floated="right">Submit</Button>
+              </List.Item>
+              <List.Item>
+                <List.Content floated="left">
+                  <List.Header>ENG 401</List.Header>
+                  <List.Description>NW 5 credits</List.Description>
+                </List.Content>
+                <Button disabled size='mini' floated="right">Submit</Button>
+              </List.Item>
+            </List>
+
+
+        </Segment>
+
+
+        <Segment>
+         <Grid columns={2}>
+           <Grid.Column>
+              <p>MyPlan can submit your entire Plan!</p>
+             <Button disabled>Submit</Button>
+           </Grid.Column>
+           <Grid.Column>
+             <p>Use <a href="#">SPS Registration</a> to manually enter SLNs.</p>
+           </Grid.Column>
+         </Grid>
+        </Segment>
        </Segment.Group>
 
 

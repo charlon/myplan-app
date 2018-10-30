@@ -1,5 +1,5 @@
 import React from 'react';
-import {Responsive, Step, Icon, Button, Card, Image, Feed, Grid, Segment, Header} from 'semantic-ui-react'
+import {Responsive, Step, Icon, Button, Card, Image, Feed, Grid, Segment, Header, Placeholder, List } from 'semantic-ui-react'
 
 import './home.scss';
 
@@ -66,176 +66,183 @@ class Registration extends React.Component {
       <Segment basic>Pellentesque habitant morbi tristique senectus.</Segment>
 
 
-      <Card fluid="fluid">
-        <Card.Content>
-          <Card.Header>Holds</Card.Header>
-        </Card.Content>
-        <Card.Content>
-          <Feed>
-            <Feed.Event>
-              <Feed.Label image='/images/avatar/small/jenny.jpg'/>
-              <Feed.Content>
-                <Feed.Date content='1 day ago'/>
-                <Feed.Summary>
-                  You added <a>Jenny Hess</a> to your <a>coworker</a> group.
-                </Feed.Summary>
-              </Feed.Content>
-            </Feed.Event>
+      <Segment color='red'>
+        <Header as='h2'>Holds</Header>
+        <List>
+          <List.Item>
+            <List.Icon name='exclamation triangle' />
+            <List.Content>
+              <List.Header>You have a hold on this.</List.Header>
+              <List.Description>Contact blkajd sadflk lksadjf lk asfdlkj</List.Description>
+            </List.Content>
+          </List.Item>
+          <List.Item>
+            <List.Icon name='exclamation triangle' />
+            <List.Content>
+            <List.Header>You have a hold on that.</List.Header>
+            <List.Description>Contact blkajd sadflk lksadjf lk asfdlkj</List.Description>
+            </List.Content>
+          </List.Item>
+          <List.Item>
+            <List.Icon name='exclamation triangle' />
+            <List.Content>
+            <List.Header>You have a hold on this and that.</List.Header>
+            <List.Description>Contact blkajd sadflk lksadjf lk asfdlkj</List.Description>
+            </List.Content>
+          </List.Item>
+          <List.Item>
+            <List.Icon name='exclamation triangle' />
+            <List.Content>
+            <List.Header>You have a hold over there.</List.Header>
+            <List.Description>Contact blkajd sadflk lksadjf lk asfdlkj</List.Description>
+            </List.Content>
+          </List.Item>
+        </List>
+      </Segment>
 
-            <Feed.Event>
-              <Feed.Label image='/images/avatar/small/molly.png'/>
-              <Feed.Content>
-                <Feed.Date content='3 days ago'/>
-                <Feed.Summary>
-                  You added <a>Molly Malone</a> as a friend.
-                </Feed.Summary>
-              </Feed.Content>
-            </Feed.Event>
 
-            <Feed.Event>
-              <Feed.Label image='/images/avatar/small/elliot.jpg'/>
-              <Feed.Content>
-                <Feed.Date content='4 days ago'/>
-                <Feed.Summary>
-                  You added <a>Elliot Baker</a> to your <a>musicians</a> group.
-                </Feed.Summary>
-              </Feed.Content>
-            </Feed.Event>
-          </Feed>
-        </Card.Content>
-      </Card>
 
-      <Card fluid="fluid">
-        <Card.Content>
-          <Card.Header>Ready</Card.Header>
-        </Card.Content>
-        <Card.Content>
-          <Feed>
-            <Feed.Event>
-              <Feed.Label image='/images/avatar/small/jenny.jpg'/>
-              <Feed.Content>
-                <Feed.Date content='1 day ago'/>
-                <Feed.Summary>
-                  You added <a>Jenny Hess</a> to your <a>coworker</a> group.
-                </Feed.Summary>
-              </Feed.Content>
-            </Feed.Event>
-
-            <Feed.Event>
-              <Feed.Label image='/images/avatar/small/molly.png'/>
-              <Feed.Content>
-                <Feed.Date content='3 days ago'/>
-                <Feed.Summary>
-                  You added <a>Molly Malone</a> as a friend.
-                </Feed.Summary>
-              </Feed.Content>
-            </Feed.Event>
-
-            <Feed.Event>
-              <Feed.Label image='/images/avatar/small/elliot.jpg'/>
-              <Feed.Content>
-                <Feed.Date content='4 days ago'/>
-                <Feed.Summary>
-                  You added <a>Elliot Baker</a> to your <a>musicians</a> group.
-                </Feed.Summary>
-              </Feed.Content>
-            </Feed.Event>
-          </Feed>
-        </Card.Content>
-      </Card>
-
-      <Card fluid>
-        <Card.Content>
-          <Card.Header>Course Issues</Card.Header>
-        </Card.Content>
-        <Card.Content>
-
-          <Responsive maxWidth={768} as={Card.Group} itemsPerRow={2}>
-            <Card
-              color="red"
-              href='#card-example-link-card'
-              header='CSE 142'
-              meta='NW(5)'
-              description='Jenny is a student studying Media Management at the New School'
-            />
-            <Card
-              color="red"
-              href='#card-example-link-card'
-              header='MATH 124'
-              meta='NW(3)'
-              description='Jenny is a student studying Media Management at the New School'
-            />
-            <Card
-              href='#card-example-link-card'
-              header='Jenny Hess'
-              meta='Friend'
-              description='Jenny is a student studying Media Management at the New School'
-            />
-           <Card
-             href='#card-example-link-card'
-             header='Jenny Hess'
-             meta='Friend'
-             description='Jenny is a student studying Media Management at the New School'
-           />
-           <Card
-             href='#card-example-link-card'
-             header='Jenny Hess'
-             meta='Friend'
-             description='Jenny is a student studying Media Management at the New School'
-           />
-           <Card color="red">
+      <Segment color='red'>
+        <Header as='h2'>Issues</Header>
+        <Card.Group itemsPerRow={2}>
+          <Card>
+            <Card.Content>
+              <Image floated='right' size='mini' src='/images/avatar/large/molly.png' />
+              <Card.Header>Molly Thomas</Card.Header>
+              <Card.Meta>New User</Card.Meta>
+              <Card.Description>
+               <Placeholder>
+                 <Placeholder.Paragraph>
+                   <Placeholder.Line length='medium' />
+                   <Placeholder.Line length='short' />
+                 </Placeholder.Paragraph>
+               </Placeholder>
+              </Card.Description>
+            </Card.Content>
+           </Card>
+           <Card>
              <Card.Content>
                <Image floated='right' size='mini' src='/images/avatar/large/molly.png' />
                <Card.Header>Molly Thomas</Card.Header>
                <Card.Meta>New User</Card.Meta>
                <Card.Description>
-                 Molly wants to add you to the group <strong>musicians</strong>
+                <Placeholder>
+                  <Placeholder.Paragraph>
+                    <Placeholder.Line length='medium' />
+                    <Placeholder.Line length='short' />
+                  </Placeholder.Paragraph>
+                </Placeholder>
                </Card.Description>
              </Card.Content>
             </Card>
-          </Responsive>
+            <Card>
+              <Card.Content>
+                <Image floated='right' size='mini' src='/images/avatar/large/molly.png' />
+                <Card.Header>Molly Thomas</Card.Header>
+                <Card.Meta>New User</Card.Meta>
+                <Card.Description>
+                 <Placeholder>
+                   <Placeholder.Paragraph>
+                     <Placeholder.Line length='medium' />
+                     <Placeholder.Line length='short' />
+                   </Placeholder.Paragraph>
+                 </Placeholder>
+                </Card.Description>
+              </Card.Content>
+             </Card>
+             <Card>
+               <Card.Content>
+                 <Image floated='right' size='mini' src='/images/avatar/large/molly.png' />
+                 <Card.Header>Molly Thomas</Card.Header>
+                 <Card.Meta>New User</Card.Meta>
+                 <Card.Description>
+                  <Placeholder>
+                    <Placeholder.Paragraph>
+                      <Placeholder.Line length='medium' />
+                      <Placeholder.Line length='short' />
+                    </Placeholder.Paragraph>
+                  </Placeholder>
+                 </Card.Description>
+               </Card.Content>
+              </Card>
+              <Card>
+                <Card.Content>
+                  <Image floated='right' size='mini' src='/images/avatar/large/molly.png' />
+                  <Card.Header>Molly Thomas</Card.Header>
+                  <Card.Meta>New User</Card.Meta>
+                  <Card.Description>
+                   <Placeholder>
+                     <Placeholder.Paragraph>
+                       <Placeholder.Line length='medium' />
+                       <Placeholder.Line length='short' />
+                     </Placeholder.Paragraph>
+                   </Placeholder>
+                  </Card.Description>
+                </Card.Content>
+               </Card>
 
-          <Responsive minWidth={768} as={Card.Group} itemsPerRow={3}>
-            <Card
-              color="red"
-              href='#card-example-link-card'
-              header='CSE 142'
-              meta='NW(5)'
-              description='Jenny is a student studying Media Management at the New School'
-            />
-            <Card
-              color="red"
-              href='#card-example-link-card'
-              header='MATH 124'
-              meta='NW(3)'
-              description='Jenny is a student studying Media Management at the New School'
-            />
-            <Card
-              href='#card-example-link-card'
-              header='Jenny Hess'
-              meta='Friend'
-              description='Jenny is a student studying Media Management at the New School'
-            />
-           <Card
-             href='#card-example-link-card'
-             header='Jenny Hess'
-             meta='Friend'
-             description='Jenny is a student studying Media Management at the New School'
-           />
-           <Card color="red">
-             <Card.Content>
-               <Image floated='right' size='mini' src='/images/avatar/large/molly.png' />
-               <Card.Header>Molly Thomas</Card.Header>
-               <Card.Meta>New User</Card.Meta>
-               <Card.Description>
-                 Molly wants to add you to the group <strong>musicians</strong>
-               </Card.Description>
-             </Card.Content>
-            </Card>
-          </Responsive>
+              <Card>
+                <Card.Content>
+                  <Image floated='right' size='mini' src='/images/avatar/large/molly.png' />
+                  <Card.Header>Molly Thomas</Card.Header>
+                  <Card.Meta>New User</Card.Meta>
+                  <Card.Description>
+                   <Placeholder>
+                     <Placeholder.Paragraph>
+                       <Placeholder.Line length='medium' />
+                       <Placeholder.Line length='short' />
+                     </Placeholder.Paragraph>
+                   </Placeholder>
+                  </Card.Description>
+                </Card.Content>
+               </Card>
+            </Card.Group>
+      </Segment>
 
-        </Card.Content>
-      </Card>
+      <Segment color='green' compact>
+        <Header as='h2'>Ready</Header>
+        <List>
+          <List.Item>
+            <List.Icon name='check square outline' />
+            <List.Content>
+              <List.Header>CSE 142</List.Header>
+              <List.Description>NW 5 credits</List.Description>
+            </List.Content>
+          </List.Item>
+          <List.Item>
+            <List.Icon name='check square outline' />
+            <List.Content>
+              <List.Header>MATH 124</List.Header>
+              <List.Description>NW 5 credits</List.Description>
+            </List.Content>
+          </List.Item>
+          <List.Item>
+            <List.Icon name='check square outline' />
+            <List.Content>
+              <List.Header>BIO 200</List.Header>
+              <List.Description>NW 5 credits</List.Description>
+            </List.Content>
+          </List.Item>
+          <List.Item>
+            <List.Icon name='check square outline' />
+            <List.Content>
+              <List.Header>ENG 401</List.Header>
+              <List.Description>NW 5 credits</List.Description>
+            </List.Content>
+          </List.Item>
+        </List>
+      </Segment>
+
+      <Segment.Group>
+        <Segment>
+          <Header as='h2'>Registration</Header>
+          <p>Your estimated priority registration date is <strong>Nov. 4, 2018</strong>.</p>
+        </Segment>
+         <Segment>
+         <Button basic color='green'>Submit</Button>
+         </Segment>
+       </Segment.Group>
+
 
       <Card fluid >
         <Card.Content>

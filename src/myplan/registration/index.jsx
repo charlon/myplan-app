@@ -3,7 +3,7 @@
 
 import React from 'react';
 import { Panel } from 'react-bootstrap'
-import { Responsive, Step, Icon, Button, Card, Image, Feed, Grid, Segment, Header, Placeholder, List, Divider} from 'semantic-ui-react'
+import { Responsive, Step, Icon, Button, Card, Image, Feed, Grid, Segment, Header, Placeholder, List, Divider, Label } from 'semantic-ui-react'
 
 import './registration.scss';
 
@@ -110,9 +110,8 @@ class Registration extends React.Component {
         <Card.Group itemsPerRow={2}>
           <Card>
             <Card.Content>
-              <Image floated='right' size='mini' src='/images/avatar/large/molly.png' />
-              <Card.Header>Molly Thomas</Card.Header>
-              <Card.Meta>New User</Card.Meta>
+              <Card.Header>CSE 142 AA</Card.Header>
+              <Card.Meta>KNE 130 Tue/Thur 8:30-9:50</Card.Meta>
               <Card.Description>
                <Placeholder>
                  <Placeholder.Paragraph>
@@ -125,9 +124,8 @@ class Registration extends React.Component {
            </Card>
            <Card>
              <Card.Content>
-               <Image floated='right' size='mini' src='/images/avatar/large/molly.png' />
-               <Card.Header>Molly Thomas</Card.Header>
-               <Card.Meta>New User</Card.Meta>
+               <Card.Header>Math 124 CA</Card.Header>
+               <Card.Meta>KNE 130 Tue/Thur 8:30-9:50</Card.Meta>
                <Card.Description>
                 <Placeholder>
                   <Placeholder.Paragraph>
@@ -140,9 +138,8 @@ class Registration extends React.Component {
             </Card>
             <Card>
               <Card.Content>
-                <Image floated='right' size='mini' src='/images/avatar/large/molly.png' />
-                <Card.Header>Molly Thomas</Card.Header>
-                <Card.Meta>New User</Card.Meta>
+                <Card.Header>BIO 200 AD</Card.Header>
+                <Card.Meta>KNE 130 Tue/Thur 8:30-9:50</Card.Meta>
                 <Card.Description>
                  <Placeholder>
                    <Placeholder.Paragraph>
@@ -155,9 +152,8 @@ class Registration extends React.Component {
              </Card>
              <Card>
                <Card.Content>
-                 <Image floated='right' size='mini' src='/images/avatar/large/molly.png' />
-                 <Card.Header>Molly Thomas</Card.Header>
-                 <Card.Meta>New User</Card.Meta>
+                 <Card.Header>ENG 401 BC</Card.Header>
+                 <Card.Meta>KNE 130 Tue/Thur 8:30-9:50</Card.Meta>
                  <Card.Description>
                   <Placeholder>
                     <Placeholder.Paragraph>
@@ -168,95 +164,102 @@ class Registration extends React.Component {
                  </Card.Description>
                </Card.Content>
               </Card>
-              <Card>
-                <Card.Content>
-                  <Image floated='right' size='mini' src='/images/avatar/large/molly.png' />
-                  <Card.Header>Molly Thomas</Card.Header>
-                  <Card.Meta>New User</Card.Meta>
-                  <Card.Description>
-                   <Placeholder>
-                     <Placeholder.Paragraph>
-                       <Placeholder.Line length='medium' />
-                       <Placeholder.Line length='short' />
-                     </Placeholder.Paragraph>
-                   </Placeholder>
-                  </Card.Description>
-                </Card.Content>
-               </Card>
-
-              <Card>
-                <Card.Content>
-                  <Image floated='right' size='mini' src='/images/avatar/large/molly.png' />
-                  <Card.Header>Molly Thomas</Card.Header>
-                  <Card.Meta>New User</Card.Meta>
-                  <Card.Description>
-                   <Placeholder>
-                     <Placeholder.Paragraph>
-                       <Placeholder.Line length='medium' />
-                       <Placeholder.Line length='short' />
-                     </Placeholder.Paragraph>
-                   </Placeholder>
-                  </Card.Description>
-                </Card.Content>
-               </Card>
             </Card.Group>
       </Segment>
 
-      <Segment.Group>
 
-        <Segment>
-          <Header as='h2'>Registration</Header>
-          <p>The following courses you have planned are ready for registration!</p>
+        <Segment color="red">
+          <Header as='h2'>Issues</Header>
+          <p>The following courses/sections have issues that need to be addressed!</p>
 
           <List relaxed>
             <List.Item>
               <List.Content floated="left">
-                <List.Header>CSE 142</List.Header>
-                <List.Description>NW 5 credits</List.Description>
+                <List.Header>CSE 142 AF</List.Header>
+                <List.Description>KNE 130 Tue/Thur 8:30-9:50</List.Description>
               </List.Content>
-              <Button disabled size='mini'floated="right">Submit</Button>
+              <Button disabled size='mini'floated="right">View</Button>
             </List.Item>
             <List.Item>
               <List.Content floated="left">
-                <List.Header>MATH 124</List.Header>
-                <List.Description>NW 5 credits</List.Description>
+                <List.Header>MATH 124 BC</List.Header>
+                <List.Description>KNE 130 Tue/Thur 8:30-9:50</List.Description>
               </List.Content>
-              <Button disabled size='mini' floated="right">Submit</Button>
+              <Button disabled size='mini' floated="right">View</Button>
             </List.Item>
             <List.Item>
               <List.Content floated="left">
-                <List.Header>BIO 200</List.Header>
-                <List.Description>NW 5 credits</List.Description>
+                <List.Header>BIO 200 CA</List.Header>
+                <List.Description>KNE 130 Tue/Thur 8:30-9:50</List.Description>
               </List.Content>
-              <Button disabled size='mini' floated="right">Submit</Button>
+              <Button disabled size='mini' floated="right">View</Button>
             </List.Item>
             <List.Item>
               <List.Content floated="left">
-                <List.Header>ENG 401</List.Header>
-                <List.Description>NW 5 credits</List.Description>
+                <List.Header>ENG 401 AA</List.Header>
+                <List.Description>KNE 130 Tue/Thur 8:30-9:50</List.Description>
               </List.Content>
-              <Button disabled size='mini' floated="right">Submit</Button>
+              <Button disabled size='mini' floated="right">View</Button>
             </List.Item>
           </List>
         </Segment>
 
-        <Segment>
-          <p>Your estimated priority registration date is <strong>Nov. 4, 2018</strong>.</p>
-        </Segment>
+
+
 
         <Segment>
+          <Header as='h2'>Registration</Header>
+
+          <Label as='a' color='green' ribbon>
+            Ready!
+          </Label>
+
+          <List relaxed>
+            <List.Item>
+              <List.Content floated="left">
+                <List.Header>CSE 142 AC</List.Header>
+                <List.Description>KNE 130 Tue/Thur 8:30-9:50</List.Description>
+              </List.Content>
+              <Button disabled size='mini'floated="right">View</Button>
+            </List.Item>
+            <List.Item>
+              <List.Content floated="left">
+                <List.Header>MATH 124 BB</List.Header>
+                <List.Description>KNE 130 Tue/Thur 8:30-9:50</List.Description>
+              </List.Content>
+              <Button disabled size='mini' floated="right">View</Button>
+            </List.Item>
+            <List.Item>
+              <List.Content floated="left">
+                <List.Header>BIO 200 AD</List.Header>
+                <List.Description>KNE 130 Tue/Thur 8:30-9:50</List.Description>
+              </List.Content>
+              <Button disabled size='mini' floated="right">View</Button>
+            </List.Item>
+            <List.Item>
+              <List.Content floated="left">
+                <List.Header>ENG 401 AA</List.Header>
+                <List.Description>KNE 130 Tue/Thur 8:30-9:50</List.Description>
+              </List.Content>
+              <Button disabled size='mini' floated="right">View</Button>
+            </List.Item>
+          </List>
+
+          <Segment compact>
+            <p>Your estimated priority registration date is <strong>Nov. 4, 2018</strong>.</p>
+            <Button color="blue">Submit using MyPlan</Button>
+          </Segment>
+
          <Grid columns={2}>
            <Grid.Column>
-              <p>MyPlan can submit your entire Plan!</p>
-             <Button disabled>Submit</Button>
+            &nbsp;
            </Grid.Column>
            <Grid.Column>
-             <p>Use to manually enter SLNs.</p>
-             <Button basic>Visit SPS</Button>
+             <p>Manually enter SLNs <br/><a href="#">SPS Registration</a></p>
            </Grid.Column>
          </Grid>
         </Segment>
-       </Segment.Group>
+
 
 
       <Card fluid >
@@ -287,7 +290,8 @@ class Registration extends React.Component {
         </Card.Content>
       </Card>
 
-
+      <p>This is a Panel component using React-Bootstrap v3.</p>
+      
       <Panel>
         <Panel.Heading>Panel Header</Panel.Heading>
         <Panel.Body>Panel content</Panel.Body>

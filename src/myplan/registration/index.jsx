@@ -3,7 +3,7 @@
 
 import React from 'react';
 import { Panel } from 'react-bootstrap'
-import { Responsive, Step, Icon, Button, Card, Image, Feed, Grid, Segment, Header, Placeholder, List, Divider, Label } from 'semantic-ui-react'
+import { Container, Message, Responsive, Step, Icon, Button, Card, Image, Feed, Grid, Segment, Header, Placeholder, List, Divider, Label } from 'semantic-ui-react'
 
 import './registration.scss';
 
@@ -16,7 +16,19 @@ class Registration extends React.Component {
   render() {
     return (<div>
 
-      <Header as='h1'>Winter 2019</Header>
+
+      <Grid>
+        <Grid.Column width={10}>
+          <Label color='gray' basic>Upcoming</Label>
+          <Header as='h1' style={{margin:'0'}}>Winter 2019</Header>
+        </Grid.Column>
+        <Grid.Column width={6} verticalAlign='top' >
+          <Label color='gray' size='mini'>Current</Label>
+          <p><a href="#">Autumn 2018</a></p>
+        </Grid.Column>
+      </Grid>
+
+      <Divider />
 
       <Responsive maxWidth={767}>
         <Step.Group size="small" unstackable fluid widths={3}>
@@ -66,12 +78,9 @@ class Registration extends React.Component {
         </Step.Group>
       </Responsive>
 
-
-      <Segment basic>Pellentesque habitant morbi tristique senectus.</Segment>
-
-
       <Segment color='red'>
         <Header as='h2'>Holds</Header>
+        <Label as='a' color='red' ribbon>Important!</Label>
         <List relaxed>
           <List.Item>
             <List.Content>
@@ -105,7 +114,11 @@ class Registration extends React.Component {
       <Segment color='red'>
 
         <Header as='h2'>Issues</Header>
-        <p>The following courses/sections have issues that need to be addressed!</p>
+
+        <Message negative size='tiny'>
+          <Message.Header>We found problems with your plan.</Message.Header>
+          <p>The following courses/sections have issues that need to be addressed!</p>
+        </Message>
 
         <Card.Group itemsPerRow={2}>
           <Card>
@@ -170,7 +183,11 @@ class Registration extends React.Component {
 
         <Segment color="red">
           <Header as='h2'>Issues</Header>
-          <p>The following courses/sections have issues that need to be addressed!</p>
+
+          <Message negative size='tiny'>
+            <Message.Header>We found problems with your plan.</Message.Header>
+            <p>The following courses/sections have issues that need to be addressed!</p>
+          </Message>
 
           <List relaxed>
             <List.Item>
@@ -210,9 +227,7 @@ class Registration extends React.Component {
         <Segment>
           <Header as='h2'>Registration</Header>
 
-          <Label as='a' color='green' ribbon>
-            Ready!
-          </Label>
+          <Label as='a' color='green' ribbon>Ready!</Label>
 
           <List relaxed>
             <List.Item>
@@ -245,19 +260,17 @@ class Registration extends React.Component {
             </List.Item>
           </List>
 
-          <Segment compact>
+          <Message positive size='small'>
+            <Message.Header>Priority Registration</Message.Header>
             <p>Your estimated priority registration date is <strong>Nov. 4, 2018</strong>.</p>
-            <Button color="blue">Submit using MyPlan</Button>
-          </Segment>
+            <Button color="green">Submit using MyPlan</Button>
+          </Message>
 
-         <Grid columns={2}>
-           <Grid.Column>
-            &nbsp;
-           </Grid.Column>
-           <Grid.Column>
-             <p>Manually enter SLNs <br/><a href="#">SPS Registration</a></p>
-           </Grid.Column>
-         </Grid>
+          <Message size='mini'>
+            <Message.Header>SPS Registration</Message.Header>
+            <p>You may manually enter your SLN numbers using <a href='#'>SPS Registration</a>.</p>
+          </Message>
+
         </Segment>
 
 
@@ -291,7 +304,7 @@ class Registration extends React.Component {
       </Card>
 
       <p>This is a Panel component using React-Bootstrap v3.</p>
-      
+
       <Panel>
         <Panel.Heading>Panel Header</Panel.Heading>
         <Panel.Body>Panel content</Panel.Body>

@@ -206,45 +206,43 @@ class Registration extends React.Component {
 
         <Segment>
           <Header as='h2'>Registration</Header>
-          <p>Your estimated priority registration date is <strong>Nov. 4, 2018</strong>.</p>
+          <p>The following courses you have planned are ready for registration!</p>
+
+          <List relaxed>
+            <List.Item>
+              <List.Content floated="left">
+                <List.Header>CSE 142</List.Header>
+                <List.Description>NW 5 credits</List.Description>
+              </List.Content>
+              <Button disabled size='mini'floated="right">Submit</Button>
+            </List.Item>
+            <List.Item>
+              <List.Content floated="left">
+                <List.Header>MATH 124</List.Header>
+                <List.Description>NW 5 credits</List.Description>
+              </List.Content>
+              <Button disabled size='mini' floated="right">Submit</Button>
+            </List.Item>
+            <List.Item>
+              <List.Content floated="left">
+                <List.Header>BIO 200</List.Header>
+                <List.Description>NW 5 credits</List.Description>
+              </List.Content>
+              <Button disabled size='mini' floated="right">Submit</Button>
+            </List.Item>
+            <List.Item>
+              <List.Content floated="left">
+                <List.Header>ENG 401</List.Header>
+                <List.Description>NW 5 credits</List.Description>
+              </List.Content>
+              <Button disabled size='mini' floated="right">Submit</Button>
+            </List.Item>
+          </List>
         </Segment>
 
         <Segment>
-
-            <List relaxed>
-              <List.Item>
-                <List.Content floated="left">
-                  <List.Header>CSE 142</List.Header>
-                  <List.Description>NW 5 credits</List.Description>
-                </List.Content>
-                <Button disabled size='mini'floated="right">Submit</Button>
-              </List.Item>
-              <List.Item>
-                <List.Content floated="left">
-                  <List.Header>MATH 124</List.Header>
-                  <List.Description>NW 5 credits</List.Description>
-                </List.Content>
-                <Button disabled size='mini' floated="right">Submit</Button>
-              </List.Item>
-              <List.Item>
-                <List.Content floated="left">
-                  <List.Header>BIO 200</List.Header>
-                  <List.Description>NW 5 credits</List.Description>
-                </List.Content>
-                <Button disabled size='mini' floated="right">Submit</Button>
-              </List.Item>
-              <List.Item>
-                <List.Content floated="left">
-                  <List.Header>ENG 401</List.Header>
-                  <List.Description>NW 5 credits</List.Description>
-                </List.Content>
-                <Button disabled size='mini' floated="right">Submit</Button>
-              </List.Item>
-            </List>
-
-
+          <p>Your estimated priority registration date is <strong>Nov. 4, 2018</strong>.</p>
         </Segment>
-
 
         <Segment>
          <Grid columns={2}>
@@ -253,7 +251,8 @@ class Registration extends React.Component {
              <Button disabled>Submit</Button>
            </Grid.Column>
            <Grid.Column>
-             <p>Use <a href="#">SPS Registration</a> to manually enter SLNs.</p>
+             <p>Use to manually enter SLNs.</p>
+             <Button basic>Visit SPS</Button>
            </Grid.Column>
          </Grid>
         </Segment>

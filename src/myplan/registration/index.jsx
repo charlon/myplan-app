@@ -262,6 +262,7 @@ class Registration extends React.Component {
               <Message.Header>Priority Registration</Message.Header>
               <p>Your estimated priority registration date is <strong>Nov. 4, 2018</strong>.</p>
               <Button color="blue" disabled>Submit using MyPlan</Button>
+              <Label attached='top right' color='blue'>0:00:00</Label>
             </Message>
             <Message info size='small'>
               <Message.Header>Priority Registration</Message.Header>

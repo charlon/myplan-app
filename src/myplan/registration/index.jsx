@@ -189,7 +189,7 @@ class Registration extends React.Component {
             <p>The following courses/sections have issues that need to be addressed!</p>
           </Message>
 
-          <List relaxed>
+          <List divided relaxed>
             <List.Item>
               <List.Content floated="left">
                 <List.Header>CSE 142 AF</List.Header>
@@ -229,7 +229,7 @@ class Registration extends React.Component {
 
           <Label as='a' color='green' ribbon>Ready!</Label>
 
-          <List relaxed>
+          <List divided relaxed>
             <List.Item>
               <List.Content floated="left">
                 <List.Header>CSE 142 AC</List.Header>

@@ -64,7 +64,7 @@ class Registration extends React.Component {
 
           <Step active>
             <Step.Content>
-              <Step.Title>Pre-registration</Step.Title>
+              <Step.Title style={{'white-space':'nowrap'}}>Pre-registration</Step.Title>
             </Step.Content>
           </Step>
 

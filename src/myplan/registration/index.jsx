@@ -3,7 +3,7 @@
 
 import React from 'react';
 import { Panel } from 'react-bootstrap'
-import { Container, Message, Responsive, Step, Icon, Button, Card, Image, Feed, Grid, Segment, Header, Placeholder, List, Divider, Label } from 'semantic-ui-react'
+import { Container, Message, Responsive, Step, Icon, Button, Card, Image, Feed, Grid, Segment, Header, Placeholder, List, Divider, Label, Modal } from 'semantic-ui-react'
 
 import './registration.scss';
 
@@ -13,7 +13,14 @@ class Registration extends React.Component {
     super(props);
   }
 
+  state = { open: false }
+  show = () => this.setState({ open: true })
+  close = () => this.setState({ open: false })
+
   render() {
+
+    const { open } = this.state
+
     return (<div>
 
 
@@ -216,6 +223,7 @@ class Registration extends React.Component {
                 <List.Content>
                   <List.Description><Label color='gray' basic horizontal size='mini'>A</Label> KNE 130 Tue/Thur 8:30-9:50</List.Description>
                   <List.Description><Label color='gray' basic horizontal size='mini'>AA</Label> KNE 130 Tue/Thur 8:30-9:50</List.Description>
+                  <Button size='mini' onClick={this.show}>Launch Modal Card</Button>
                 </List.Content>
               </List.Item>
               <List.Item as='a' href='#'>
@@ -232,6 +240,27 @@ class Registration extends React.Component {
                 </List.Content>
               </List.Item>
             </List>
+
+            <Modal size='mini' open={open} onClose={this.close}>
+              <Modal.Header>CSE 142 Computer Programming I (4)</Modal.Header>
+              <Modal.Content image scrolling>
+                <Modal.Description>
+                  <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' style={{ paddingBottom: 5 }} />
+                  <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' style={{ paddingBottom: 5 }} />
+                  <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' style={{ paddingBottom: 5 }} />
+                  <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' style={{ paddingBottom: 5 }} />
+                  <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' style={{ paddingBottom: 5 }} />
+                  <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' style={{ paddingBottom: 5 }} />
+                  <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' style={{ paddingBottom: 5 }} />
+                  <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' style={{ paddingBottom: 5 }} />
+                </Modal.Description>
+              </Modal.Content>
+              <Modal.Actions>
+                <Button primary>
+                  Action
+                </Button>
+              </Modal.Actions>
+            </Modal>
 
             <Message info size='small'>
               <Message.Header>Priority Registration</Message.Header>
@@ -260,11 +289,6 @@ class Registration extends React.Component {
         <Segment>
           <Header as='h3'>Dropping Courses</Header>
           <p>You cannot drop courses using MyPlan. If you need to update your schedule, visit SPS. <a href='#'>Drop courses using SPS</a>.</p>
-        </Segment>
-
-        <Segment stacked>
-          <Header as='h3'>CSE 142 Computer Programming I (4) </Header>
-          sdjfa lk falsdkj lkjsdaf lkj dsalfk lkjdsaf lkjasdflk
         </Segment>
 
         <br/>

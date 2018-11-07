@@ -23,29 +23,46 @@ class Registration extends React.Component {
 
     return (<div>
 
+      <Responsive maxWidth={767}>
+        <Grid>
+          <Grid.Column width={10}>
+            <Label color='gray' basic>Upcoming</Label>
+            <Header as='h1' style={{margin:'0'}}>Winter 2019</Header>
+          </Grid.Column>
+          <Grid.Column width={6} verticalAlign='bottom'>
+            <Label color='gray' size='mini'>Current</Label>
+            <p><a href="#">Autumn 2018</a></p>
+          </Grid.Column>
+        </Grid>
+      </Responsive>
 
-      <Grid>
-        <Grid.Column width={10}>
-          <Label color='gray' basic>Upcoming</Label>
-          <Header as='h1' style={{margin:'0'}}>Winter 2019</Header>
-        </Grid.Column>
-        <Grid.Column width={6} verticalAlign='top' >
-          <Label color='gray' size='mini'>Current</Label>
-          <p><a href="#">Autumn 2018</a></p>
-        </Grid.Column>
-      </Grid>
+      <Responsive minWidth={768}>
+        <Grid>
+          <Grid.Row columns={3}>
+            <Grid.Column>
+              <Label color='gray' basic>Upcoming</Label>
+              <Header as='h1' style={{margin:'0'}}>Winter 2019</Header>
+            </Grid.Column>
+            <Grid.Column>&nbsp;</Grid.Column>
+            <Grid.Column verticalAlign='bottom'>
+              <Label color='gray' size='mini'>Current</Label>
+              <p><a href="#">Autumn 2018</a></p>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+      </Responsive>
 
       <Divider />
 
       <Responsive maxWidth={767}>
-        <Step.Group size="small" unstackable fluid widths={3}>
-          <Step active>
+        <Step.Group size="mini" unstackable fluid widths={3}>
+          <Step completed>
             <Step.Content>
               <Step.Title>Preview</Step.Title>
             </Step.Content>
           </Step>
 
-          <Step disabled>
+          <Step active>
             <Step.Content>
               <Step.Title>Pre-registration</Step.Title>
             </Step.Content>
@@ -60,16 +77,15 @@ class Registration extends React.Component {
       </Responsive>
 
       <Responsive minWidth={768}>
-        <Step.Group size="small" fluid widths={3}>
-          <Step active>
-            <Icon name='truck' />
+        <Step.Group size="small" widths={3}>
+          <Step completed>
             <Step.Content>
               <Step.Title>Preview</Step.Title>
               <Step.Description>Find Courses/Sections when Time Schedule is published. Fix issues or resolve holds.</Step.Description>
             </Step.Content>
           </Step>
 
-          <Step disabled>
+          <Step active>
             <Step.Content>
               <Step.Title>Pre-registration</Step.Title>
               <Step.Description>Complete acknowledgements and make any final adjustments to your schedule.</Step.Description>

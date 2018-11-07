@@ -80,10 +80,7 @@ class Registration extends React.Component {
 
       <Segment color='red'>
         <Header as='h2'>Holds</Header>
-        <Message negative size='tiny'>
-          <Message.Header>You have holds!</Message.Header>
-          <p>The following registration holds will prevent you from being able to register.</p>
-        </Message>
+        <Message negative size='tiny'>The following hold(s) will prevent you from registration.</Message>
         <List divided relaxed>
           <List.Item>
             <List.Content>
@@ -113,113 +110,96 @@ class Registration extends React.Component {
       </Segment>
 
 
+      <Segment color="red">
+        <Header as='h2'>Planned Items</Header>
 
-      <Segment color='red'>
+        <Label as='a' color='red' ribbon>Issues</Label>
 
-        <Header as='h2'>Issues</Header>
+        <List divided relaxed='very'>
+          <List.Item as='a' href='#'>
+            <List.Header>CSE 142 Computer Programming I (4)</List.Header>
+            <List.Content>
+              <List.Description><Label color='gray' basic horizontal size='mini'>A</Label> KNE 130 Tue/Thur 8:30-9:50</List.Description>
+              <List.Description><Label color='gray' basic horizontal size='mini'>AB</Label> KNE 130 Tue/Thur 8:30-9:50</List.Description>
+              <Message negative size='mini'>There is a time conflict with another course!</Message>
+            </List.Content>
+          </List.Item>
+          <List.Item as='a' href='#'>
+            <List.Header>BIO A 370 Introduction to Primates (5)</List.Header>
+            <List.Content>
+              <List.Description><Label color='gray' basic horizontal size='mini'>A</Label> KNE 130 Tue/Thur 8:30-9:50</List.Description>
+              <List.Description><Label color='gray' basic horizontal size='mini'>AC</Label> KNE 130 Tue/Thur 8:30-9:50</List.Description>
+              <Message negative size='mini'>There is a time conflict with another course!</Message>
+            </List.Content>
+          </List.Item>
+          <List.Item as='a' href='#'>
+            <List.Header>MATH 124 Calculus with Analytic Geometry I (5)</List.Header>
+            <List.Content>
+              <List.Description><Label color='gray' basic horizontal size='mini'>A</Label> KNE 130 Tue/Thur 8:30-9:50</List.Description>
+              <List.Description><Label color='red' basic horizontal size='mini'>BC</Label> KNE 130 Tue/Thur 8:30-9:50</List.Description>
+              <Message negative size='mini'>You must select the correct quiz section.</Message>
+            </List.Content>
+          </List.Item>
+          <List.Item as='a' href='#'>
+            <List.Header>CHEM 110 Preparation for General Chemistry (3-5)</List.Header>
+            <List.Content>
+              <Message negative size='mini'>This course is not offered in Winter 2019.</Message>
+            </List.Content>
+          </List.Item>
+        </List>
 
-        <Message negative size='tiny'>
-          <Message.Header>We found problems with your plan.</Message.Header>
-          <p>The following courses/sections have issues that need to be addressed!</p>
-        </Message>
-
-        <Card.Group itemsPerRow={2}>
-          <Card>
-            <Card.Content>
-              <Card.Header>CSE 142 AA</Card.Header>
-              <Card.Meta>KNE 130 Tue/Thur 8:30-9:50</Card.Meta>
-              <Card.Description>
-               <Placeholder>
-                 <Placeholder.Paragraph>
-                   <Placeholder.Line length='medium' />
-                   <Placeholder.Line length='short' />
-                 </Placeholder.Paragraph>
-               </Placeholder>
-              </Card.Description>
-            </Card.Content>
-           </Card>
-           <Card>
-             <Card.Content>
-               <Card.Header>Math 124 CA</Card.Header>
-               <Card.Meta>KNE 130 Tue/Thur 8:30-9:50</Card.Meta>
-               <Card.Description>
-                <Placeholder>
-                  <Placeholder.Paragraph>
-                    <Placeholder.Line length='medium' />
-                    <Placeholder.Line length='short' />
-                  </Placeholder.Paragraph>
-                </Placeholder>
-               </Card.Description>
-             </Card.Content>
-            </Card>
-            <Card>
-              <Card.Content>
-                <Card.Header>BIO 200 AD</Card.Header>
-                <Card.Meta>KNE 130 Tue/Thur 8:30-9:50</Card.Meta>
-                <Card.Description>
-                 <Placeholder>
-                   <Placeholder.Paragraph>
-                     <Placeholder.Line length='medium' />
-                     <Placeholder.Line length='short' />
-                   </Placeholder.Paragraph>
-                 </Placeholder>
-                </Card.Description>
-              </Card.Content>
-             </Card>
-             <Card>
-               <Card.Content>
-                 <Card.Header>ENG 401 BC</Card.Header>
-                 <Card.Meta>KNE 130 Tue/Thur 8:30-9:50</Card.Meta>
-                 <Card.Description>
-                  <Placeholder>
-                    <Placeholder.Paragraph>
-                      <Placeholder.Line length='medium' />
-                      <Placeholder.Line length='short' />
-                    </Placeholder.Paragraph>
-                  </Placeholder>
-                 </Card.Description>
-               </Card.Content>
-              </Card>
-            </Card.Group>
       </Segment>
 
 
+
         <Segment color="red">
-          <Header as='h2'>Issues</Header>
-
-          <Message negative size='tiny'>
-            <Message.Header>We found problems with your plan.</Message.Header>
-            <p>The following courses/sections have issues that need to be fixed!</p>
-          </Message>
-
+          <Header as='h2'>Not Offered</Header>
+          <Message negative size='tiny'>The following courses are not offered in Winter 2019.</Message>
           <List divided relaxed>
             <List.Item>
-              <List.Content floated="left">
-                <List.Header>CSE 142 AF</List.Header>
-                <List.Description>KNE 130 Tue/Thur 8:30-9:50</List.Description>
-              </List.Content>
-              <Button disabled size='mini'floated="right">View</Button>
+              <List.Header>CSE 142 Computer Programming I (4)</List.Header>
             </List.Item>
             <List.Item>
-              <List.Content floated="left">
-                <List.Header>MATH 124 BC</List.Header>
-                <List.Description>KNE 130 Tue/Thur 8:30-9:50</List.Description>
-              </List.Content>
-              <Button disabled size='mini' floated="right">View</Button>
+              <List.Header>CHEM 110 Preparation for General Chemistry (3-5)</List.Header>
             </List.Item>
-            <List.Item>
-              <List.Content floated="left">
-                <List.Header>BIO 200 CA</List.Header>
-                <List.Description>KNE 130 Tue/Thur 8:30-9:50</List.Description>
+          </List>
+        </Segment>
+
+        <Segment color="red">
+          <Header as='h2'>Incorrect Sections</Header>
+          <Message negative size='tiny'>
+            <p>You must choose the correct sections.</p>
+          </Message>
+          <List divided relaxed='very'>
+            <List.Item as='a' href='#'>
+              <List.Header>CSE 142 Computer Programming I (4)</List.Header>
+              <List.Content>
+                <List.Description><Label color='gray' basic horizontal size='mini'>A</Label> KNE 130 Tue/Thur 8:30-9:50</List.Description>
+                <List.Description><Label color='red' basic horizontal size='mini'>BC</Label> KNE 130 Tue/Thur 8:30-9:50</List.Description>
               </List.Content>
-              <Button disabled size='mini' floated="right">View</Button>
             </List.Item>
-            <List.Item>
-              <List.Content floated="left">
-                <List.Header>ENG 401 AA</List.Header>
-                <List.Description>KNE 130 Tue/Thur 8:30-9:50</List.Description>
+          </List>
+        </Segment>
+
+        <Segment color="red">
+          <Header as='h2'>Schedule Conflicts</Header>
+          <Message negative size='tiny'>
+            <p>2 of your planned sections have schedule conflicts.</p>
+          </Message>
+          <List divided relaxed='very'>
+            <List.Item as='a' href='#'>
+              <List.Header>CSE 142 Computer Programming I (4)</List.Header>
+              <List.Content>
+                <List.Description><Label color='red' basic horizontal size='mini'>A</Label> KNE 130 Tue/Thur 8:30-9:50</List.Description>
+                <List.Description><Label color='red' basic horizontal size='mini'>AA</Label> KNE 130 Tue/Thur 8:30-9:50</List.Description>
               </List.Content>
-              <Button disabled size='mini' floated="right">View</Button>
+            </List.Item>
+            <List.Item as='a' href='#'>
+              <List.Header>BIO A 370 Introduction to Primates (5)</List.Header>
+              <List.Content>
+                <List.Description><Label color='red' basic horizontal size='mini'>A</Label> KNE 130 Tue/Thur 8:30-9:50</List.Description>
+                <List.Description><Label color='red' basic horizontal size='mini'>AA</Label> KNE 130 Tue/Thur 8:30-9:50</List.Description>
+              </List.Content>
             </List.Item>
           </List>
         </Segment>
@@ -230,24 +210,24 @@ class Registration extends React.Component {
 
             <Label as='a' color='green' ribbon>Ready!</Label>
 
-            <List divided relaxed>
-              <List.Item>
+            <List divided relaxed='very'>
+              <List.Item as='a' href='#'>
+                <List.Header>CSE 142 Computer Programming I (4)</List.Header>
                 <List.Content>
-                  <List.Header>CSE 142 Computer Programming I (4)</List.Header>
                   <List.Description><Label color='gray' basic horizontal size='mini'>A</Label> KNE 130 Tue/Thur 8:30-9:50</List.Description>
                   <List.Description><Label color='gray' basic horizontal size='mini'>AA</Label> KNE 130 Tue/Thur 8:30-9:50</List.Description>
                 </List.Content>
               </List.Item>
-              <List.Item>
+              <List.Item as='a' href='#'>
+                <List.Header>CHEM 110 Preparation for General Chemistry (3-5)</List.Header>
                 <List.Content>
-                  <List.Header>CHEM 110 Preparation for General Chemistry (3-5)</List.Header>
                   <List.Description><Label color='gray' basic horizontal size='mini'>A</Label> KNE 130 Tue/Thur 8:30-9:50</List.Description>
                   <List.Description><Label color='gray' basic horizontal size='mini'>AA</Label> KNE 130 Tue/Thur 8:30-9:50</List.Description>
                 </List.Content>
               </List.Item>
-              <List.Item>
+              <List.Item as='a' href='#'>
+                <List.Header>BIO A 370 Introduction to Primates (5)</List.Header>
                 <List.Content>
-                  <List.Header>BIO A 370 Introduction to Primates (5)</List.Header>
                   <List.Description><Label color='gray' basic horizontal size='mini'>A</Label> KNE 130 Tue/Thur 8:30-9:50</List.Description>
                 </List.Content>
               </List.Item>
@@ -262,7 +242,6 @@ class Registration extends React.Component {
               <Message.Header>Priority Registration</Message.Header>
               <p>Your estimated priority registration date is <strong>Nov. 4, 2018</strong>.</p>
               <Button color="blue" disabled>Submit using MyPlan</Button>
-              <Label attached='top right' color='blue'>0:00:00</Label>
             </Message>
             <Message info size='small'>
               <Message.Header>Priority Registration</Message.Header>
@@ -272,9 +251,10 @@ class Registration extends React.Component {
 
           </Segment>
           <Message size='tiny' attached='bottom'>
-            <Message.Header>SPS Registration</Message.Header>
+            <Message.Header>Need to manually enter SLN numbers?</Message.Header>
             <p>You may manually enter your SLN numbers using <a href='#'>SPS Registration</a>.</p>
           </Message>
+
         </Segment.Group>
 
         <Segment>
@@ -282,9 +262,16 @@ class Registration extends React.Component {
           <p>You cannot drop courses using MyPlan. If you need to update your schedule, visit SPS. <a href='#'>Drop courses using SPS</a>.</p>
         </Segment>
 
+        <Segment stacked>
+          <Header as='h3'>CSE 142 Computer Programming I (4) </Header>
+          sdjfa lk falsdkj lkjsdaf lkj dsalfk lkjdsaf lkjasdflk
+        </Segment>
 
-
-
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
 
 
       <p>This is a Panel component using React-Bootstrap v3.</p>

@@ -19,9 +19,7 @@ class Registration extends React.Component {
 
     return (<div>
 
-    <SemanticExample />
 
-    <br/><hr/><br/>
 
     <BootstrapExample />
 

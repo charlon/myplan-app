@@ -17,7 +17,7 @@ class SemanticExample extends React.Component {
 
     return (<div>
 
-      <Responsive maxWidth={767}>
+
         <Grid>
           <Grid.Column width={10}>
             <Label color='gray' basic>Upcoming</Label>
@@ -28,23 +28,7 @@ class SemanticExample extends React.Component {
             <p><a href="#">Autumn 2018</a></p>
           </Grid.Column>
         </Grid>
-      </Responsive>
-
-      <Responsive minWidth={768}>
-        <Grid>
-          <Grid.Row columns={3}>
-            <Grid.Column>
-              <Label color='gray' basic>Upcoming</Label>
-              <Header as='h1' style={{margin:'0'}}>Winter 2019</Header>
-            </Grid.Column>
-            <Grid.Column>&nbsp;</Grid.Column>
-            <Grid.Column verticalAlign='bottom'>
-              <Label color='gray' size='mini'>Current</Label>
-              <p><a href="#">Autumn 2018</a></p>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-      </Responsive>
+    
 
       <Divider />
 

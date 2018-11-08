@@ -226,7 +226,7 @@ class BootstrapExample extends React.Component {
                 </ListGroup.Item>
               </ListGroup>
 
-              <Row className='no-gutters'>
+              <Row>
                 <Col sm={6}>
                   <Card bg='light' className='shadow-sm mt-3 mr-2'>
                     <Card.Body>

@@ -16,7 +16,7 @@ class BootstrapExample extends React.Component {
       <Row className='mb-3'>
         <Col>
 
-
+          top portion here
 
         </Col>
       </Row>
@@ -226,9 +226,9 @@ class BootstrapExample extends React.Component {
                 </ListGroup.Item>
               </ListGroup>
 
-              <Row>
+              <Row className='no-gutters'>
                 <Col sm={6}>
-                  <Card bg='light' className='shadow-sm mt-3'>
+                  <Card bg='light' className='shadow-sm mt-3 mr-2'>
                     <Card.Body>
                       <Card.Title as='h3'>Priority Registration</Card.Title>
                       <Card.Text>Your estimated priority registration date is <strong>November 4, 2018.</strong> at 6:00am.</Card.Text>
@@ -237,7 +237,7 @@ class BootstrapExample extends React.Component {
                   </Card>
                 </Col>
                 <Col sm={6}>
-                  <Card border='light' className='shadow-sm mt-3'>
+                  <Card border='light' className='shadow-sm mt-3 ml-2'>
                     <Card.Body>
                       <Card.Title as='h4'>Dropping Courses</Card.Title>
                       <Card.Text>You cannot drop courses using MyPlan. If you need to update your schedule, please visit <strong>SPS Registration</strong>.</Card.Text>

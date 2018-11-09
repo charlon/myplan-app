@@ -1,5 +1,8 @@
+import 'rc-steps/assets/index.css';
+import 'rc-steps/assets/iconfont.css';
 import React from 'react'
 import { Badge, Card, CardDeck, Container, Row, Col, Alert, Button, ListGroup}  from 'react-bootstrap'
+import Steps, { Step } from 'rc-steps';
 
 class BootstrapExample extends React.Component {
 
@@ -24,11 +27,11 @@ class BootstrapExample extends React.Component {
         </Col>
       </Row>
 
-      <Row className='mb-5'>
-        <Col xs={4}><Badge pill variant="secondary">1</Badge> Preview</Col>
-        <Col xs={4}><Badge pill variant="secondary">2</Badge> Pre-registration</Col>
-        <Col xs={4}><Badge pill variant="secondary">3</Badge> Registration</Col>
-      </Row>
+      <Steps current={2} direction="vertical" size="small">
+        <Steps.Step title="Preview" description='Time schedule has been published.' />
+        <Steps.Step title="Pre-registration" />
+        <Steps.Step title="Registration" />
+      </Steps>
 
       <Row>
         <Col md={4}>

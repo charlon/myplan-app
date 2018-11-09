@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardDeck, Container, Row, Col, Alert, Button, ListGroup}  from 'react-bootstrap'
+import { Badge, Card, CardDeck, Container, Row, Col, Alert, Button, ListGroup}  from 'react-bootstrap'
 
 class BootstrapExample extends React.Component {
 
@@ -25,9 +25,9 @@ class BootstrapExample extends React.Component {
       </Row>
 
       <Row className='mb-5'>
-        <Col xs={4}>sm=4</Col>
-        <Col xs={4}>sm=4</Col>
-        <Col xs={4}>sm=4</Col>
+        <Col xs={4}><Badge pill variant="secondary">1</Badge> Time Schedule Published</Col>
+        <Col xs={4}><Badge pill variant="secondary">2</Badge> Pre-registration</Col>
+        <Col xs={4}><Badge pill variant="secondary">3</Badge> Registration Begins</Col>
       </Row>
 
       <Row>

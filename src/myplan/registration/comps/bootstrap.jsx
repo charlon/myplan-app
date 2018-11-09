@@ -14,8 +14,14 @@ class BootstrapExample extends React.Component {
     return (<div>
 
       <Row className='mb-5'>
-        <Col xs={4}>sm=4</Col>
-        <Col xs={8} className='text-right'>sm=8</Col>
+        <Col xs={6}>
+          <span className="badge badge-secondary">Upcoming</span>
+          <h1 className='mt-0 text-nowrap'>Winter 2019</h1>
+        </Col>
+        <Col xs={6} className='text-right'>
+          <span className="badge badge-light">Current</span>
+          <h3 className='mt-0 font-weight-light text-nowrap'><a href='#'>Autumn 2019</a></h3>
+        </Col>
       </Row>
 
       <Row className='mb-5'>
@@ -23,6 +29,7 @@ class BootstrapExample extends React.Component {
         <Col xs={4}>sm=4</Col>
         <Col xs={4}>sm=4</Col>
       </Row>
+
       <Row>
         <Col md={4}>
 
@@ -230,7 +237,7 @@ class BootstrapExample extends React.Component {
               </ListGroup>
 
               <CardDeck className='mt-4'>
-                <Card bg='light' className='shadow-sm'>
+                <Card bg='light' className='shadow-sm mr-0'>
                   <Card.Body>
                     <Card.Title as='h3'>Priority Registration</Card.Title>
                     <Card.Text>Your estimated priority registration date is <strong>November 4, 2018.</strong> at 6:00am.</Card.Text>

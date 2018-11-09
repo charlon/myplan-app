@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Container, Row, Col, Alert, Button, ListGroup}  from 'react-bootstrap'
+import { Card, CardDeck, Container, Row, Col, Alert, Button, ListGroup}  from 'react-bootstrap'
 
 class BootstrapExample extends React.Component {
 
@@ -13,17 +13,20 @@ class BootstrapExample extends React.Component {
 
     return (<div>
 
-      <Row className='mb-3'>
-        <Col>
+      <Row className='mb-5'>
+        <Col xs={4}>sm=4</Col>
+        <Col xs={8} className='text-right'>sm=8</Col>
+      </Row>
 
-          top portion here
-
-        </Col>
+      <Row className='mb-5'>
+        <Col xs={4}>sm=4</Col>
+        <Col xs={4}>sm=4</Col>
+        <Col xs={4}>sm=4</Col>
       </Row>
       <Row>
         <Col md={4}>
 
-          <Card className='shadow-sm mb-3'>
+          <Card className='shadow-sm mb-4'>
             <Card.Body>
               <Card.Title as='h2'>Holds</Card.Title>
               <Card.Text>Here is a list of your holds!</Card.Text>
@@ -31,11 +34,11 @@ class BootstrapExample extends React.Component {
             </Card.Body>
           </Card>
 
-          <Card className='shadow-sm mb-3'>
+          <Card className='shadow-sm mb-4'>
             <Card.Body>
               <Card.Title as='h2'>Scheduled Courses</Card.Title>
 
-              <ListGroup variant='flush' as="ul" className='mb-3'>
+              <ListGroup variant='flush' as='ul' className='mb-4'>
                 <ListGroup.Item as="li" className='pl-0 pr-0 border-top-0'>
                   <a href="#" className="list-group-item-action">
                     <div className="d-flex w-100 justify-content-between">
@@ -98,7 +101,7 @@ class BootstrapExample extends React.Component {
         </Col>
         <Col md={8}>
 
-          <Card className='shadow-sm mb-3'>
+          <Card className='shadow-sm mb-4'>
             <Card.Body>
               <Card.Title as='h2'>Issues</Card.Title>
 
@@ -226,26 +229,22 @@ class BootstrapExample extends React.Component {
                 </ListGroup.Item>
               </ListGroup>
 
-              <Row>
-                <Col sm={6}>
-                  <Card bg='light' className='shadow-sm mt-3 mr-2'>
-                    <Card.Body>
-                      <Card.Title as='h3'>Priority Registration</Card.Title>
-                      <Card.Text>Your estimated priority registration date is <strong>November 4, 2018.</strong> at 6:00am.</Card.Text>
-                      <Button variant="primary">Submit using MyPlan</Button>
-                    </Card.Body>
-                  </Card>
-                </Col>
-                <Col sm={6}>
-                  <Card border='light' className='shadow-sm mt-3 ml-2'>
-                    <Card.Body>
-                      <Card.Title as='h4'>Dropping Courses</Card.Title>
-                      <Card.Text>You cannot drop courses using MyPlan. If you need to update your schedule, please visit <strong>SPS Registration</strong>.</Card.Text>
-                      <Card.Link href="#">SPS Registration</Card.Link>
-                    </Card.Body>
-                  </Card>
-                </Col>
-              </Row>
+              <CardDeck className='mt-4'>
+                <Card bg='light' className='shadow-sm'>
+                  <Card.Body>
+                    <Card.Title as='h3'>Priority Registration</Card.Title>
+                    <Card.Text>Your estimated priority registration date is <strong>November 4, 2018.</strong> at 6:00am.</Card.Text>
+                    <Button variant="primary">Submit using MyPlan</Button>
+                  </Card.Body>
+                </Card>
+                <Card border='light' className='shadow-sm'>
+                  <Card.Body>
+                    <Card.Title as='h4'>Dropping Courses</Card.Title>
+                    <Card.Text>You cannot drop courses using MyPlan. If you need to update your schedule, please visit <strong>SPS Registration</strong>.</Card.Text>
+                    <Card.Link href="#">SPS Registration</Card.Link>
+                  </Card.Body>
+                </Card>
+              </CardDeck>
 
             </Card.Body>
           </Card>

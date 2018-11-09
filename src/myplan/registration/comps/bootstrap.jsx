@@ -25,9 +25,9 @@ class BootstrapExample extends React.Component {
       </Row>
 
       <Row className='mb-5'>
-        <Col xs={4}><Badge pill variant="secondary">1</Badge> Time Schedule Published</Col>
+        <Col xs={4}><Badge pill variant="secondary">1</Badge> Preview</Col>
         <Col xs={4}><Badge pill variant="secondary">2</Badge> Pre-registration</Col>
-        <Col xs={4}><Badge pill variant="secondary">3</Badge> Registration Begins</Col>
+        <Col xs={4}><Badge pill variant="secondary">3</Badge> Registration</Col>
       </Row>
 
       <Row>
@@ -35,7 +35,7 @@ class BootstrapExample extends React.Component {
 
           <Card className='shadow-sm mb-4'>
             <Card.Body>
-              <Card.Title as='h2'>Holds</Card.Title>
+              <Card.Title as='h4'>Holds</Card.Title>
               <Card.Text>Here is a list of your holds!</Card.Text>
               <Card.Link href="#">View MyUW</Card.Link>
             </Card.Body>
@@ -43,7 +43,7 @@ class BootstrapExample extends React.Component {
 
           <Card className='shadow-sm mb-4'>
             <Card.Body>
-              <Card.Title as='h2'>Scheduled Courses</Card.Title>
+              <Card.Title as='h4'>Scheduled Courses</Card.Title>
 
               <ListGroup variant='flush' as='ul' className='mb-4'>
                 <ListGroup.Item as="li" className='pl-0 pr-0 border-top-0'>
@@ -110,7 +110,7 @@ class BootstrapExample extends React.Component {
 
           <Card className='shadow-sm mb-4'>
             <Card.Body>
-              <Card.Title as='h2'>Issues</Card.Title>
+              <Card.Title as='h3'>Issues</Card.Title>
 
               <Alert variant='danger' className='mb-0'>These courses are ready!</Alert>
 
@@ -176,7 +176,7 @@ class BootstrapExample extends React.Component {
 
           <Card className='shadow-sm'>
             <Card.Body>
-              <Card.Title as='h2'>Registration</Card.Title>
+              <Card.Title as='h3'>Ready</Card.Title>
 
               <Alert variant='success' className='mb-0'>These courses are ready!</Alert>
 
@@ -239,7 +239,7 @@ class BootstrapExample extends React.Component {
               <CardDeck className='mt-4'>
                 <Card bg='light' className='shadow-sm mr-0'>
                   <Card.Body>
-                    <Card.Title as='h3'>Priority Registration</Card.Title>
+                    <Card.Title as='h4'>Priority Registration</Card.Title>
                     <Card.Text>Your estimated priority registration date is <strong>November 4, 2018.</strong> at 6:00am.</Card.Text>
                     <Button variant="primary">Submit using MyPlan</Button>
                   </Card.Body>

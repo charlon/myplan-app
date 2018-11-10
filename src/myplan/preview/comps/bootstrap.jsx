@@ -31,8 +31,8 @@ class BootstrapExample extends React.Component {
         <Col className='d-md-none'>
 
           <Steps size='small' direction="vertical" current={0}>
-            <Steps.Step title="Time Schedule" description='Time schedule is published Oct. 13, 2018' />
-            <Steps.Step title="Pre-registration" description='1 week prior to Registration.' />
+            <Steps.Step title="Registration Preview" description='Fix the errors that we found with your plan' />
+            <Steps.Step title="Acknowledgements" description='1 week prior to Registration.' />
             <Steps.Step title="Registration" description='Its go time! Youre priority registration is Nov. 2, 2018' />
             <Steps.Step title="Quarter Begins" description='asdfasf' />
           </Steps>
@@ -41,8 +41,8 @@ class BootstrapExample extends React.Component {
         <Col className='d-none d-md-block'>
 
           <Steps direction='horizontal' current={0}>
-            <Steps.Step title="Time Schedule" description='Time schedule is published Oct. 13, 2018' />
-            <Steps.Step title="Pre-registration" description='1 week prior to Registration.' />
+            <Steps.Step title="Registration Preview" description='Fix the errors that we found with your plan' />
+            <Steps.Step title="Acknowledgements" description='1 week prior to Registration.' />
             <Steps.Step title="Registration" description='Its go time! Youre priority registration is Nov. 2, 2018' />
             <Steps.Step title="Quarter Begins" description='asdfasf' />
           </Steps>

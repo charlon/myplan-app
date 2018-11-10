@@ -4,18 +4,3 @@
 .rc-steps-icon {
   display: none !important;
 }
-
-// increase width of step content (4 steps)
-.rc-steps-item-content {
-  max-width: 75% !important;
-
-
-  .rc-steps-item-title {
-    max-width: 75% !important;
-  }
-  .rc-steps-item-description {
-    max-width: none !important;
-  }
-
-
-}

@@ -30,21 +30,21 @@ class BootstrapExample extends React.Component {
       <Row className='mb-3'>
         <Col className='d-md-none'>
 
-          <Steps size='small' direction="vertical" current={2}>
+          <Steps size='small' direction="vertical" current={0}>
             <Steps.Step title="Time Schedule" description='Time schedule is published Oct. 13, 2018' />
             <Steps.Step title="Pre-registration" description='1 week prior to Registration.' />
             <Steps.Step title="Registration" description='Its go time! Youre priority registration is Nov. 2, 2018' />
-            <Steps.Step title="Quarter Begins" description='Winter 2019 starts on Dec. 10, 2018' />
+            <Steps.Step title="Quarter Begins" description='asdfasf' />
           </Steps>
 
         </Col>
         <Col className='d-none d-md-block'>
 
-          <Steps direction='horizontal' current={2}>
+          <Steps direction='horizontal' current={0}>
             <Steps.Step title="Time Schedule" description='Time schedule is published Oct. 13, 2018' />
             <Steps.Step title="Pre-registration" description='1 week prior to Registration.' />
             <Steps.Step title="Registration" description='Its go time! Youre priority registration is Nov. 2, 2018' />
-            <Steps.Step title="Quarter Begins" description='Winter 2019 starts on Dec. 10, 2018' />
+            <Steps.Step title="Quarter Begins" description='asdfasf' />
           </Steps>
 
         </Col>
@@ -52,6 +52,16 @@ class BootstrapExample extends React.Component {
 
       <Row>
         <Col md={4}>
+
+          <Card border='light' className='shadow-sm mb-4'>
+            <Card.Img variant="top" src="https://myplan-dev.washington.edu/home/images/6.png" />
+            <Card.Body>
+              <Card.Title as='h4'>Hello, J. Julius!</Card.Title>
+              <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc turpis quam, euismod vel dolor ut, rhoncus volutpat orci. Morbi blandit finibus neque, ac ullamcorper mauris.</Card.Text>
+              <Card.Link href="#">View Profile</Card.Link>
+              <Card.Link href="#">Hide Forever!</Card.Link>
+            </Card.Body>
+          </Card>
 
           <Card className='shadow-sm mb-4'>
             <Card.Body>

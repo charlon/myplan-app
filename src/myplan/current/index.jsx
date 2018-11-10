@@ -1,7 +1,7 @@
 import 'rc-steps/assets/index.css';
 import 'rc-steps/assets/iconfont.css';
 import React from 'react'
-import { Badge, Card, CardDeck, Container, Row, Col, Alert, Button, ListGroup}  from 'react-bootstrap'
+import { Badge, Card, CardDeck, Image, Container, Row, Col, Alert, Button, ListGroup}  from 'react-bootstrap'
 import Steps, { Step } from 'rc-steps';
 
 import './current.scss';
@@ -15,25 +15,25 @@ class Current extends React.Component {
   render() {
     return (<div>
 
-      <Row className='mb-4'>
-        <Col xs={6}>
-          <span className="badge badge-secondary">Week 7 of 11</span>
-          <h1 className='mt-0 text-nowrap'>Autumn 2018</h1>
-        </Col>
-        <Col xs={6} className='text-right'>
-          <span className="badge badge-light">Upcoming</span>
-          <h3 className='mt-0 font-weight-light text-nowrap'><a href='/preview'>Winter 2019</a></h3>
-        </Col>
-      </Row>
+    <Row className='mb-4'>
+      <Col xs={6}>
+        <span className="badge badge-secondary">Week 7 of 11</span>
+        <h1 className='mt-0 text-nowrap'>Autumn 2018</h1>
+      </Col>
+      <Col xs={6} className='text-right'>
+        <span className="badge badge-light">Upcoming</span>
+        <h3 className='mt-0 font-weight-light text-nowrap'><a href='/preview'>Winter 2019</a></h3>
+      </Col>
+    </Row>
 
       <Row className='mb-3'>
         <Col className='d-md-none'>
 
           <Steps size='small' direction="vertical" current={1}>
-            <Steps.Step title="Time Schedule" description='Time schedule is published Oct. 13, 2018' />
-            <Steps.Step title="Pre-registration" description='1 week prior to Registration.' />
-            <Steps.Step title="Registration" description='Its go time! Youre priority registration is Nov. 2, 2018' />
-            <Steps.Step title="Quarter Begins" description='Winter 2019 starts on Dec. 10, 2018' />
+            <Steps.Step title="Quarter Begins" description='Oct. 3, 2018' />
+            <Steps.Step title="Time Schedule" description='Preview your upcoming registration' />
+            <Steps.Step title="Registration" description='Time schedule will publish...' />
+            <Steps.Step title="Finals Week" description='Winter 2019 starts on Dec. 10, 2018' />
           </Steps>
 
         </Col>
@@ -41,9 +41,9 @@ class Current extends React.Component {
 
           <Steps direction='horizontal' current={1}>
             <Steps.Step title="Quarter Begins" description='Oct. 3, 2018' />
-            <Steps.Step title="Registration Preview" description='Time schedule will publish...' />
+            <Steps.Step title="Time Schedule" description='Preview your upcoming registration' />
+            <Steps.Step title="Registration" description='Time schedule will publish...' />
             <Steps.Step title="Finals Week" description='Winter 2019 starts on Dec. 10, 2018' />
-            <Steps.Step title="Break" description='Winter 2019 starts on Dec. 10, 2018' />
           </Steps>
 
         </Col>
@@ -52,6 +52,16 @@ class Current extends React.Component {
       <Row>
         <Col md={4}>
 
+          <Card border='light' className='shadow-sm mb-4'>
+            <Card.Img variant="top" src="https://myplan-dev.washington.edu/home/images/6.png" />
+            <Card.Body>
+              <Card.Title as='h4'>Hello, J. Julius!</Card.Title>
+              <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc turpis quam, euismod vel dolor ut, rhoncus volutpat orci. Morbi blandit finibus neque, ac ullamcorper mauris.</Card.Text>
+              <Card.Link href="#">View Profile</Card.Link>
+              <Card.Link href="#">Hide Forever!</Card.Link>
+            </Card.Body>
+          </Card>
+
           <Card className='shadow-sm mb-4'>
             <Card.Body>
               <Card.Title as='h4'>Holds</Card.Title>
@@ -59,16 +69,6 @@ class Current extends React.Component {
               <Card.Link href="#">View MyUW</Card.Link>
             </Card.Body>
           </Card>
-
-          <Card border='light' className='shadow-sm mb-4'>
-            <Card.Body>
-              <Card.Title as='h4'>Blah</Card.Title>
-              <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc turpis quam, euismod vel dolor ut, rhoncus volutpat orci. Morbi blandit finibus neque, ac ullamcorper mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin et diam ut neque pellentesque sollicitudin eget eget quam. Morbi vitae ligula et diam facilisis dignissim. In elementum dolor aliquet massa vehicula, iaculis maximus ante dapibus. </Card.Text>
-              <Card.Link href="#">View MyUW</Card.Link>
-            </Card.Body>
-          </Card>
-
-
 
         </Col>
         <Col md={8}>

@@ -17,7 +17,6 @@ class SemanticExample extends React.Component {
 
     return (<div>
 
-
         <Grid>
           <Grid.Column width={10}>
             <Label color='gray' basic>Upcoming</Label>
@@ -28,7 +27,7 @@ class SemanticExample extends React.Component {
             <p><a href="#">Autumn 2018</a></p>
           </Grid.Column>
         </Grid>
-    
+
 
       <Divider />
 

@@ -16,7 +16,7 @@ class BootstrapExample extends React.Component {
 
     return (<div>
 
-      <Row className='mb-5'>
+      <Row className='mb-3'>
         <Col xs={6}>
           <span className="badge badge-secondary">Upcoming</span>
           <h1 className='mt-0 text-nowrap'>Winter 2019</h1>
@@ -27,11 +27,28 @@ class BootstrapExample extends React.Component {
         </Col>
       </Row>
 
-      <Steps current={2} direction="vertical" size="small">
-        <Steps.Step title="Preview" description='Time schedule has been published.' />
-        <Steps.Step title="Pre-registration" />
-        <Steps.Step title="Registration" />
-      </Steps>
+      <Row className='mb-3'>
+        <Col className='d-md-none'>
+
+          <Steps size='small' direction="vertical" current={2}>
+            <Steps.Step title="Time Schedule" description='Time schedule is published Oct. 13, 2018' />
+            <Steps.Step title="Pre-registration" description='1 week prior to Registration.' />
+            <Steps.Step title="Registration" description='Its go time! Youre priority registration is Nov. 2, 2018' />
+            <Steps.Step title="Quarter Begins" description='Winter 2019 starts on Dec. 10, 2018' />
+          </Steps>
+
+        </Col>
+        <Col className='d-none d-md-block'>
+
+          <Steps direction='horizontal' current={2}>
+            <Steps.Step title="Time Schedule" description='Time schedule is published Oct. 13, 2018' />
+            <Steps.Step title="Pre-registration" description='1 week prior to Registration.' />
+            <Steps.Step title="Registration" description='Its go time! Youre priority registration is Nov. 2, 2018' />
+            <Steps.Step title="Quarter Begins" description='Winter 2019 starts on Dec. 10, 2018' />
+          </Steps>
+
+        </Col>
+      </Row>
 
       <Row>
         <Col md={4}>

@@ -1,0 +1,16 @@
+/*** override rc-steps component ***/
+
+
+.rc-steps-icon {
+  display: none !important;
+}
+
+// increase width of step content (4 steps)
+.rc-steps-item-content {
+  width: 79% !important;
+
+  .rc-steps-item-description {
+    max-width: none !important;
+  }
+
+}

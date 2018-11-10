@@ -5,18 +5,19 @@ import './App.scss';
 
 import Common from './common/Common';
 import Courses from './myplan/courses/'
-import Home from './myplan/home/'
 import Programs from './myplan/programs/'
-import Registration from './myplan/registration/'
+
+import Current from './myplan/current/'
+import Preview from './myplan/preview/'
 
 const App = () => (
   <Common>
     <BrowserRouter>
     <Switch>
-      <Route exact={true} path="/" component={Home} />
+      <Route exact={true} path="/" component={Current} />
       <Route path="/programs" component={Programs} />
       <Route path="/courses" component={Courses} />
-      <Route path="/registration" component={Registration} />
+      <Route path="/preview" component={Preview} />
     </Switch>
     </BrowserRouter>
   </Common>

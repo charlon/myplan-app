@@ -6,9 +6,9 @@ import React from 'react'
 import SemanticExample from './comps/semantic'
 import BootstrapExample from './comps/bootstrap'
 
-import './registration.scss';
+import './preview.scss';
 
-class Registration extends React.Component {
+class Preview extends React.Component {
 
   constructor(props) {
     super(props);
@@ -27,4 +27,4 @@ class Registration extends React.Component {
     </div>);
   }
 }
-export default Registration
+export default Preview

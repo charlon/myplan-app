@@ -16,14 +16,14 @@ class BootstrapExample extends React.Component {
 
     return (<div>
 
-      <Row className='mb-3'>
+      <Row className='mb-4'>
         <Col xs={6}>
           <span className="badge badge-secondary">Upcoming</span>
           <h1 className='mt-0 text-nowrap'>Winter 2019</h1>
         </Col>
         <Col xs={6} className='text-right'>
           <span className="badge badge-light">Current</span>
-          <h3 className='mt-0 font-weight-light text-nowrap'><a href='#'>Autumn 2019</a></h3>
+          <h3 className='mt-0 font-weight-light text-nowrap'><a href='/'>Autumn 2018</a></h3>
         </Col>
       </Row>
 

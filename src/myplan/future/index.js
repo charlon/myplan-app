@@ -26,14 +26,14 @@ class Future extends React.Component {
         <Col xs={6}>
 
           <Row>
-            <Col sm={4}>&nbsp;</Col>
-            <Col sm={4} className='text-right'>
+            <Col xs={4}>&nbsp;</Col>
+            <Col xs={4} className='text-right'>
               <span className="badge badge-light"> -- Previous</span>
-              <h5 className='mt-0 font-weight-light text-nowrap'><a href='/preview'>Winter 2019</a></h5>
+              <h6 className='mt-0 font-weight-light text-nowrap'><a href='/preview'>Winter 2019</a></h6>
             </Col>
-            <Col sm={4}>
+            <Col xs={4}>
               <span className="badge badge-light">Next --</span>
-              <h5 className='mt-0 font-weight-light text-nowrap'><a href='/future'>Summer 2019</a></h5>
+              <h6 className='mt-0 font-weight-light text-nowrap'><a href='/future'>Summer 2019</a></h6>
             </Col>
           </Row>
 

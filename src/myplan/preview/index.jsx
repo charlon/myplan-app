@@ -4,6 +4,8 @@ import React from 'react'
 import { Badge, Card, CardDeck, Container, Row, Col, Alert, Button, ListGroup}  from 'react-bootstrap'
 import Steps, { Step } from 'rc-steps';
 
+import UserProfile from '../cards/UserProfile.jsx'
+
 import './preview.scss';
 
 class Preview extends React.Component {
@@ -53,15 +55,7 @@ class Preview extends React.Component {
       <Row>
         <Col md={4}>
 
-          <Card border='light' className='shadow-sm mb-4'>
-            <Card.Img variant="top" src="https://myplan-dev.washington.edu/home/images/6.png" />
-            <Card.Body>
-              <Card.Title as='h4'>Hello, J. Julius!</Card.Title>
-              <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc turpis quam, euismod vel dolor ut, rhoncus volutpat orci. Morbi blandit finibus neque, ac ullamcorper mauris.</Card.Text>
-              <Card.Link href="#">View Profile</Card.Link>
-              <Card.Link href="#">Hide Forever!</Card.Link>
-            </Card.Body>
-          </Card>
+          <UserProfile />
 
           <Card className='shadow-sm mb-4'>
             <Card.Body>

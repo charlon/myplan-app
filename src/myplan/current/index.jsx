@@ -4,7 +4,7 @@ import React from 'react'
 import { Badge, Card, CardDeck, Image, Container, Row, Col, Alert, Button, ListGroup}  from 'react-bootstrap'
 import Steps, { Step } from 'rc-steps';
 
-import UserProfile from '../cards/UserProfile.jsx'
+import UserProfile from '../components/UserProfile.jsx'
 
 import './current.scss';
 

@@ -22,11 +22,11 @@ class Current extends React.Component {
         <span className="badge badge-secondary">Week 7 of 11</span>
         <h1 className='mt-0 text-nowrap'>Autumn 2018</h1>
       </Col>
-      <Col xs={6} className='text-right'>
+      <Col xs={6}>
 
         <Row>
           <Col sm={4}>&nbsp;</Col>
-          <Col sm={4}>
+          <Col sm={4} className='text-right'>
             <span className="badge badge-light"> -- Previous</span>
             <h5 className='mt-0 font-weight-light text-nowrap'><a href='/previous'>Summer 2018</a></h5>
           </Col>

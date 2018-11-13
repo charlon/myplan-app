@@ -23,11 +23,11 @@ class Future extends React.Component {
           <span className="badge badge-secondary">Future</span>
           <h1 className='mt-0 text-nowrap'>Spring 2019</h1>
         </Col>
-        <Col xs={6} className='text-right'>
+        <Col xs={6}>
 
           <Row>
             <Col sm={4}>&nbsp;</Col>
-            <Col sm={4}>
+            <Col sm={4} className='text-right'>
               <span className="badge badge-light"> -- Previous</span>
               <h5 className='mt-0 font-weight-light text-nowrap'><a href='/preview'>Winter 2019</a></h5>
             </Col>

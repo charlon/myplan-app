@@ -1,5 +1,5 @@
 import React from 'react';
-import { Badge, Card, CardDeck, Image, Container, Row, Col, Alert, Button, ListGroup}  from 'react-bootstrap'
+import { Card, Image }  from 'react-bootstrap'
 
 import './UserProfile.scss';
 

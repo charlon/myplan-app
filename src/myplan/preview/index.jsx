@@ -25,11 +25,17 @@ class Preview extends React.Component {
         </Col>
         <Col xs={6} className='text-right'>
 
-          <span className="badge badge-light">Previous</span>
-          <h5 className='mt-0 font-weight-light text-nowrap'><a href='/'>Autumn 2018</a></h5>
-
-          <span className="badge badge-light">Next</span>
-          <h5 className='mt-0 font-weight-light text-nowrap'><a href='/future'>Spring 2019</a></h5>
+          <Row>
+            <Col sm={4}>&nbsp;</Col>
+            <Col sm={4}>
+              <span className="badge badge-light"> -- Previous</span>
+              <h5 className='mt-0 font-weight-light text-nowrap'><a href='/'>Autumn 2018</a></h5>
+            </Col>
+            <Col sm={4}>
+              <span className="badge badge-light">Next --</span>
+              <h5 className='mt-0 font-weight-light text-nowrap'><a href='/future'>Spring 2019</a></h5>
+            </Col>
+          </Row>
 
         </Col>
       </Row>

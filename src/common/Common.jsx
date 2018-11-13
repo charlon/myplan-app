@@ -35,7 +35,7 @@ class Common extends React.Component {
                     <i className="fa fa-bars fa-stack-1x" />
                   </span>
                 </button>
-                <span>MyPlan</span>
+                <span><a href='/'>MyPlan</a></span>
               </div>
               <div className="com-title-desktop">
                 <button className="com-title-button" id="nav_button">
@@ -44,7 +44,7 @@ class Common extends React.Component {
                     <i className="fa fa-bars fa-stack-1x" />
                   </span>
                 </button>
-                <span>MyPlan</span>
+                <span><a href='/'>MyPlan</a></span>
               </div>
             </div>
           </div>

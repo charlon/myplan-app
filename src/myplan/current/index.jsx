@@ -23,8 +23,13 @@ class Current extends React.Component {
         <h1 className='mt-0 text-nowrap'>Autumn 2018</h1>
       </Col>
       <Col xs={6} className='text-right'>
-        <span className="badge badge-light">Upcoming</span>
-        <h3 className='mt-0 font-weight-light text-nowrap'><a href='/preview'>Winter 2019</a></h3>
+        
+        <span className="badge badge-light">Previous</span>
+        <h5 className='mt-0 font-weight-light text-nowrap'><a href='/previous'>Summer 2018</a></h5>
+
+        <span className="badge badge-light">Next</span>
+        <h5 className='mt-0 font-weight-light text-nowrap'><a href='/preview'>Winter 2019</a></h5>
+
       </Col>
     </Row>
 
@@ -33,7 +38,7 @@ class Current extends React.Component {
 
           <Steps size='small' direction="vertical" current={1}>
             <Steps.Step title="Quarter Begins" description='Oct. 3, 2018' />
-            <Steps.Step title="Registration Preview" description='Preview your upcoming registration' />
+            <Steps.Step title="Preview" description='Preview your upcoming registration' />
             <Steps.Step title="Registration" description='Time schedule will publish...' />
             <Steps.Step title="Finals Week" description='Winter 2019 starts on Dec. 10, 2018' />
           </Steps>
@@ -43,7 +48,7 @@ class Current extends React.Component {
 
           <Steps direction='horizontal' current={1}>
             <Steps.Step title="Quarter Begins" description='Oct. 3, 2018' />
-            <Steps.Step title="Registration Preview" description='Preview your upcoming registration' />
+            <Steps.Step title="Preview" description='Preview your upcoming registration' />
             <Steps.Step title="Registration" description='Time schedule will publish...' />
             <Steps.Step title="Finals Week" description='Winter 2019 starts on Dec. 10, 2018' />
           </Steps>
@@ -126,6 +131,8 @@ class Current extends React.Component {
                   </a>
                 </ListGroup.Item>
               </ListGroup>
+
+              <h4 className='text-right'>Currently Enrolled: 19 credits</h4>
 
               <CardDeck className='mt-4'>
                 <Card bg='light' className='shadow-sm mr-0'>

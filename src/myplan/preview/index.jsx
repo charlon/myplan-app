@@ -20,12 +20,17 @@ class Preview extends React.Component {
 
       <Row className='mb-4'>
         <Col xs={6}>
-          <span className="badge badge-secondary">Upcoming</span>
+          <span className="badge badge-secondary">Preview</span>
           <h1 className='mt-0 text-nowrap'>Winter 2019</h1>
         </Col>
         <Col xs={6} className='text-right'>
-          <span className="badge badge-light">Current</span>
-          <h3 className='mt-0 font-weight-light text-nowrap'><a href='/'>Autumn 2018</a></h3>
+
+          <span className="badge badge-light">Previous</span>
+          <h5 className='mt-0 font-weight-light text-nowrap'><a href='/'>Autumn 2018</a></h5>
+
+          <span className="badge badge-light">Next</span>
+          <h5 className='mt-0 font-weight-light text-nowrap'><a href='/future'>Spring 2019</a></h5>
+
         </Col>
       </Row>
 
@@ -33,7 +38,7 @@ class Preview extends React.Component {
         <Col className='d-md-none'>
 
           <Steps size='small' direction="vertical" current={0}>
-            <Steps.Step title="Registration Preview" description='Fix the errors that we found with your plan' />
+            <Steps.Step title="Published" description='Fix the errors that we found with your plan' />
             <Steps.Step title="Acknowledgements" description='1 week prior to Registration.' />
             <Steps.Step title="Registration" description='Its go time! Youre priority registration is Nov. 2, 2018' />
             <Steps.Step title="Quarter Begins" description='asdfasf' />
@@ -43,7 +48,7 @@ class Preview extends React.Component {
         <Col className='d-none d-md-block'>
 
           <Steps direction='horizontal' current={0}>
-            <Steps.Step title="Registration Preview" description='Fix the errors that we found with your plan' />
+            <Steps.Step title="Published" description='Fix the errors that we found with your plan' />
             <Steps.Step title="Acknowledgements" description='1 week prior to Registration.' />
             <Steps.Step title="Registration" description='Its go time! Youre priority registration is Nov. 2, 2018' />
             <Steps.Step title="Quarter Begins" description='asdfasf' />

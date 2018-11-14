@@ -43,7 +43,7 @@ class Preview extends React.Component {
       <Row className='mb-3'>
         <Col className='d-md-none'>
 
-          <Steps size='small' direction="vertical" current={0}>
+          <Steps size='small' direction="vertical" current={2}>
             <Steps.Step title="Published" description='Fix the errors that we found with your plan' />
             <Steps.Step title="Acknowledgements" description='1 week prior to Registration.' />
             <Steps.Step title="Registration" description='Its go time! Youre priority registration is Nov. 2, 2018' />
@@ -53,7 +53,7 @@ class Preview extends React.Component {
         </Col>
         <Col className='d-none d-md-block'>
 
-          <Steps direction='horizontal' current={0}>
+          <Steps direction='horizontal' current={2}>
             <Steps.Step title="Published" description='Fix the errors that we found with your plan' />
             <Steps.Step title="Acknowledgements" description='1 week prior to Registration.' />
             <Steps.Step title="Registration" description='Its go time! Youre priority registration is Nov. 2, 2018' />

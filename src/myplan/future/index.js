@@ -79,6 +79,10 @@ class Future extends React.Component {
         </Col>
         <Col md={8}>
 
+          <p>View, add, or delete courses and sections from your plan to prepare
+          for registration.MyPlan allows you to create an academic plan, but does not check your eligibility
+          for planned courses and sections.You can also view course options in a calendar grid and register by choosing "plan". </p>
+
           <Card className='shadow-sm mb-4'>
             <Card.Body>
               <Card.Title as='h3'>Planned Courses</Card.Title>

@@ -44,9 +44,9 @@ class Current extends React.Component {
 
           <Steps size='small' direction="vertical" current={1}>
             <Steps.Step title="Quarter Begins" description='Oct. 3, 2018' />
-            <Steps.Step title="Preview" description='Preview your upcoming registration' />
-            <Steps.Step title="Registration" description='Time schedule will publish...' />
-            <Steps.Step title="Finals Week" description='Winter 2019 starts on Dec. 10, 2018' />
+            <Steps.Step title="Preview" description='Time schedule is published for Winter 2019.' />
+            <Steps.Step title="Registration" description='Winter 2019 registration begins.' />
+            <Steps.Step title="Finals Week" description='Finals week begins.' />
           </Steps>
 
         </Col>
@@ -54,9 +54,9 @@ class Current extends React.Component {
 
           <Steps direction='horizontal' current={1}>
             <Steps.Step title="Quarter Begins" description='Oct. 3, 2018' />
-            <Steps.Step title="Preview" description='Preview your upcoming registration' />
-            <Steps.Step title="Registration" description='Time schedule will publish...' />
-            <Steps.Step title="Finals Week" description='Winter 2019 starts on Dec. 10, 2018' />
+            <Steps.Step title="Preview" description='Time schedule is published for Winter 2019.' />
+            <Steps.Step title="Registration" description='Winter 2019 registration begins.' />
+            <Steps.Step title="Finals Week" description='Finals week begins.' />
           </Steps>
 
         </Col>

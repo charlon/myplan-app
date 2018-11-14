@@ -76,72 +76,50 @@ class Preview extends React.Component {
             </Card.Body>
           </Card>
 
-          <Card className='shadow-sm mb-4'>
-            <Card.Body>
-              <Card.Title as='h4'>Scheduled Courses</Card.Title>
 
-              <ListGroup variant='flush' as='ul' className='mb-4'>
-                <ListGroup.Item as="li" className='pl-0 pr-0 border-top-0'>
-                  <a href="#" className="list-group-item-action">
-                    <div className="d-flex w-100 justify-content-between">
-                      <h5 className="mb-1">CSE 142 Computer Programming I </h5>
-                      <small className='text-nowrap'>5 credits</small>
-                    </div>
-                    <ul className='list-unstyled'>
-                      <li>A KNE 130 Tue/Thur 8:30-9:50</li>
-                      <li>AC KNE 130 Tue/Thur 8:30-9:50</li>
-                    </ul>
-                  </a>
-                </ListGroup.Item>
-                <ListGroup.Item as="li" className='pl-0 pr-0'>
-                  <a href="#" className="list-group-item-action">
-                    <div className="d-flex w-100 justify-content-between">
-                      <h5 className="mb-1">CHEM 110 Preparation for General Chemistry</h5>
-                      <small className='text-nowrap'>5 credits</small>
-                    </div>
-                    <ul className='list-unstyled'>
-                      <li>A KNE 130 Tue/Thur 8:30-9:50</li>
-                      <li>AC KNE 130 Tue/Thur 8:30-9:50</li>
-                    </ul>
-                  </a>
-                </ListGroup.Item>
-                <ListGroup.Item as="li" className='pl-0 pr-0'>
-                  <a href="#" className="list-group-item-action">
-                    <div className="d-flex w-100 justify-content-between">
-                      <h5 className="mb-1">BIO A 370 Introduction to Primates</h5>
-                      <small className='text-nowrap'>5 credits</small>
-                    </div>
-                    <ul className='list-unstyled'>
-                      <li>A KNE 130 Tue/Thur 8:30-9:50</li>
-                      <li>AC KNE 130 Tue/Thur 8:30-9:50</li>
-                    </ul>
-                  </a>
-                </ListGroup.Item>
-                <ListGroup.Item as="li" className='pl-0 pr-0 border-bottom-0'>
-                  <a href="#" className="list-group-item-action">
-                    <div className="d-flex w-100 justify-content-between">
-                      <h5 className="mb-1">GEN ST 199 A2: University Community</h5>
-                      <small className='text-nowrap'>12 credits</small>
-                    </div>
-                    <ul className='list-unstyled'>
-                      <li>GEN ST 199 A2: University Community TH 1:30-2:20</li>
-                      <li>CHEM 142 C: General Chemistry MWF 12:30-1:20</li>
-                      <li>CHEM 142 CD T 9:30-10:20 TH 2:30-5:20</li>
-                      <li>ENGL 199 H: Linked Writing Course: HSERVE 100 MWF 8:30-9:20</li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                    </ul>
-                  </a>
-                </ListGroup.Item>
-              </ListGroup>
-
-              <Card.Link href="#">View MyUW</Card.Link>
-            </Card.Body>
-          </Card>
 
         </Col>
         <Col md={8}>
+
+        <Card className='shadow-sm mb-4'>
+          <Card.Body>
+            <Card.Title as='h4'>Scheduled Courses</Card.Title>
+
+            <ListGroup variant='flush' as='ul' className='mb-4'>
+              <ListGroup.Item as="li" className='pl-0 pr-0 border-top-0'>
+                <a href="#" className="list-group-item-action">
+                  <div className="d-flex w-100 justify-content-between">
+                    <h5 className="mb-1">CSE 142 Computer Programming I </h5>
+                    <small className='text-nowrap'>5 credits</small>
+                  </div>
+                  <ul className='list-unstyled'>
+                    <li>A KNE 130 Tue/Thur 8:30-9:50</li>
+                    <li>AC KNE 130 Tue/Thur 8:30-9:50</li>
+                  </ul>
+                </a>
+              </ListGroup.Item>
+              <ListGroup.Item as="li" className='pl-0 pr-0 border-bottom-0'>
+                <a href="#" className="list-group-item-action">
+                  <div className="d-flex w-100 justify-content-between">
+                    <h5 className="mb-1">GEN ST 199 A2: University Community</h5>
+                    <small className='text-nowrap'>12 credits</small>
+                  </div>
+                  <ul className='list-unstyled'>
+                    <li>GEN ST 199 A2: University Community TH 1:30-2:20</li>
+                    <li>CHEM 142 C: General Chemistry MWF 12:30-1:20</li>
+                    <li>CHEM 142 CD T 9:30-10:20 TH 2:30-5:20</li>
+                    <li>ENGL 199 H: Linked Writing Course: HSERVE 100 MWF 8:30-9:20</li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </a>
+              </ListGroup.Item>
+            </ListGroup>
+
+            <Card.Link href="#">View MyUW</Card.Link>
+          </Card.Body>
+        </Card>
 
           <Card className='shadow-sm mb-4'>
             <Card.Body>

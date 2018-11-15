@@ -14,6 +14,10 @@ class Current extends React.Component {
     super(props);
   }
 
+  componentDidMount(){
+    document.title = "Current Term"
+  }
+
   render() {
     return (<div>
 

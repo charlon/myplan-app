@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import './App.scss';
 
@@ -12,17 +12,21 @@ import Preview from './myplan/preview/'
 import Future from './myplan/future/'
 
 const App = () => (
-  <Common>
-    <BrowserRouter>
-    <Switch>
-      <Route exact={true} path="/" component={Current} />
-      <Route path="/programs" component={Programs} />
-      <Route path="/courses" component={Courses} />
-      <Route path="/preview" component={Preview} />
-      <Route path="/future" component={Future} />
-    </Switch>
-    </BrowserRouter>
-  </Common>
+
+
+    <Router >
+      <Common>
+        <Switch>
+          <Route exact={true} path="/" component={Current} />
+          <Route path="/programs" component={Programs} />
+          <Route path="/courses" component={Courses} />
+          <Route path="/preview" component={Preview} />
+          <Route path="/future" component={Future} />
+        </Switch>
+      </Common>
+    </Router>
+
+
 );
 
 export default App;

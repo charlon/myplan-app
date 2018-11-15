@@ -14,6 +14,10 @@ class Preview extends React.Component {
     super(props);
   }
 
+  componentDidMount(){
+    document.title = "Preview"
+  }
+
   render() {
 
     return (<div>

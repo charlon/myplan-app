@@ -14,6 +14,10 @@ class Future extends React.Component {
     super(props);
   }
 
+  componentDidMount(){
+    document.title = "Future Term"
+  }
+
   render() {
 
     return (<div>

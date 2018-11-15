@@ -1,10 +1,24 @@
 import React from 'react';
+import queryString from "query-string";
+import createBrowserHistory from "history/createBrowserHistory";
 
 import './common.scss';
 
+const history = createBrowserHistory()
+console.log(history);
+
 class Common extends React.Component {
 
+  componentDidMount() {
+    const values = queryString.parse(history.location.search)
+
+    const isHybrid = values.hybrid
+    console.log(isHybrid) // "hybrid"
+
+  }
+
   render() {
+
     return (
 
       <section>

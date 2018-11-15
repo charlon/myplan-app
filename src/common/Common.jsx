@@ -6,22 +6,37 @@ import './common.scss';
 
 const history = createBrowserHistory()
 console.log(history);
+const values = queryString.parse(history.location.search)
+
+const isHybrid = values.hybrid
+console.log(isHybrid) // "hybrid"
+
+
+function UserGreeting(props) {
+  return <h1>Welcome back!</h1>;
+}
+
+function GuestGreeting(props) {
+  return <h1>Please sign up.</h1>;
+}
+
+function Greeting(props) {
+  const isLoggedIn = props.isLoggedIn;
+  if (isLoggedIn) {
+    return <UserGreeting />;
+  }
+  return <GuestGreeting />;
+}
 
 class Common extends React.Component {
-
-  componentDidMount() {
-    const values = queryString.parse(history.location.search)
-
-    const isHybrid = values.hybrid
-    console.log(isHybrid) // "hybrid"
-
-  }
 
   render() {
 
     return (
 
       <section>
+
+        <Greeting isLoggedIn={true} />
 
         <header role="banner" className="com-header">
           <div className="com-thin-bar">

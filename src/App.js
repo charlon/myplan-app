@@ -14,7 +14,7 @@ import Future from './myplan/future/'
 const App = () => (
 
 
-    <Router >
+    <Router>
       <Common>
         <Switch>
           <Route exact={true} path="/" component={Current} />

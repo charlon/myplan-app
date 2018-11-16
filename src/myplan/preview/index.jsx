@@ -15,7 +15,7 @@ class Preview extends React.Component {
   }
 
   componentDidMount(){
-    document.title = "Preview"
+    document.title = "Winter 2019"
   }
 
   render() {

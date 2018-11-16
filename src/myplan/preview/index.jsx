@@ -1,10 +1,10 @@
 import 'rc-steps/assets/index.css';
 import 'rc-steps/assets/iconfont.css';
-import React from 'react'
-import { Card, CardDeck, Row, Col, Alert, Button, ListGroup}  from 'react-bootstrap'
+import React from 'react';
+import { Card, CardDeck, Row, Col, Alert, Button, ListGroup}  from 'react-bootstrap';
 import Steps from 'rc-steps';
 
-import UserProfile from '../components/UserProfile.jsx'
+import UserProfile from '../components/UserProfile.jsx';
 
 import './preview.scss';
 

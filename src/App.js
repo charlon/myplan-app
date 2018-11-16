@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import './App.scss';
 
-import Common from './common/Common';
+import MyPlan from './boilerplate/MyPlan';
+
 import Courses from './myplan/courses/'
 import Programs from './myplan/programs/'
 
@@ -13,20 +14,18 @@ import Future from './myplan/future/'
 
 const App = () => (
 
-
+  <MyPlan>
     <Router>
-      <Common>
-        <Switch>
-          <Route exact={true} path="/" component={Current} />
-          <Route path="/programs" component={Programs} />
-          <Route path="/courses" component={Courses} />
-          <Route path="/preview" component={Preview} />
-          <Route path="/future" component={Future} />
-        </Switch>
-      </Common>
+      <Switch>
+        <Route exact={true} path="/" component={Current} />
+        <Route path="/programs" component={Programs} />
+        <Route path="/courses" component={Courses} />
+        <Route path="/preview" component={Preview} />
+        <Route path="/future" component={Future} />
+      </Switch>
     </Router>
-
-
+  </MyPlan>
+    
 );
 
 export default App;

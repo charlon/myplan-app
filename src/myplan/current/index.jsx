@@ -15,33 +15,33 @@ class Current extends React.Component {
   }
 
   componentDidMount(){
-    document.title = "Current Term"
+    document.title = "Home"
   }
 
   render() {
     return (<div>
 
-    <Row className='mb-4'>
-      <Col xs={6}>
-        <span className="badge badge-secondary">Week 7 of 11</span>
-        <h1 className='mt-0 text-nowrap'>Autumn 2018</h1>
-      </Col>
-      <Col xs={6}>
+      <Row className='mb-4'>
+        <Col xs={6}>
+          <span className="badge badge-secondary">Week 7 of 11</span>
+          <h1 className='mt-0 text-nowrap'>Autumn 2018</h1>
+        </Col>
+        <Col xs={6}>
 
-        <Row>
-          <Col xs={4}>&nbsp;</Col>
-          <Col xs={4} className='text-right'>
-            <span className="badge badge-light"> -- Previous</span>
-            <h6 className='mt-0 font-weight-light text-nowrap'><a href='/previous'>Summer 2018</a></h6>
-          </Col>
-          <Col xs={4}>
-            <span className="badge badge-light">Next --</span>
-            <h6 className='mt-0 font-weight-light text-nowrap'><a href='/preview'>Winter 2019</a></h6>
-          </Col>
-        </Row>
+          <Row>
+            <Col xs={4}>&nbsp;</Col>
+            <Col xs={4} className='text-right'>
+              <span className="badge badge-light"> -- Previous</span>
+              <h6 className='mt-0 font-weight-light text-nowrap'><a href='/previous'>Summer 2018</a></h6>
+            </Col>
+            <Col xs={4}>
+              <span className="badge badge-light">Next --</span>
+              <h6 className='mt-0 font-weight-light text-nowrap'><a href='/preview'>Winter 2019</a></h6>
+            </Col>
+          </Row>
 
-      </Col>
-    </Row>
+        </Col>
+      </Row>
 
       <Row className='mb-3'>
         <Col className='d-md-none'>

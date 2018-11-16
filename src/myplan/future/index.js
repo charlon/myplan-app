@@ -15,7 +15,7 @@ class Future extends React.Component {
   }
 
   componentDidMount(){
-    document.title = "Future Term"
+    document.title = "Spring 2019"
   }
 
   render() {

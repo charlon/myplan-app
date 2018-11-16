@@ -5,8 +5,8 @@ import './App.scss';
 
 import MyPlan from './boilerplate/MyPlan';
 
-import Courses from './myplan/courses/'
-import Programs from './myplan/programs/'
+import Courses from './myplan/pages/Courses'
+import Programs from './myplan/pages/Programs'
 
 import Current from './myplan/current/'
 import Preview from './myplan/preview/'
@@ -25,7 +25,7 @@ const App = () => (
       </Switch>
     </Router>
   </MyPlan>
-    
+
 );
 
 export default App;

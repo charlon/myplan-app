@@ -1,8 +1,8 @@
 import React from 'react';
 
-import './programs.scss';
+import './Courses.scss';
 
-class Programs extends React.Component {
+class Courses extends React.Component {
 
   constructor(props) {
     super(props);
@@ -11,9 +11,9 @@ class Programs extends React.Component {
   render() {
     return (
       <div>
-        <h1>Hello, Welcome to Programs!</h1>
+        <h1>Hello, Welcome to Courses!</h1>
       </div>
     );
   }
 }
-export default Programs
+export default Courses

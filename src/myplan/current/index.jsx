@@ -15,7 +15,7 @@ class Current extends React.Component {
   }
 
   componentDidMount(){
-    document.title = "Autumn 2018"
+    document.title = "Home"
   }
 
   render() {

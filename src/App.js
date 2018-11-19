@@ -8,10 +8,10 @@ import MyPlan from './boilerplate/MyPlan';
 import Courses from './myplan/pages/Courses'
 import Programs from './myplan/pages/Programs'
 
-import Current from './myplan/current/'
+import Current from './myplan/pages/Current'
 import Previous from './myplan/pages/Previous'
-import Preview from './myplan/preview/'
-import Future from './myplan/future/'
+import Preview from './myplan/pages/Preview'
+import Future from './myplan/pages/Future'
 
 const App = () => (
 

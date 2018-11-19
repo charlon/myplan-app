@@ -6,7 +6,7 @@ import Steps from 'rc-steps';
 
 import UserProfile from '../components/UserProfile.jsx'
 
-import './future.scss';
+import './Future.scss';
 
 class Future extends React.Component {
 

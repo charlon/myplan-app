@@ -6,7 +6,7 @@ import Steps from 'rc-steps';
 
 import UserProfile from '../components/UserProfile.jsx';
 
-import './preview.scss';
+import './Preview.scss';
 
 class Preview extends React.Component {
 

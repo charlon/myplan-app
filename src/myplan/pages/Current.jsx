@@ -6,7 +6,7 @@ import Steps from 'rc-steps';
 
 import UserProfile from '../components/UserProfile.jsx'
 
-import './current.scss';
+import './Current.scss';
 
 class Current extends React.Component {
 

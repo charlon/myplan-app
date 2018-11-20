@@ -1,6 +1,9 @@
-import React from 'react';
-import queryString from "query-string";
-import createBrowserHistory from "history/createBrowserHistory";
+import React from 'react'
+import { Button, OverlayTrigger, Popover }  from 'react-bootstrap'
+import queryString from "query-string"
+import createBrowserHistory from "history/createBrowserHistory"
+
+import UserData from '../data/Students.json'
 
 import './MyPlan.scss';
 
@@ -10,7 +13,28 @@ const values = queryString.parse(history.location.search)
 const isHybrid = values.hybrid
 console.log(isHybrid) // "hybrid"
 
+const popover = (
+  <Popover id="popover-basic" title="Switch Student...">
+    <ul className='list-unstyled'>
+      {UserData.map((userDetail, index) => {
+        return <li><span key={userDetail.id}>{userDetail.name}</span></li>
+      })}
+    </ul>
+  </Popover>
+);
+
+const Example = () => (
+  <OverlayTrigger trigger="click" placement="bottom" overlay={popover}>
+    <Button variant="link" className='p-0'><i className="fas fa-user" /></Button>
+  </OverlayTrigger>
+);
+
+
 class MyPlan extends React.Component {
+
+  constructor(props) {
+    super(props);
+  }
 
   render() {
 
@@ -45,7 +69,7 @@ class MyPlan extends React.Component {
                 </div>
                 <div className="com-user">
                   <ul>
-                    <li><i className="fas fa-user" /></li>
+                    <li><Example /></li>
                     <li><i className="fas fa-question-circle" /></li>
                   </ul>
                 </div>
@@ -70,6 +94,9 @@ class MyPlan extends React.Component {
                     </span>
                   </button>
                   <span><a href='/'>MyPlan</a></span>
+
+
+
                 </div>
               </div>
             </div>

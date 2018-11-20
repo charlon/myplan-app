@@ -1,7 +1,6 @@
 import React from 'react';
 import { Card, Image }  from 'react-bootstrap'
 
-import UserData from '../data/Students.json'
 import './UserProfile.scss'
 
 class UserProfile extends React.Component {
@@ -19,11 +18,6 @@ class UserProfile extends React.Component {
           <Image src="https://randomuser.me/api/portraits/lego/1.jpg" roundedCircle className='shadow-sm mp-user' />
 
           <Card.Title as='h4'>Hello, J. Julius!</Card.Title>
-
-          {UserData.map((userDetail, index) => {
-              return <div key={userDetail.id}>{userDetail.name}</div>
-          })}
-
           <Card.Text>
             <p>Class:<br/>Freshman</p>
             <p>Intended Major:<br/>Bachelor of Arts Business</p>

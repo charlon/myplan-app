@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Bob Jones",
+    "netid": "bjones",
+    "standing": "Freshman",
+    "intendedMajor": "Bachelor of Arts, Computer Science"
+  },
+  {
+    "id": 2,
+    "name": "Harry Smith",
+    "netid": "hsmith",
+    "standing": "Sophomore",
+    "intendedMajor": "Bachelor of Arts, Math"
+  },
+  {
+    "id": 3,
+    "name": "Becky Brierman",
+    "netid": "beckyb",
+    "standing": "Junior",
+    "intendedMajor": "Bachelor of Arts, Human Computer Interaction"
+  }
+]

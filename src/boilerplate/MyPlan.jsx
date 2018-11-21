@@ -4,20 +4,16 @@ import queryString from "query-string"
 import createBrowserHistory from "history/createBrowserHistory"
 
 import UserData from '../data/Students.json'
-
 import './MyPlan.scss';
 
 const history = createBrowserHistory()
 const values = queryString.parse(history.location.search)
 
-const isHybrid = values.hybrid
-console.log(isHybrid) // "hybrid"
-
 const popover = (
   <Popover id="popover-basic" title="Switch Student...">
-    <ul className='list-unstyled'>
+    <ul className="list-unstyled">
       {UserData.map((userDetail, index) => {
-        return <li><span key={userDetail.id}>{userDetail.name}</span></li>
+        return <li key={userDetail.id}><span>{userDetail.name}</span></li>
       })}
     </ul>
   </Popover>
@@ -34,11 +30,23 @@ class MyPlan extends React.Component {
 
   constructor(props) {
     super(props);
+
+    this.state = {
+      isHybrid: false,
+      userNetid: "jjulius"
+    }
+
+  }
+
+  componentDidMount() {
+    this.setState({ isHybrid: values.hybrid });
   }
 
   render() {
 
-    if (isHybrid) {
+    console.log(this.state.isHybrid)
+
+    if (this.state.isHybrid) {
 
       return (<section>
 
@@ -94,9 +102,6 @@ class MyPlan extends React.Component {
                     </span>
                   </button>
                   <span><a href='/'>MyPlan</a></span>
-
-
-
                 </div>
               </div>
             </div>

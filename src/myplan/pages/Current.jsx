@@ -69,7 +69,7 @@ class Current extends React.Component {
       <Row>
         <Col md={4}>
 
-          <UserProfile />
+          <UserProfile netid="jjulius" />
 
           <Card className='shadow-sm mb-4'>
             <Card.Body>

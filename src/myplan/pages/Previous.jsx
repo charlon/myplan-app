@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardDeck, Row, Col, ListGroup}  from 'react-bootstrap'
+import { Row, Col }  from 'react-bootstrap'
 
 import './Previous.scss';
 

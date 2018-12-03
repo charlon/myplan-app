@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "studentNumber": 1234567,
     "name": "J. Julius",
     "netid": "jjulius",
     "standing": "Freshman",
@@ -8,6 +9,7 @@
   },
   {
     "id": 2,
+    "studentNumber": 7654321,
     "name": "Harry Smith",
     "netid": "hsmith",
     "standing": "Sophomore",
@@ -15,6 +17,7 @@
   },
   {
     "id": 3,
+    "studentNumber": 2468101,
     "name": "Becky Brierman",
     "netid": "beckyb",
     "standing": "Junior",

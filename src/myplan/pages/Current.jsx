@@ -23,7 +23,7 @@ class Current extends React.Component {
 
       <Row className='mb-4'>
         <Col xs={6}>
-          <span className="badge badge-secondary">Week 7 of 11</span>
+          <span className="badge badge-secondary">Week 11 of 11</span>
           <h1 className='mt-0 text-nowrap'>Autumn 2018</h1>
         </Col>
         <Col xs={6}>
@@ -46,7 +46,7 @@ class Current extends React.Component {
       <Row className='mb-3'>
         <Col className='d-md-none'>
 
-          <Steps size='small' direction="vertical" current={1}>
+          <Steps size='small' direction="vertical" current={3}>
             <Steps.Step title="Quarter Begins" description='Oct. 3, 2018' />
             <Steps.Step title="Preview" description='Time schedule is published for Winter 2019.' />
             <Steps.Step title="Registration" description='Winter 2019 registration begins.' />
@@ -56,7 +56,7 @@ class Current extends React.Component {
         </Col>
         <Col className='d-none d-md-block'>
 
-          <Steps direction='horizontal' current={1}>
+          <Steps direction='horizontal' current={3}>
             <Steps.Step title="Quarter Begins" description='Oct. 3, 2018' />
             <Steps.Step title="Preview" description='Time schedule is published for Winter 2019.' />
             <Steps.Step title="Registration" description='Winter 2019 registration begins.' />

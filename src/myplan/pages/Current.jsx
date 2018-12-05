@@ -154,7 +154,6 @@ class Current extends React.Component {
                     <Card.Text>You cannot drop courses using MyPlan. If you need to update your schedule, please visit <strong>SPS Registration</strong>.</Card.Text>
                     <Card.Link href="#">SPS Registration</Card.Link>
                   </Card.Body>
-
                 </Card>
                 <Card border='light' className='shadow-sm'>
                   <Card.Body>

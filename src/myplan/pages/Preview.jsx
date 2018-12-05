@@ -121,6 +121,8 @@ class Preview extends React.Component {
               </ListGroup.Item>
             </ListGroup>
 
+            <h4 className='text-right'>Currently Enrolled: 17 credits</h4>
+
             <Card.Link href="#">View MyUW</Card.Link>
           </Card.Body>
         </Card>
@@ -187,6 +189,8 @@ class Preview extends React.Component {
                 </ListGroup.Item>
               </ListGroup>
 
+              <h4 className='text-right'>Currently Planned: 19 credits</h4>
+
             </Card.Body>
           </Card>
 
@@ -252,6 +256,8 @@ class Preview extends React.Component {
                   </a>
                 </ListGroup.Item>
               </ListGroup>
+
+              <h4 className='text-right'>Currently Planned: 19 credits</h4>
 
               <CardDeck className='mt-4'>
                 <Card bg='light' className='shadow-sm mr-0'>

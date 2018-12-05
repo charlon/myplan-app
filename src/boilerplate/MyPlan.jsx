@@ -3,7 +3,7 @@ import { Button, OverlayTrigger, Popover }  from 'react-bootstrap'
 import queryString from "query-string"
 import createBrowserHistory from "history/createBrowserHistory"
 
-import UserData from '../data/students.json'
+import UserData from '../data/Students.json'
 import './MyPlan.scss';
 
 const history = createBrowserHistory()

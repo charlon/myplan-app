@@ -13,21 +13,33 @@ import Previous from './myplan/pages/Previous'
 import Preview from './myplan/pages/Preview'
 import Future from './myplan/pages/Future'
 
-const App = () => (
+class App extends React.Component {
 
-  <MyPlan>
-    <Router>
-      <Switch>
-        <Route exact={true} path="/" component={Current} />
-        <Route path="/previous" component={Previous} />
-        <Route path="/preview" component={Preview} />
-        <Route path="/future" component={Future} />
-        <Route path="/programs" component={Programs} />
-        <Route path="/courses" component={Courses} />
-      </Switch>
-    </Router>
-  </MyPlan>
+  constructor(props) {
+    super(props);
+    this.state = {
+      loggedIn: "billy",
+    };
+  }
 
-);
+  render() {
+    return (<div>
 
-export default App;
+      <MyPlan>
+        <Router>
+          <Switch>
+            <Route exact={true} path="/" component={() => <Current netid={this.state.loggedIn} />} />
+            <Route path="/previous" component={Previous} />
+            <Route path="/preview" component={Preview} />
+            <Route path="/future" component={Future} />
+            <Route path="/programs" component={Programs} />
+            <Route path="/courses" component={Courses} />
+          </Switch>
+        </Router>
+      </MyPlan>
+
+    </div>);
+  }
+}
+
+export default App

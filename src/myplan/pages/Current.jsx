@@ -12,11 +12,6 @@ class Current extends React.Component {
 
   constructor(props) {
     super(props);
-
-    this.state = {
-      currentUser: "javerage",
-    }
-    
   }
 
   componentDidMount(){
@@ -24,6 +19,9 @@ class Current extends React.Component {
   }
 
   render() {
+
+    console.log(this.props)
+
     return (<div>
 
       <Row className='mb-4'>
@@ -74,7 +72,7 @@ class Current extends React.Component {
       <Row>
         <Col md={4}>
 
-          <UserProfile netid={this.state.currentUser} />
+          <UserProfile netid={this.props.netid} />
 
           <Card className='shadow-sm mb-4'>
             <Card.Body>

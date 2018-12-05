@@ -1,22 +1,19 @@
 import React from 'react';
 import { Card, Image }  from 'react-bootstrap'
 
-import UserData from '../../data/students.json'
+import UserData from '../../data/Students.json'
 import './UserProfile.scss'
 
 class UserProfile extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {
-      loggedIn: this.props.netid,
-    };
   }
 
   render() {
     return (<div>
 
-      logged in: {this.state.loggedIn}
+      logged in: {this.props.netid}
 
       <Card border='light' className='shadow-sm mb-4'>
         <Card.Img variant="top" src="https://myplan-dev.washington.edu/home/images/6.png" className='mp-user-background' />

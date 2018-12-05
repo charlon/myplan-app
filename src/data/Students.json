@@ -19,5 +19,12 @@
     "netid": "beckyb",
     "standing": "Junior",
     "intendedMajor": "Bachelor of Arts, Human Computer Interaction"
+  },
+  {
+    "id": 3,
+    "name": "Jack Average",
+    "netid": "javerage",
+    "standing": "Senior",
+    "intendedMajor": "Bachelor of Arts, Business"
   }
 ]

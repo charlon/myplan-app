@@ -1,18 +1,22 @@
 import React from 'react';
 import { Card, Image }  from 'react-bootstrap'
 
+import UserData from '../../data/students.json'
 import './UserProfile.scss'
 
 class UserProfile extends React.Component {
 
   constructor(props) {
     super(props);
+    this.state = {
+      loggedIn: this.props.netid,
+    };
   }
 
   render() {
     return (<div>
 
-      logged in: {this.props.netid}
+      logged in: {this.state.loggedIn}
 
       <Card border='light' className='shadow-sm mb-4'>
         <Card.Img variant="top" src="https://myplan-dev.washington.edu/home/images/6.png" className='mp-user-background' />
@@ -21,8 +25,9 @@ class UserProfile extends React.Component {
 
           <Card.Title as='h4'>Hello, J. Julius!</Card.Title>
           <Card.Text>
-            <p>Class:<br/>Freshman</p>
-            <p>Intended Major:<br/>Bachelor of Arts Business</p>
+            Class:<br/>Freshman
+            <br/>
+            Intended Major:<br/>Bachelor of Arts Business
           </Card.Text>
           <Card.Link href="#">View Academic History (audit)</Card.Link>
         </Card.Body>

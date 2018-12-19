@@ -4,3 +4,16 @@
 .rc-steps-icon {
   display: none !important;
 }
+
+
+.table thead th {
+  border-top: none;
+  font-size: 11px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #aaa;
+}
+
+.table tbody td {
+  white-space: nowrap;
+}

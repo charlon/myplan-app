@@ -12,9 +12,7 @@ class UserProfile extends React.Component {
 
   render() {
     return (<div>
-
-      logged in: {this.props.netid}
-
+      
       <Card border='light' className='shadow-sm mb-4'>
         <Card.Img variant="top" src="https://myplan-dev.washington.edu/home/images/6.png" className='mp-user-background' />
         <Card.Body>

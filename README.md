@@ -10,7 +10,7 @@ A student academic planning app written in React. This app was created using Cre
 Clone this repository:
 ```
   $ git clone https://github.com/charlon/myplan-app.git
-  $ cd plan-app
+  $ cd myplan-app
 ```
 
 Install Node dependencies:

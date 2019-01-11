@@ -452,7 +452,7 @@ class Preview extends React.Component {
                     <Button variant="primary">Throw Over the Wall</Button>
                   </Card.Body>
                 </Card>
-                <Card border='light' className='shadow-sm'>
+                <Card className='border-0'>
                   <Card.Body>
                     <Card.Title as='h4' className="sr-only">SLN Registration</Card.Title>
                     <Card.Text>You cannot drop courses using MyPlan. If you need to update your schedule manually, please visit <strong><a href="#">SLN Registration</a></strong>.</Card.Text>

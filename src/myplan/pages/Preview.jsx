@@ -449,7 +449,7 @@ class Preview extends React.Component {
                   <Card.Body>
                     <Card.Title as='h4'>Registration</Card.Title>
                     <Card.Text>Your estimated priority registration date is <strong>November 4, 2018.</strong> at 6:00am.</Card.Text>
-                    <Button variant="primary">Throw Over the Wall</Button>
+                    <Button variant="warning">Throw Over the Wall</Button>
                   </Card.Body>
                 </Card>
                 <Card className='border-0'>

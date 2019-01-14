@@ -84,7 +84,7 @@ class Preview extends React.Component {
                   <Table className="table-condensed table-sm mt-3">
                     <tbody>
                     <tr>
-                      <td rowspan="3">A</td>
+                      <td className="section-cell" rowspan="3">A</td>
                       <td className="half-cell"><a href="#">54321</a> <span className="badge badge-info">Lecture</span></td>
                       <td className="half-cell">Open 5 of 30</td>
                     </tr>
@@ -96,7 +96,7 @@ class Preview extends React.Component {
                     </tr>
 
                     <tr>
-                      <td rowspan="3">AC</td>
+                      <td className="section-cell" rowspan="3">AC</td>
                       <td className="half-cell"><a href="#">54321</a> <span className="badge badge-info">Quiz</span></td>
                       <td className="half-cell">Open 5 of 30</td>
                     </tr>
@@ -116,7 +116,7 @@ class Preview extends React.Component {
                   <Table className="table-condensed table-sm mt-3">
                     <tbody>
                     <tr>
-                      <td rowspan="3">A</td>
+                      <td className="section-cell" rowspan="3">A</td>
                       <td className="half-cell"><a href="#">54321</a> <span className="badge badge-info">Lecture</span></td>
                       <td className="half-cell">Open 5 of 30</td>
                     </tr>
@@ -128,7 +128,7 @@ class Preview extends React.Component {
                     </tr>
 
                     <tr>
-                      <td rowspan="3">AC</td>
+                      <td className="section-cell" rowspan="3">AC</td>
                       <td className="half-cell"><a href="#">54321</a> <span className="badge badge-info">Quiz</span></td>
                       <td className="half-cell">Open 5 of 30</td>
                     </tr>
@@ -149,7 +149,7 @@ class Preview extends React.Component {
                   <Table className="table-condensed table-sm mt-3">
                     <tbody>
                       <tr>
-                        <td rowspan="3">A</td>
+                        <td className="section-cell" rowspan="3">A</td>
                         <td className="half-cell"><a href="#">54321</a> <span className="badge badge-info">Lecture</span></td>
                         <td className="half-cell">Open 5 of 30</td>
                       </tr>
@@ -194,7 +194,7 @@ class Preview extends React.Component {
                   <Table className="table-condensed table-sm mt-3">
                     <tbody>
                       <tr>
-                        <td rowspan="3">A</td>
+                        <td className="section-cell" rowspan="3">A</td>
                         <td className="half-cell"><a href="#">54321</a> <span className="badge badge-info">Lecture</span></td>
                         <td className="half-cell">Open 5 of 30</td>
                       </tr>
@@ -209,7 +209,7 @@ class Preview extends React.Component {
                       </tr>
 
                       <tr>
-                        <td rowspan="3">AC</td>
+                        <td className="section-cell" rowspan="3">AC</td>
                         <td className="half-cell"><a href="#">45638</a> <span className="badge badge-info">Quiz</span></td>
                         <td className="half-cell">Open 25 of 30</td>
                       </tr>
@@ -231,7 +231,7 @@ class Preview extends React.Component {
                   <Table className="table-condensed table-sm mt-3">
                     <tbody>
                       <tr>
-                        <td rowspan="3">A</td>
+                        <td className="section-cell" rowspan="3">A</td>
                         <td className="half-cell"><a href="#">54321</a> <span className="badge badge-info">Lecture</span></td>
                         <td className="half-cell">Open 5 of 30</td>
                       </tr>
@@ -246,7 +246,7 @@ class Preview extends React.Component {
                       </tr>
 
                       <tr>
-                        <td rowspan="3">AC</td>
+                        <td className="section-cell" rowspan="3">AC</td>
                         <td className="half-cell"><a href="#">45638</a> <span className="badge badge-info">Quiz</span></td>
                         <td className="half-cell">Open 25 of 30</td>
                       </tr>
@@ -269,7 +269,7 @@ class Preview extends React.Component {
                   <Table className="table-condensed table-sm mt-3">
                     <tbody>
                       <tr>
-                        <td rowspan="3">A</td>
+                        <td className="section-cell" rowspan="3">A</td>
                         <td className="half-cell"><a href="#">54321</a> <span className="badge badge-info">Lecture</span></td>
                         <td className="half-cell">Open 5 of 30</td>
                       </tr>
@@ -284,7 +284,7 @@ class Preview extends React.Component {
                       </tr>
 
                       <tr>
-                        <td rowspan="3">AC</td>
+                        <td className="section-cell" rowspan="3">AC</td>
                         <td className="half-cell"><a href="#">45638</a> <span className="badge badge-info">Quiz</span></td>
                         <td className="half-cell">Open 25 of 30</td>
                       </tr>
@@ -307,7 +307,7 @@ class Preview extends React.Component {
                   <Table className="table-condensed table-sm mt-3">
                     <tbody>
                       <tr>
-                        <td rowspan="3">A</td>
+                        <td className="section-cell" rowspan="3">A</td>
                         <td className="half-cell"><a href="#">54321</a> <span className="badge badge-info">Independent Study</span></td>
                         <td className="half-cell">Open 5 of 30</td>
                       </tr>

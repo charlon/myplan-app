@@ -81,37 +81,31 @@ class Preview extends React.Component {
                   <div>
                     <h5 className="mb-2 course-header">CSE 142 <span>Computer Programming I (5)</span></h5>
                   </div>
-                  <Table className="table-condensed  table-responsive table-sm">
-                    <thead>
-                      <tr>
-                        <th>Section</th>
-                        <th>SLN</th>
-                        <th>Type</th>
-                        <th className="text-danger">Issue</th>
-                        <th>Meeting Time &amp; Location</th>
-                        <th>Instructor</th>
-                        <th>Enr. Status</th>
-                      </tr>
-                    </thead>
+                  <Table className="table-condensed table-sm mt-3">
                     <tbody>
-                      <tr>
-                        <td>A</td>
-                        <td><a href="#">54321</a></td>
-                        <td><span className="badge badge-info">Lecture</span></td>
-                        <td className="text-danger">askldfj asdlfj aslkfdj ;lasdkfj alskdf</td>
-                        <td>MWF 8:30am - 9:20am BAG 154</td>
-                        <td>Anderson</td>
-                        <td>Open 5 of 200</td>
-                      </tr>
-                      <tr>
-                        <td>AC</td>
-                        <td><a href="#">45638</a></td>
-                        <td><span className="badge badge-info">Quiz</span></td>
-                        <td className="text-danger">askldfj asdlfj aslkfdj ;lasdkfj alskdf</td>
-                        <td>TTh 10:30am 0 11:20am</td>
-                        <td>--</td>
-                        <td>Open 5 of 30</td>
-                      </tr>
+                    <tr>
+                      <td rowspan="3">A</td>
+                      <td className="half-cell"><a href="#">54321</a> <span className="badge badge-info">Lecture</span></td>
+                      <td className="half-cell">Open 5 of 30</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">To be arranged</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" className="text-danger">You haven't added a Quiz section to your plan. Add a Quiz section to register for this course.</td>
+                    </tr>
+
+                    <tr>
+                      <td rowspan="3">AC</td>
+                      <td className="half-cell"><a href="#">54321</a> <span className="badge badge-info">Quiz</span></td>
+                      <td className="half-cell">Open 5 of 30</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">To be arranged</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" className="text-danger">You haven't added a Quiz section to your plan. Add a Quiz section to register for this course.</td>
+                    </tr>
                     </tbody>
                   </Table>
                 </ListGroup.Item>
@@ -119,79 +113,45 @@ class Preview extends React.Component {
                   <div>
                     <h5 className="mb-2 course-header">CHEM 110 <span>Preparation for General Chemistry (5)</span></h5>
                   </div>
-                  <Table className="table-condensed  table-responsive table-sm">
-                    <thead>
-                      <tr>
-                        <th>Section</th>
-                        <th>SLN</th>
-                        <th>Type</th>
-                        <th className="text-danger">Issue</th>
-                        <th>Meeting Time &amp; Location</th>
-                        <th>Instructor</th>
-                        <th>Enr. Status</th>
-                      </tr>
-                    </thead>
+                  <Table className="table-condensed table-sm mt-3">
                     <tbody>
-                      <tr>
-                        <td>A</td>
-                        <td><a href="#">54321</a></td>
-                        <td><span className="badge badge-info">Lecture</span></td>
-                        <td className="text-danger">askldfj asdlfj aslkfdj ;lasdkfj alskdf</td>
-                        <td>MWF 8:30am - 9:20am BAG 154</td>
-                        <td>Anderson</td>
-                        <td>Open 5 of 200</td>
-                      </tr>
-                      <tr>
-                        <td>AC</td>
-                        <td><a href="#">45638</a></td>
-                        <td><span className="badge badge-info">Quiz</span></td>
-                        <td className="text-danger">askldfj asdlfj aslkfdj ;lasdkfj alskdf</td>
-                        <td>TTh 10:30am 0 11:20am</td>
-                        <td>--</td>
-                        <td>Open 5 of 30</td>
-                      </tr>
+                    <tr>
+                      <td rowspan="3">A</td>
+                      <td className="half-cell"><a href="#">54321</a> <span className="badge badge-info">Lecture</span></td>
+                      <td className="half-cell">Open 5 of 30</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">To be arranged</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" className="text-danger">You haven't added a Quiz section to your plan. Add a Quiz section to register for this course.</td>
+                    </tr>
+
+                    <tr>
+                      <td rowspan="3">AC</td>
+                      <td className="half-cell"><a href="#">54321</a> <span className="badge badge-info">Quiz</span></td>
+                      <td className="half-cell">Open 5 of 30</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">To be arranged</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" className="text-danger">You haven't added a Quiz section to your plan. Add a Quiz section to register for this course.</td>
+                    </tr>
                     </tbody>
                   </Table>
                 </ListGroup.Item>
-                <ListGroup.Item as="li" className='pl-0 pr-0'>
-                  <div className="d-flex w-100 justify-content-between">
-                    <h5 className="mb-2 course-header">BIO 370 <span>Introduction to Primates (5)</span></h5>
-                  </div>
-                  <Table className="table-condensed  table-responsive table-sm">
-                    <thead>
-                      <tr>
-                        <th>Section</th>
-                        <th>SLN</th>
-                        <th>Type</th>
-                        <th className="text-danger">Issue</th>
-                        <th>Meeting Time &amp; Location</th>
-                        <th>Instructor</th>
-                        <th>Enr. Status</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>A</td>
-                        <td><a href="#">54321</a></td>
-                        <td><span className="badge badge-info">Lecture</span></td>
-                        <td className="text-danger">You haven't added a Quiz section to your plan. Add a Quiz section to register for this course.</td>
-                        <td>MWF 8:30am - 9:20am BAG 154</td>
-                        <td>Anderson</td>
-                        <td>Open 5 of 200</td>
-                      </tr>
-                    </tbody>
-                  </Table>
-                </ListGroup.Item>
+
                 <ListGroup.Item as="li" className='pl-0 pr-0'>
                   <div>
                     <h5 className="mb-2 course-header">BIO 370 <span>Introduction to Primates (5)</span></h5>
                   </div>
-                  <Table className="table-condensed table-bordered table-sm mt-3">
+                  <Table className="table-condensed table-sm mt-3">
                     <tbody>
                       <tr>
                         <td rowspan="3">A</td>
-                        <td><a href="#">54321</a> <span className="badge badge-info">Lecture</span></td>
-                        <td>Open 5 of 30</td>
+                        <td className="half-cell"><a href="#">54321</a> <span className="badge badge-info">Lecture</span></td>
+                        <td className="half-cell">Open 5 of 30</td>
                       </tr>
                       <tr>
                         <td colspan="2">To be arranged</td>
@@ -225,143 +185,18 @@ class Preview extends React.Component {
           <Card className='shadow-sm'>
             <Card.Body>
               <Card.Title as='h3'>Ready</Card.Title>
-              <div className="course-add-code"><i class="fas fa-key"></i> add code required</div>
+
               <ListGroup variant='flush' as="ul" className="list-unstyled">
                 <ListGroup.Item as="li" className='pl-0 pr-0 border-top-0'>
                   <div>
                     <h5 className="mb-2 course-header"><input type="checkbox" /> CSE 142 <span>Computer Programming I (5)</span></h5>
                   </div>
-                  <Table className="table-condensed table-responsive table-sm">
-                    <thead>
-                      <tr>
-                        <th>Section</th>
-                        <th>SLN</th>
-                        <th>Type</th>
-                        <th>Add Code</th>
-                        <th>Meeting Time &amp; Location</th>
-                        <th>Instructor</th>
-                        <th>Enr. Status</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>A</td>
-                        <td><a href="#">54321</a></td>
-                        <td><span className="badge badge-info">Lecture</span></td>
-                        <td>
-                          <div class="input-group">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text"><i class="fas fa-key"></i></span>
-                            </div>
-                            <input type="text" class="form-control"/>
-                          </div>
-                        </td>
-                        <td>MWF 8:30am - 9:20am BAG 154</td>
-                        <td>Anderson</td>
-                        <td>Open 5 of 200</td>
-                      </tr>
-                      <tr>
-                        <td>AC</td>
-                        <td><a href="#">45638</a></td>
-                        <td><span className="badge badge-info">Quiz</span></td>
-                        <td><input type="text" className="form-control" /></td>
-                        <td>TTh 10:30am 0 11:20am</td>
-                        <td>--</td>
-                        <td>Open 5 of 30</td>
-                      </tr>
-                    </tbody>
-                  </Table>
-                </ListGroup.Item>
-                <ListGroup.Item as="li" className='pl-0 pr-0'>
-                  <div>
-                    <h5 className="mb-2 course-header"><input type="checkbox" /> CHEM 110 <span>Preparation for General Chemistry (5)</span></h5>
-                  </div>
-                  <Table className="table-condensed table-responsive table-sm">
-                    <thead>
-                      <tr>
-                        <th>Section</th>
-                        <th>SLN</th>
-                        <th>Type</th>
-                        <th>Add Code</th>
-                        <th>Meeting Time &amp; Location</th>
-                        <th>Instructor</th>
-                        <th>Enr. Status</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>A</td>
-                        <td><a href="#">54321</a></td>
-                        <td><span className="badge badge-info">Lecture</span></td>
-                        <td><input type="text" className="form-control" /></td>
-                        <td>MWF 8:30am - 9:20am BAG 154</td>
-                        <td>Anderson</td>
-                        <td>Open 5 of 200</td>
-                      </tr>
-                      <tr>
-                        <td>AC</td>
-                        <td><a href="#">45638</a></td>
-                        <td><span className="badge badge-info">Quiz</span></td>
-                        <td><input type="text" className="form-control" /></td>
-                        <td>TTh 10:30am 0 11:20am</td>
-                        <td>--</td>
-                        <td>Open 5 of 30</td>
-                      </tr>
-                    </tbody>
-                  </Table>
-                </ListGroup.Item>
-
-                <ListGroup.Item as="li" className='pl-0 pr-0'>
-                  <div>
-                    <h5 className="mb-2 course-header"><input type="checkbox" /> BIO 370 <span>Introduction to Primates (4)</span></h5>
-                  </div>
-                  <Table className="table-condensed table-bordered table-responsive table-sm">
-                    <thead>
-                      <tr>
-                        <th>Section</th>
-                        <th>SLN</th>
-                        <th>Type</th>
-                        <th>Add Code</th>
-                        <th>Meeting Time &amp; Location</th>
-                        <th>Instructor</th>
-                        <th>Enr. Status</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>A</td>
-                        <td><a href="#">54321</a></td>
-                        <td><span className="badge badge-info">Lecture</span></td>
-                        <td><input type="text" className="form-control" /></td>
-                        <td>MF 8:30am - 9:20am BAG 154<br/>
-                        W 8:30am - 9:20am TUL 301
-                        </td>
-                        <td>Anderson</td>
-                        <td>Open 5 of 200</td>
-                      </tr>
-                      <tr>
-                        <td>AC</td>
-                        <td><a href="#">45638</a></td>
-                        <td><span className="badge badge-info">Quiz</span></td>
-                        <td><input type="text" className="form-control" /></td>
-                        <td>TTh 10:30am 0 11:20am</td>
-                        <td>--</td>
-                        <td>Open 5 of 30</td>
-                      </tr>
-                    </tbody>
-                  </Table>
-                </ListGroup.Item>
-
-                <ListGroup.Item as="li" className='pl-0 pr-0'>
-                  <div>
-                    <h5 className="mb-2 course-header"><input type="checkbox" /> BIO 370 <span>Introduction to Primates (4)</span></h5>
-                  </div>
-                  <Table className="table-condensed table-bordered table-sm mt-3">
+                  <Table className="table-condensed table-sm mt-3">
                     <tbody>
                       <tr>
                         <td rowspan="3">A</td>
-                        <td><a href="#">54321</a> <span className="badge badge-info">Lecture</span></td>
-                        <td>Open 5 of 30</td>
+                        <td className="half-cell"><a href="#">54321</a> <span className="badge badge-info">Lecture</span></td>
+                        <td className="half-cell">Open 5 of 30</td>
                       </tr>
                       <tr>
                         <td colspan="2">MF 8:30am - 9:20am BAG 154<br/>
@@ -369,28 +204,96 @@ class Preview extends React.Component {
                         </td>
                       </tr>
                       <tr>
-                        <td>Mr. Anderson</td>
-                        <td>
-                        <div class="input-group">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fas fa-key"></i></span>
-                          </div>
-                          <input type="text" class="form-control"/>
-                        </div>
-                        </td>
+                        <td className="half-cell">Mr. Anderson</td>
+                        <td className="half-cell"><input type="text" className="form-control" /></td>
                       </tr>
 
                       <tr>
                         <td rowspan="3">AC</td>
-                        <td><a href="#">45638</a> <span className="badge badge-info">Quiz</span></td>
-                        <td>Open 25 of 30</td>
+                        <td className="half-cell"><a href="#">45638</a> <span className="badge badge-info">Quiz</span></td>
+                        <td className="half-cell">Open 25 of 30</td>
                       </tr>
                       <tr>
                         <td colspan="2">TTh 10:30am 0 11:20am</td>
                       </tr>
                       <tr>
-                        <td>---</td>
-                        <td><input type="text" className="form-control" /></td>
+                        <td className="half-cell">---</td>
+                        <td className="half-cell"><input type="text" className="form-control" /></td>
+                      </tr>
+
+                    </tbody>
+                  </Table>
+                </ListGroup.Item>
+                <ListGroup.Item as="li" className='pl-0 pr-0'>
+                  <div>
+                    <h5 className="mb-2 course-header"><input type="checkbox" /> CHEM 110 <span>Preparation for General Chemistry (5)</span></h5>
+                  </div>
+                  <Table className="table-condensed table-sm mt-3">
+                    <tbody>
+                      <tr>
+                        <td rowspan="3">A</td>
+                        <td className="half-cell"><a href="#">54321</a> <span className="badge badge-info">Lecture</span></td>
+                        <td className="half-cell">Open 5 of 30</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">MF 8:30am - 9:20am BAG 154<br/>
+                        W 8:30am - 9:20am TUL 301
+                        </td>
+                      </tr>
+                      <tr>
+                        <td className="half-cell">Mr. Anderson</td>
+                        <td className="half-cell"><input type="text" className="form-control" /></td>
+                      </tr>
+
+                      <tr>
+                        <td rowspan="3">AC</td>
+                        <td className="half-cell"><a href="#">45638</a> <span className="badge badge-info">Quiz</span></td>
+                        <td className="half-cell">Open 25 of 30</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">TTh 10:30am 0 11:20am</td>
+                      </tr>
+                      <tr>
+                        <td className="half-cell">---</td>
+                        <td className="half-cell"><input type="text" className="form-control" /></td>
+                      </tr>
+
+                    </tbody>
+                  </Table>
+                </ListGroup.Item>
+
+                <ListGroup.Item as="li" className='pl-0 pr-0'>
+                  <div>
+                    <h5 className="mb-2 course-header"><input type="checkbox" /> BIO 370 <span>Introduction to Primates (4)</span></h5>
+                  </div>
+                  <Table className="table-condensed table-sm mt-3">
+                    <tbody>
+                      <tr>
+                        <td rowspan="3">A</td>
+                        <td className="half-cell"><a href="#">54321</a> <span className="badge badge-info">Lecture</span></td>
+                        <td className="half-cell">Open 5 of 30</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">MF 8:30am - 9:20am BAG 154<br/>
+                        W 8:30am - 9:20am TUL 301
+                        </td>
+                      </tr>
+                      <tr>
+                        <td className="half-cell">Mr. Anderson</td>
+                        <td className="half-cell"><input type="text" className="form-control" /></td>
+                      </tr>
+
+                      <tr>
+                        <td rowspan="3">AC</td>
+                        <td className="half-cell"><a href="#">45638</a> <span className="badge badge-info">Quiz</span></td>
+                        <td className="half-cell">Open 25 of 30</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">TTh 10:30am 0 11:20am</td>
+                      </tr>
+                      <tr>
+                        <td className="half-cell">---</td>
+                        <td className="half-cell"><input type="text" className="form-control" /></td>
                       </tr>
 
                     </tbody>
@@ -401,26 +304,19 @@ class Preview extends React.Component {
                   <div>
                     <h5 className="mb-2 course-header"><input type="checkbox" /> COM 497 <span>Honors Thesis (4)</span></h5>
                   </div>
-                  <Table className="table-condensed table-bordered table-sm mt-3">
+                  <Table className="table-condensed table-sm mt-3">
                     <tbody>
                       <tr>
                         <td rowspan="3">A</td>
-                        <td><a href="#">54321</a> <span className="badge badge-info">Independent Study</span></td>
-                        <td>Open 5 of 30</td>
+                        <td className="half-cell"><a href="#">54321</a> <span className="badge badge-info">Independent Study</span></td>
+                        <td className="half-cell">Open 5 of 30</td>
                       </tr>
                       <tr>
                         <td colspan="2">To be arranged</td>
                       </tr>
                       <tr>
-                        <td>--</td>
-                        <td>
-                          <div class="input-group">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text"><i class="fas fa-key"></i></span>
-                            </div>
-                            <input type="text" class="form-control"/>
-                          </div>
-                        </td>
+                        <td className="half-cell">--</td>
+                        <td className="half-cell"><i class="fa fa-lock"></i> Add Code Required, Faculty Code Required, OR Has Restrictions<input type="text" className="form-control" /></td>
                       </tr>
                     </tbody>
                   </Table>
@@ -453,7 +349,7 @@ class Preview extends React.Component {
                   </Card.Body>
                 </Card>
                 <Card className='border-0'>
-                  <Card.Body>
+                  <Card.Body className="p-0">
                     <Card.Title as='h4' className="sr-only">SLN Registration</Card.Title>
                     <Card.Text>You cannot drop courses using MyPlan. If you need to update your schedule manually, please visit <strong><a href="#">SLN Registration</a></strong>.</Card.Text>
                   </Card.Body>

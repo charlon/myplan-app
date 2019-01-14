@@ -14,8 +14,8 @@
   color: #aaa;
 }
 
-.table tbody td {
-  white-space: nowrap;
+.table {
+  .half-cell { width: 50%; }
 }
 
 
@@ -28,10 +28,4 @@
     right: 10px;
   }
 
-}
-
-.course-add-code {
-  position: absolute;
-  top: 20px;
-  right: 15px;
 }

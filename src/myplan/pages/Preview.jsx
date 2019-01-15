@@ -24,7 +24,7 @@ class Preview extends React.Component {
 
       <Row className='mb-4'>
         <Col xs={6}>
-          <span className="badge badge-secondary">Preview</span>
+          <span className="badge badge-light">Preview</span>
           <h1 className='mt-0 text-nowrap'>Winter 2019</h1>
         </Col>
         <Col xs={6}>
@@ -32,11 +32,11 @@ class Preview extends React.Component {
           <Row>
             <Col xs={4}>&nbsp;</Col>
             <Col xs={4} className='text-right'>
-              <span className="badge badge-light"> -- Previous</span>
+              <span className="badge badge-light">Previous</span>
               <h6 className='mt-0 font-weight-light text-nowrap'><a href='/'>Autumn 2018</a></h6>
             </Col>
             <Col xs={4}>
-              <span className="badge badge-light">Next --</span>
+              <span className="badge badge-light">Next</span>
               <h6 className='mt-0 font-weight-light text-nowrap'><a href='/future'>Spring 2019</a></h6>
             </Col>
           </Row>
@@ -70,73 +70,111 @@ class Preview extends React.Component {
       <Row>
 
 
-        <Col md={8}>
+        <Col md={8} >
 
           <Card className='shadow-sm mb-4'>
             <Card.Body>
               <Card.Title as='h3'>Issues</Card.Title>
 
+              <div className="alert alert-danger issues-alert" role="alert">The following plan items have issues you must resolve before you proceed to Registration. <a href="#">Go to your Winter 2019 plan to resolve these issues.</a></div>
+
               <ListGroup variant='flush' as="ul">
-                <ListGroup.Item as="li" className='pl-0 pr-0 border-top-0'>
-                  <div>
-                    <h5 className="mb-2 course-header">CSE 142 <span>Computer Programming I (5)</span></h5>
-                  </div>
-                  <Table className="table-condensed table-sm mt-3">
-                    <tbody>
-                    <tr>
-                      <td className="section-cell" rowspan="3">A</td>
-                      <td className="half-cell"><a href="#">54321</a> <span className="badge badge-info">Lecture</span></td>
-                      <td className="half-cell">Open 5 of 30</td>
-                    </tr>
-                    <tr>
-                      <td colspan="2">To be arranged</td>
-                    </tr>
-                    <tr>
-                      <td colspan="2" className="text-danger">You haven't added a Quiz section to your plan. Add a Quiz section to register for this course.</td>
-                    </tr>
 
-                    <tr>
-                      <td className="section-cell" rowspan="3">AC</td>
-                      <td className="half-cell"><a href="#">54321</a> <span className="badge badge-info">Quiz</span></td>
-                      <td className="half-cell">Open 5 of 30</td>
-                    </tr>
-                    <tr>
-                      <td colspan="2">To be arranged</td>
-                    </tr>
-                    <tr>
-                      <td colspan="2" className="text-danger">You haven't added a Quiz section to your plan. Add a Quiz section to register for this course.</td>
-                    </tr>
+                <ListGroup.Item as="li" className='pl-0 pr-0'>
+
+                  <h5 className="mb-2 course-header">
+                    <input type="checkbox" /> CSE 142
+                    <div class="course-name">Computer Programming I <span class="badge badge-pill badge-light">5 CR</span></div>
+                  </h5>
+
+                  <div className="text-danger issues-alert">This is a problem with the course.</div>
+
+                  <Table className="table table-condensed table-borderless table-sm mt-3">
+                    <tbody>
+                      <tr>
+                        <td rowspan="3"><span className="section-cell">A</span></td>
+                        <td className="half-cell"><a href="#">54321</a> <span className="badge border border-light">Lecture</span></td>
+                        <td className="half-cell text-right"><span className="badge border border-success">Open 5/30</span></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                          <div className="meeting-time">
+                            <span className="boop">MTWThF</span>
+                            <span className="blah">8:30am - 9:20am</span>
+                            <span className="beep">BAG 154</span>
+                          </div>
+                          <div className="meeting-time">
+                            <span className="boop">W</span>
+                            <span className="blah">10:30am - 11:20am</span>
+                            <span className="beep">TUL 301</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" className="text-danger issues-alert">You haven't added a Quiz section to your plan. Add a Quiz section to register for this course.</td>
+                      </tr>
+                    </tbody>
+                  </Table>
+
+                  <Table className="table table-condensed table-borderless table-sm mt-3">
+                    <tbody>
+                      <tr>
+                        <td rowspan="3"><span className="section-cell">AC</span></td>
+                        <td className="half-cell"><a href="#">54321</a> <span className="badge border border-light">Quiz</span></td>
+                        <td className="half-cell text-right"><span className="badge border border-success">Open 5/30</span></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                          <div className="meeting-time">
+                            <span className="boop">Th</span>
+                            <span className="blah">10:30am - 11:20am</span>
+                            <span className="beep">BAG 211</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" className="text-danger issues-alert">You haven't added a Quiz section to your plan. Add a Quiz section to register for this course.</td>
+                      </tr>
                     </tbody>
                   </Table>
                 </ListGroup.Item>
                 <ListGroup.Item as="li" className='pl-0 pr-0'>
                   <div>
-                    <h5 className="mb-2 course-header">CHEM 110 <span>Preparation for General Chemistry (5)</span></h5>
+                    <h5 className="mb-2 course-header">
+                      <input type="checkbox" /> CHEM 110
+                      <div className="course-name">Preparation for General Chemistry <span class="badge badge-pill badge-light">5 CR</span></div>
+                    </h5>
                   </div>
-                  <Table className="table-condensed table-sm mt-3">
+                  <Table className="table table-condensed table-borderless table-sm mt-3">
                     <tbody>
                     <tr>
-                      <td className="section-cell" rowspan="3">A</td>
-                      <td className="half-cell"><a href="#">54321</a> <span className="badge badge-info">Lecture</span></td>
-                      <td className="half-cell">Open 5 of 30</td>
+                      <td rowspan="3"><span className="section-cell">A</span></td>
+                      <td className="half-cell"><a href="#">54321</a> <span className="badge border border-light">Lecture</span></td>
+                      <td className="half-cell text-right"><span className="badge border border-success">Open 5/30</span></td>
                     </tr>
                     <tr>
-                      <td colspan="2">To be arranged</td>
+                      <td colspan="2">
+                        <div className="meeting-time">
+                          <span className="boop">MTWThF</span>
+                          <span className="blah">8:30am - 9:20am</span>
+                          <span className="beep">BAG 154</span>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
-                      <td colspan="2" className="text-danger">You haven't added a Quiz section to your plan. Add a Quiz section to register for this course.</td>
+                      <td colspan="2" className="text-danger issues-alert">You haven't added a Quiz section to your plan. Add a Quiz section to register for this course.</td>
                     </tr>
 
                     <tr>
-                      <td className="section-cell" rowspan="3">AC</td>
-                      <td className="half-cell"><a href="#">54321</a> <span className="badge badge-info">Quiz</span></td>
-                      <td className="half-cell">Open 5 of 30</td>
+                      <td rowspan="3"><span className="section-cell">AC</span></td>
+                      <td className="half-cell"><a href="#">54321</a> <span className="badge border border-light">Quiz</span></td>
+                      <td className="half-cell text-right"><span className="badge border border-success">Open 5/30</span></td>
                     </tr>
                     <tr>
-                      <td colspan="2">To be arranged</td>
+                      <td colspan="2"><span className="tba">Meeting time to be arranged</span></td>
                     </tr>
                     <tr>
-                      <td colspan="2" className="text-danger">You haven't added a Quiz section to your plan. Add a Quiz section to register for this course.</td>
+                      <td colspan="2" className="text-danger issues-alert">You haven't added a Quiz section to your plan. Add a Quiz section to register for this course.</td>
                     </tr>
                     </tbody>
                   </Table>
@@ -144,27 +182,39 @@ class Preview extends React.Component {
 
                 <ListGroup.Item as="li" className='pl-0 pr-0'>
                   <div>
-                    <h5 className="mb-2 course-header">BIO 370 <span>Introduction to Primates (5)</span></h5>
+                    <h5 className="mb-2 course-header">
+                      <input type="checkbox" /> BIO 370
+                      <div className="course-name">Introduction to Primates <span class="badge badge-pill badge-light">4 CR</span></div>
+                    </h5>
                   </div>
-                  <Table className="table-condensed table-sm mt-3">
+                  <Table className="table table-condensed table-borderless table-sm mt-3">
                     <tbody>
                       <tr>
-                        <td className="section-cell" rowspan="3">A</td>
-                        <td className="half-cell"><a href="#">54321</a> <span className="badge badge-info">Lecture</span></td>
-                        <td className="half-cell">Open 5 of 30</td>
+                        <td rowspan="3"><span className="section-cell">A</span></td>
+                        <td className="half-cell"><a href="#">54321</a> <span className="badge border border-light">Lecture</span></td>
+                        <td className="half-cell text-right"><span className="badge border border-success">Open 5/30</span></td>
                       </tr>
                       <tr>
-                        <td colspan="2">To be arranged</td>
+                        <td colspan="2">
+                          <div className="meeting-time">
+                            <span className="boop">W</span>
+                            <span className="blah">10:30am - 11:20am</span>
+                            <span className="beep">TUL 301</span>
+                          </div>
+                        </td>
                       </tr>
                       <tr>
-                        <td colspan="2" className="text-danger">You haven't added a Quiz section to your plan. Add a Quiz section to register for this course.</td>
+                        <td colspan="2" className="text-danger issues-alert">You haven't added a Quiz section to your plan. Add a Quiz section to register for this course.</td>
                       </tr>
                     </tbody>
                   </Table>
                 </ListGroup.Item>
                 <ListGroup.Item as="li" className='pl-0 pr-0 border-bottom-0'>
                   <div className="d-flex w-100 justify-content-between">
-                    <h5 className="mb-2 course-header">GEN ST 199 <span>A2: The University Community (19)</span></h5>
+                    <h5 className="mb-2 course-header">
+                      <input type="checkbox" /> GEN ST 199
+                      <div className="course-name">A3 The University Community <span class="badge badge-pill badge-light">19 CR</span></div>
+                    </h5>
                   </div>
                   <ul className='list-unstyled'>
                     <li>GEN ST 199 A2: University Community TH 1:30-2:20</li>
@@ -182,168 +232,275 @@ class Preview extends React.Component {
           </Card>
 
 
-          <Card className='shadow-sm'>
+          <Card className='shadow-sm mb-4'>
             <Card.Body>
               <Card.Title as='h3'>Ready</Card.Title>
 
+              <div className="add-code-required"><i class="fa fa-lock"></i> Required</div>
+
               <ListGroup variant='flush' as="ul" className="list-unstyled">
-                <ListGroup.Item as="li" className='pl-0 pr-0 border-top-0'>
-                  <div>
-                    <h5 className="mb-2 course-header"><input type="checkbox" /> CSE 142 <span>Computer Programming I (5)</span></h5>
-                  </div>
-                  <Table className="table-condensed table-sm mt-3">
+                <ListGroup.Item as="li" className='pl-0 pr-0'>
+
+                  <h5 className="mb-2 course-header">
+                    <input type="checkbox" /> CSE 142
+                    <div class="course-name">Computer Programming I <span class="badge badge-pill badge-light">5 CR</span></div>
+                  </h5>
+
+                  <Table className="table table-condensed table-borderless table-sm mt-3">
                     <tbody>
                       <tr>
-                        <td className="section-cell" rowspan="3">A</td>
-                        <td className="half-cell"><a href="#">54321</a> <span className="badge badge-info">Lecture</span></td>
-                        <td className="half-cell">Open 5 of 30</td>
+                        <td rowspan="3"><span className="section-cell">A</span></td>
+                        <td className="half-cell"><a href="#">54321</a> <span className="badge border border-light">Lecture</span></td>
+                        <td className="half-cell text-right"><span className="badge border border-success">Open 5/30</span></td>
                       </tr>
                       <tr>
-                        <td colspan="2">MF 8:30am - 9:20am BAG 154<br/>
-                        W 8:30am - 9:20am TUL 301
+                        <td colspan="2">
+                          <div className="meeting-time">
+                            <span className="boop">MTWThF</span>
+                            <span className="blah">8:30am - 9:20am</span>
+                            <span className="beep">BAG 154</span>
+                          </div>
+                          <div className="meeting-time">
+                            <span className="boop">W</span>
+                            <span className="blah">10:30am - 11:20am</span>
+                            <span className="beep">TUL 301</span>
+                          </div>
                         </td>
                       </tr>
                       <tr>
-                        <td className="half-cell">Mr. Anderson</td>
-                        <td className="half-cell"><input type="text" className="form-control" /></td>
+                        <td className="half-cell">Mike John Anderson</td>
+                        <td className="half-cell">
+                          <span className="add-code">Add/Faculty Code</span>
+                          <input type="text" className="form-control" />
+                        </td>
                       </tr>
-
-                      <tr>
-                        <td className="section-cell" rowspan="3">AC</td>
-                        <td className="half-cell"><a href="#">45638</a> <span className="badge badge-info">Quiz</span></td>
-                        <td className="half-cell">Open 25 of 30</td>
-                      </tr>
-                      <tr>
-                        <td colspan="2">TTh 10:30am 0 11:20am</td>
-                      </tr>
-                      <tr>
-                        <td className="half-cell">---</td>
-                        <td className="half-cell"><input type="text" className="form-control" /></td>
-                      </tr>
-
                     </tbody>
                   </Table>
-                </ListGroup.Item>
-                <ListGroup.Item as="li" className='pl-0 pr-0'>
-                  <div>
-                    <h5 className="mb-2 course-header"><input type="checkbox" /> CHEM 110 <span>Preparation for General Chemistry (5)</span></h5>
-                  </div>
-                  <Table className="table-condensed table-sm mt-3">
+
+                  <Table className="table table-condensed table-borderless table-sm mt-3">
                     <tbody>
                       <tr>
-                        <td className="section-cell" rowspan="3">A</td>
-                        <td className="half-cell"><a href="#">54321</a> <span className="badge badge-info">Lecture</span></td>
-                        <td className="half-cell">Open 5 of 30</td>
+                        <td rowspan="3"><span className="section-cell">AC</span></td>
+                        <td className="half-cell"><a href="#">45638</a> <span className="badge border border-light">Quiz</span></td>
+                        <td className="half-cell text-right"><span className="badge border border-danger">Closed 30/30</span></td>
                       </tr>
                       <tr>
-                        <td colspan="2">MF 8:30am - 9:20am BAG 154<br/>
-                        W 8:30am - 9:20am TUL 301
+                        <td colspan="2">
+                          <div className="meeting-time">
+                            <span className="boop">TTh</span>
+                            <span className="blah">10:30am - 11:20am</span>
+                            <span className="beep">KNE 130</span>
+                          </div>
                         </td>
                       </tr>
                       <tr>
-                        <td className="half-cell">Mr. Anderson</td>
-                        <td className="half-cell"><input type="text" className="form-control" /></td>
+                        <td className="half-cell"><span className="tba">Instructor to be arranged</span></td>
+                        <td className="half-cell">
+                          <span className="add-code">Add/Faculty Code <i class="fa fa-lock"></i></span>
+                          <input type="text" className="form-control" />
+                        </td>
                       </tr>
-
-                      <tr>
-                        <td className="section-cell" rowspan="3">AC</td>
-                        <td className="half-cell"><a href="#">45638</a> <span className="badge badge-info">Quiz</span></td>
-                        <td className="half-cell">Open 25 of 30</td>
-                      </tr>
-                      <tr>
-                        <td colspan="2">TTh 10:30am 0 11:20am</td>
-                      </tr>
-                      <tr>
-                        <td className="half-cell">---</td>
-                        <td className="half-cell"><input type="text" className="form-control" /></td>
-                      </tr>
-
                     </tbody>
                   </Table>
-                </ListGroup.Item>
 
+                </ListGroup.Item>
                 <ListGroup.Item as="li" className='pl-0 pr-0'>
-                  <div>
-                    <h5 className="mb-2 course-header"><input type="checkbox" /> BIO 370 <span>Introduction to Primates (4)</span></h5>
-                  </div>
-                  <Table className="table-condensed table-sm mt-3">
+
+                  <h5 className="mb-2 course-header">
+                    <input type="checkbox" /> CHEM 110
+                    <div className="course-name">Preparation for General Chemistry <span class="badge badge-pill badge-light">5 CR</span></div>
+                  </h5>
+
+                  <Table className="table table-condensed table-borderless table-sm mt-3">
                     <tbody>
                       <tr>
-                        <td className="section-cell" rowspan="3">A</td>
-                        <td className="half-cell"><a href="#">54321</a> <span className="badge badge-info">Lecture</span></td>
-                        <td className="half-cell">Open 5 of 30</td>
+                        <td rowspan="3"><span className="section-cell">A</span></td>
+                        <td className="half-cell"><a href="#">54321</a> <span className="badge border border-light">Lecture</span></td>
+                        <td className="half-cell text-right"><span className="badge border border-warning">Suspended</span></td>
                       </tr>
                       <tr>
-                        <td colspan="2">MF 8:30am - 9:20am BAG 154<br/>
-                        W 8:30am - 9:20am TUL 301
+                        <td colspan="2">
+                          <div className="meeting-time">
+                            <span className="boop">MTWThF</span>
+                            <span className="blah">8:30am - 9:20am</span>
+                            <span className="beep">BAG 154</span>
+                          </div>
+                          <div className="meeting-time">
+                            <span className="boop">W</span>
+                            <span className="blah">10:30am - 11:20am</span>
+                            <span className="beep">TUL 301</span>
+                          </div>
                         </td>
                       </tr>
                       <tr>
-                        <td className="half-cell">Mr. Anderson</td>
-                        <td className="half-cell"><input type="text" className="form-control" /></td>
+                        <td className="half-cell">Mike John Anderson</td>
+                        <td className="half-cell">
+                          <span className="add-code">Add/Faculty Code</span>
+                          <input type="text" className="form-control" />
+                        </td>
                       </tr>
-
-                      <tr>
-                        <td className="section-cell" rowspan="3">AC</td>
-                        <td className="half-cell"><a href="#">45638</a> <span className="badge badge-info">Quiz</span></td>
-                        <td className="half-cell">Open 25 of 30</td>
-                      </tr>
-                      <tr>
-                        <td colspan="2">TTh 10:30am 0 11:20am</td>
-                      </tr>
-                      <tr>
-                        <td className="half-cell">---</td>
-                        <td className="half-cell"><input type="text" className="form-control" /></td>
-                      </tr>
-
                     </tbody>
                   </Table>
+
+                  <Table className="table table-condensed table-borderless table-sm mt-3">
+                    <tbody>
+                      <tr>
+                        <td rowspan="3"><span className="section-cell">AC</span></td>
+                        <td className="half-cell"><a href="#">45638</a> <span className="badge border border-light">Quiz</span></td>
+                        <td className="half-cell text-right"><span className="badge border border-success">Open 25/30</span></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                          <div className="meeting-time">
+                            <span className="boop">TTh</span>
+                            <span className="blah">10:30am - 11:20am</span>
+                            <span className="beep">TUL 301</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td className="half-cell"><span className="tba">Instructor to be arranged</span></td>
+                        <td className="half-cell">
+                          <span className="add-code">Add/Faculty Code</span>
+                          <input type="text" className="form-control" />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </Table>
+
                 </ListGroup.Item>
 
                 <ListGroup.Item as="li" className='pl-0 pr-0'>
-                  <div>
-                    <h5 className="mb-2 course-header"><input type="checkbox" /> COM 497 <span>Honors Thesis (4)</span></h5>
-                  </div>
-                  <Table className="table-condensed table-sm mt-3">
+
+                  <h5 className="mb-2 course-header">
+                    <input type="checkbox" /> BIO 370
+                    <div className="course-name">Introduction to Primates <span class="badge badge-pill badge-light">4 CR</span></div>
+                  </h5>
+
+                  <Table className="table table-condensed table-borderless table-sm mt-3">
                     <tbody>
                       <tr>
-                        <td className="section-cell" rowspan="3">A</td>
-                        <td className="half-cell"><a href="#">54321</a> <span className="badge badge-info">Independent Study</span></td>
-                        <td className="half-cell">Open 5 of 30</td>
+                        <td rowspan="3"><span className="section-cell">A</span></td>
+                        <td className="half-cell"><a href="#">54321</a> <span className="badge border border-light">Lecture</span></td>
+                        <td className="half-cell text-right"><span className="badge border border-success">Open 5/30</span></td>
                       </tr>
                       <tr>
-                        <td colspan="2">To be arranged</td>
+                        <td colspan="2">
+                          <div className="meeting-time">
+                            <span className="boop">MTWThF</span>
+                            <span className="blah">8:30am - 9:20am</span>
+                            <span className="beep">BAG 154</span>
+                          </div>
+                          <div className="meeting-time">
+                            <span className="boop">W</span>
+                            <span className="blah">10:30am - 11:20am</span>
+                            <span className="beep">TUL 301</span>
+                          </div>
+                        </td>
                       </tr>
                       <tr>
-                        <td className="half-cell">--</td>
-                        <td className="half-cell"><i class="fa fa-lock"></i> Add Code Required, Faculty Code Required, OR Has Restrictions<input type="text" className="form-control" /></td>
+                        <td className="half-cell">Mike John Anderson</td>
+                        <td className="half-cell">
+                          <span className="add-code">Add/Faculty Code</span>
+                          <input type="text" className="form-control" />
+                        </td>
                       </tr>
                     </tbody>
                   </Table>
+
+                  <Table className="table table-condensed table-borderless table-sm mt-3">
+                    <tbody>
+                      <tr>
+                        <td rowspan="3"><span className="section-cell">AC</span></td>
+                        <td className="half-cell"><a href="#">45638</a> <span className="badge border border-light">Quiz</span></td>
+                        <td className="half-cell text-right"><span className="badge border border-success">Open 5/30</span></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                          <div className="meeting-time">
+                            <span className="boop">MW</span>
+                            <span className="blah">8:30am - 9:20am</span>
+                            <span className="beep">BAG 154</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td className="half-cell"><span className="tba">Instructor to be arranged</span></td>
+                        <td className="half-cell">
+                          <span className="add-code">Add/Faculty Code</span>
+                          <input type="text" className="form-control" />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </Table>
+
+                </ListGroup.Item>
+
+                <ListGroup.Item as="li" className='pl-0 pr-0'>
+
+                  <h5 className="mb-2 course-header">
+                    <input type="checkbox" /> COM 497
+                    <div className="course-name">Honors Thesis <span class="badge badge-pill badge-light">4 CR</span></div>
+                  </h5>
+
+                  <Table className="table table-condensed table-borderless table-sm mt-3">
+                    <tbody>
+                      <tr>
+                        <td rowspan="3"><span className="section-cell">A</span></td>
+                        <td className="half-cell"><a href="#">54321</a> <span className="badge border border-light">Independent Study</span></td>
+                        <td className="half-cell text-right"><span className="badge border border-success">Open 5/30</span></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2"><span className="tba">Meeting time to be arranged</span></td>
+                      </tr>
+                      <tr>
+                        <td className="half-cell"><span className="tba">Instructor to be arranged</span></td>
+                        <td className="half-cell">
+                          <span className="add-code">Add/Faculty Code <i class="fa fa-lock"></i> </span>
+                          <input type="text" className="form-control" /></td>
+                      </tr>
+                    </tbody>
+                  </Table>
+
                 </ListGroup.Item>
 
                 <ListGroup.Item as="li" className='pl-0 pr-0 border-bottom-0'>
-                  <div>
-                    <h5 className="mb-2 course-header"><input type="checkbox" /> GEN ST 199 <span>A3 The University Community (19)</span></h5>
-                  </div>
+
+                  <h5 className="mb-2 course-header">
+                    <input type="checkbox" /> GEN ST 199
+                    <div className="course-name">A3 The University Community <span class="badge badge-pill badge-light">19 CR</span></div>
+                  </h5>
+
                   <ul className='list-unstyled'>
                     <li>GEN ST 199 A2: University Community TH 1:30-2:20</li>
                     <li>CHEM 142 C: General Chemistry MWF 12:30-1:20</li>
                     <li>CHEM 142 CD T 9:30-10:20 TH 2:30-5:20</li>
                     <li>ENGL 199 H: Linked Writing Course: HSERVE 100 MWF 8:30-9:20</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
                   </ul>
                 </ListGroup.Item>
+
+                <ListGroup.Item as="li" className='pl-0 pr-0 border-bottom-0'>
+
+                  <h5 className="mb-2 course-header">
+                    <input type="checkbox" /> ART 500
+                    <div className="course-name">Some Block Art Class <span class="badge badge-pill badge-light">10 CR</span></div>
+                  </h5>
+
+                  <ul className='list-unstyled'>
+                    <li>ART 101 AA: University Community TH 1:30-2:20</li>
+                    <li>INFO 400 AC: General Chemistry MWF 12:30-1:20</li>
+                  </ul>
+                </ListGroup.Item>
+
               </ListGroup>
 
-              <h4>Selected: 9 credits</h4>
+
 
               <CardDeck className='mt-4'>
                 <Card bg='light' className='shadow-sm mr-0'>
                   <Card.Body>
                     <Card.Title as='h4'>Registration</Card.Title>
+                    <div className="credit-total">Selected: <span class="badge badge-pill badge-light">9 CR</span></div>
                     <Card.Text>Your estimated priority registration date is <strong>November 4, 2018.</strong> at 6:00am.</Card.Text>
                     <Button variant="warning">Throw Over the Wall</Button>
                   </Card.Body>
@@ -351,16 +508,13 @@ class Preview extends React.Component {
                 <Card className='border-0'>
                   <Card.Body className="p-0">
                     <Card.Title as='h4' className="sr-only">SLN Registration</Card.Title>
-                    <Card.Text>You cannot drop courses using MyPlan. If you need to update your schedule manually, please visit <strong><a href="#">SLN Registration</a></strong>.</Card.Text>
+                    <Card.Text>Visit the <strong><a href="#">SLN Registration</a></strong> page to add courses by SLN, drop courses, and more.</Card.Text>
                   </Card.Body>
                 </Card>
               </CardDeck>
 
             </Card.Body>
           </Card>
-
-
-
 
         </Col>
 

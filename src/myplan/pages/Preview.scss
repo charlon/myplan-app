@@ -19,6 +19,9 @@
   .badge { font-weight: normal; text-transform: uppercase;}
   .section-cell { width: 30px; display: inline-block; white-space: nowrap; }
 
+  .add-cell { width: 25%; }
+  .instructor-cell { width: 75%; }
+
   .meeting-time { white-space: nowrap; }
   .boop { display: inline-block; min-width: 60px; white-space: nowrap; }
   .blah { display: inline-block; min-width: 55%; text-align: center; white-space: nowrap; }
@@ -54,7 +57,6 @@ input[type=text] {
 .course-requirements { position: absolute; top: 30px; right: 18px; font-size: 11px; }
 .code-required { display: inline-block; margin-left: 10px; }
 .add-code {
-  white-space: nowrap;
   font-size: 11px;
   font-weight: bold;
 }

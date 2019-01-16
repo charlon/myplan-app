@@ -44,7 +44,7 @@ class Preview extends React.Component {
         </Col>
       </Row>
 
-      <Row className='mb-3'>
+      <Row className='mb-3 d-none'>
         <Col className='d-md-none'>
 
           <Steps size='small' direction="vertical" current={2}>
@@ -76,7 +76,7 @@ class Preview extends React.Component {
             <Card.Body>
               <Card.Title as='h3' className="sr-only">Acknowledgements</Card.Title>
               <Card.Text><div><strong>Pre-Registration Requirement</strong><br/>
-              Beginning one week prior to each quarter's registration period you can make all the required Notices and Insurance &amp; Optional Charges selections. You will then be able to go directly into Web Registration when your priority registration period begins. If you have not already done so, <a href="https://sdb.admin.uw.edu/students/uwnetid/op_charges.asp">go to the Insurance &amp; Optional Charges</a> services now to complete these requirements prior to registering for autumn quarter.</div></Card.Text>
+              Beginning one week prior to each quarter's registration period you can make all the required Notices and Insurance &amp; Optional Charges selections. You will then be able to go directly into SLN Registration when your priority registration period begins. If you have not already done so, <a href="https://sdb.admin.uw.edu/students/uwnetid/op_charges.asp">go to the Insurance &amp; Optional Charges</a> services now to complete these requirements prior to registering for <strong>Winter 2019</strong>.</div></Card.Text>
             </Card.Body>
           </Card>
 
@@ -88,7 +88,7 @@ class Preview extends React.Component {
 
               <ListGroup variant='flush' as="ul">
 
-                <ListGroup.Item as="li" className='pl-0 pr-0'>
+                <ListGroup.Item as="li" className='pl-0 pr-0 border-top-0'>
 
                   <h5 className="mb-2 course-header">
                     <input type="checkbox" /> CSE 142
@@ -435,8 +435,8 @@ class Preview extends React.Component {
                         </td>
                       </tr>
                       <tr>
-                        <td ><span className="tba">Instructor to be arranged</span></td>
-                        <td >
+                        <td className="instructor-cell"><span className="tba">Instructor to be arranged</span></td>
+                        <td className="add-cell">
                           <span className="add-code">Add Code</span>
                           <input type="text" className="form-control" />
                         </td>
@@ -466,8 +466,8 @@ class Preview extends React.Component {
                         <td colspan="2"><span className="tba">Meeting time to be arranged</span></td>
                       </tr>
                       <tr>
-                        <td ><span className="tba">Instructor to be arranged</span></td>
-                        <td >
+                        <td className="instructor-cell"><span className="tba">Instructor to be arranged</span></td>
+                        <td className="add-cell">
                           <span className="add-code">Faculty Code (required) </span>
                           <input type="text" className="form-control" /></td>
                       </tr>
@@ -495,7 +495,7 @@ class Preview extends React.Component {
 
                   <h5 className="mb-2 course-header">
                     <input type="checkbox" /> ART 333
-                    <div className="course-name">New Materials and Processes in Glass (5) <span class="badge badge-pill badge-light">x CR</span></div>
+                    <div className="course-name">New Materials and Processes in Glass <span class="badge badge-pill badge-light">x CR</span></div>
                   </h5>
 
                   <ul className='list-unstyled'>
@@ -506,7 +506,7 @@ class Preview extends React.Component {
 
               </ListGroup>
 
-              <CardDeck className='mt-4'>
+              <CardDeck className='mt-5'>
 
                 <Card bg='light' className='shadow-sm mr-0'>
                   <Card.Body>

@@ -209,7 +209,7 @@ class Preview extends React.Component {
                     </tbody>
                   </Table>
                 </ListGroup.Item>
-                <ListGroup.Item as="li" className='pl-0 pr-0 border-bottom-0'>
+                <ListGroup.Item as="li" className='pl-0 pr-0 '>
                   <div className="d-flex w-100 justify-content-between">
                     <h5 className="mb-2 course-header">
                       <input type="checkbox" /> GEN ST 199
@@ -464,7 +464,7 @@ class Preview extends React.Component {
 
                 </ListGroup.Item>
 
-                <ListGroup.Item as="li" className='pl-0 pr-0 border-bottom-0'>
+                <ListGroup.Item as="li" className='pl-0 pr-0 '>
 
                   <h5 className="mb-2 course-header">
                     <input type="checkbox" /> GEN ST 199
@@ -482,21 +482,28 @@ class Preview extends React.Component {
                 <ListGroup.Item as="li" className='pl-0 pr-0 border-bottom-0'>
 
                   <h5 className="mb-2 course-header">
-                    <input type="checkbox" /> ART 500
-                    <div className="course-name">Some Block Art Class <span class="badge badge-pill badge-light">10 CR</span></div>
+                    <input type="checkbox" /> ART 333
+                    <div className="course-name">New Materials and Processes in Glass (5) <span class="badge badge-pill badge-light">x CR</span></div>
                   </h5>
 
                   <ul className='list-unstyled'>
-                    <li>ART 101 AA: University Community TH 1:30-2:20</li>
-                    <li>INFO 400 AC: General Chemistry MWF 12:30-1:20</li>
+                    <li>ART 333 A: (STUDIO) <a href="#">10448</a> New Materials and Processes in Glass TH 1:30-2:20</li>
+                    <li>ART 350 A: (STUDIO) <a href="#">10450</a> Printmaking Special Projects MWF 12:30-1:20</li>
                   </ul>
                 </ListGroup.Item>
 
               </ListGroup>
 
 
+              <Card bg="light" className='border-danger shadow-sm'>
+                <Card.Body>
+                  <Card.Text><div>Pre-Registration Requirement<br/>
+                  Beginning one week prior to each quarter's registration period you can make all the required Notices and Insurance &amp; Optional Charges selections. You will then be able to go directly into Web Registration when your priority registration period begins. If you have not already done so, <a href="https://sdb.admin.uw.edu/students/uwnetid/op_charges.asp">go to the Insurance &amp; Optional Charges</a> services now to complete these requirements prior to registering for autumn quarter.</div></Card.Text>
+                </Card.Body>
+              </Card>
 
               <CardDeck className='mt-4'>
+
                 <Card bg='light' className='shadow-sm mr-0'>
                   <Card.Body>
                     <Card.Title as='h4'>Registration</Card.Title>
@@ -542,7 +549,7 @@ class Preview extends React.Component {
                     <li>AC KNE 130 Tue/Thur 8:30-9:50</li>
                   </ul>
                 </ListGroup.Item>
-                <ListGroup.Item as="li" className='pl-0 pr-0 border-bottom-0'>
+                <ListGroup.Item as="li" className='pl-0 pr-0'>
                   <div className="d-flex w-100 justify-content-between">
                     <h5 className="mb-1">GEN ST 199 <span>A2: University Community</span></h5>
                   </div>

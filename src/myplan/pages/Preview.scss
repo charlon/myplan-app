@@ -17,10 +17,7 @@
 .table {
 
   .badge { font-weight: normal; text-transform: uppercase;}
-
-  .half-cell { width: 48%; }
-  .section-cell { width: 20px; display: inline-block; }
-
+  .section-cell { width: 30px; display: inline-block; white-space: nowrap; }
 
   .meeting-time { white-space: nowrap; }
   .boop { display: inline-block; min-width: 60px; white-space: nowrap; }
@@ -51,10 +48,15 @@
 input[type=text] {
   height: 27px !important;
 }
-.add-code-required { position: absolute; top: 30px; right: 18px; font-size: 11px; }
+
+
+
+.course-requirements { position: absolute; top: 30px; right: 18px; font-size: 11px; }
+.code-required { display: inline-block; margin-left: 10px; }
 .add-code {
   white-space: nowrap;
   font-size: 11px;
+  font-weight: bold;
 }
 
 
@@ -72,3 +74,6 @@ input[type=text] {
 }
 
 .tba { color: #aaa; font-size: 13px; }
+
+
+.pre-reg { font-size: 13px; }

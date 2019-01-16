@@ -72,6 +72,14 @@ class Preview extends React.Component {
 
         <Col md={8} >
 
+          <Card bg="light" className='shadow-sm mb-4 pre-reg'>
+            <Card.Body>
+              <Card.Title as='h3' className="sr-only">Acknowledgements</Card.Title>
+              <Card.Text><div><strong>Pre-Registration Requirement</strong><br/>
+              Beginning one week prior to each quarter's registration period you can make all the required Notices and Insurance &amp; Optional Charges selections. You will then be able to go directly into Web Registration when your priority registration period begins. If you have not already done so, <a href="https://sdb.admin.uw.edu/students/uwnetid/op_charges.asp">go to the Insurance &amp; Optional Charges</a> services now to complete these requirements prior to registering for autumn quarter.</div></Card.Text>
+            </Card.Body>
+          </Card>
+
           <Card className='shadow-sm mb-4'>
             <Card.Body>
               <Card.Title as='h3'>Issues</Card.Title>
@@ -93,7 +101,7 @@ class Preview extends React.Component {
                     <tbody>
                       <tr>
                         <td rowspan="3"><span className="section-cell">A</span></td>
-                        <td className="half-cell"><a href="#">54321</a> <span className="badge border border-light">Lecture</span></td>
+                        <td ><a href="#">54321</a> <span className="badge border border-light">Lecture</span></td>
                         <td className="half-cell text-right"><span className="badge border border-success">Open 5/30</span></td>
                       </tr>
                       <tr>
@@ -120,7 +128,7 @@ class Preview extends React.Component {
                     <tbody>
                       <tr>
                         <td rowspan="3"><span className="section-cell">AC</span></td>
-                        <td className="half-cell"><a href="#">54321</a> <span className="badge border border-light">Quiz</span></td>
+                        <td ><a href="#">54321</a> <span className="badge border border-light">Quiz</span></td>
                         <td className="half-cell text-right"><span className="badge border border-success">Open 5/30</span></td>
                       </tr>
                       <tr>
@@ -149,7 +157,7 @@ class Preview extends React.Component {
                     <tbody>
                     <tr>
                       <td rowspan="3"><span className="section-cell">A</span></td>
-                      <td className="half-cell"><a href="#">54321</a> <span className="badge border border-light">Lecture</span></td>
+                      <td ><a href="#">54321</a> <span className="badge border border-light">Lecture</span></td>
                       <td className="half-cell text-right"><span className="badge border border-success">Open 5/30</span></td>
                     </tr>
                     <tr>
@@ -167,7 +175,7 @@ class Preview extends React.Component {
 
                     <tr>
                       <td rowspan="3"><span className="section-cell">AC</span></td>
-                      <td className="half-cell"><a href="#">54321</a> <span className="badge border border-light">Quiz</span></td>
+                      <td ><a href="#">54321</a> <span className="badge border border-light">Quiz</span></td>
                       <td className="half-cell text-right"><span className="badge border border-success">Open 5/30</span></td>
                     </tr>
                     <tr>
@@ -191,7 +199,7 @@ class Preview extends React.Component {
                     <tbody>
                       <tr>
                         <td rowspan="3"><span className="section-cell">A</span></td>
-                        <td className="half-cell"><a href="#">54321</a> <span className="badge border border-light">Lecture</span></td>
+                        <td ><a href="#">54321</a> <span className="badge border border-light">Lecture</span></td>
                         <td className="half-cell text-right"><span className="badge border border-success">Open 5/30</span></td>
                       </tr>
                       <tr>
@@ -236,7 +244,9 @@ class Preview extends React.Component {
             <Card.Body>
               <Card.Title as='h3'>Ready</Card.Title>
 
-              <div className="add-code-required"><i class="fa fa-lock"></i> Required</div>
+              <div className="course-requirements">
+                <span className="code-required"><i class="fas fa-key"></i> Has enrollment restrictions</span>
+              </div>
 
               <ListGroup variant='flush' as="ul" className="list-unstyled">
                 <ListGroup.Item as="li" className='pl-0 pr-0'>
@@ -250,7 +260,7 @@ class Preview extends React.Component {
                     <tbody>
                       <tr>
                         <td rowspan="3"><span className="section-cell">A</span></td>
-                        <td className="half-cell"><a href="#">54321</a> <span className="badge border border-light">Lecture</span></td>
+                        <td ><a href="#">54321</a> <span className="badge border border-light">Lecture</span></td>
                         <td className="half-cell text-right"><span className="badge border border-success">Open 5/30</span></td>
                       </tr>
                       <tr>
@@ -268,9 +278,9 @@ class Preview extends React.Component {
                         </td>
                       </tr>
                       <tr>
-                        <td className="half-cell">Mike John Anderson</td>
-                        <td className="half-cell">
-                          <span className="add-code">Add/Faculty Code</span>
+                        <td >Mike John Anderson</td>
+                        <td >
+                          <span className="add-code">Add Code</span>
                           <input type="text" className="form-control" />
                         </td>
                       </tr>
@@ -281,7 +291,7 @@ class Preview extends React.Component {
                     <tbody>
                       <tr>
                         <td rowspan="3"><span className="section-cell">AC</span></td>
-                        <td className="half-cell"><a href="#">45638</a> <span className="badge border border-light">Quiz</span></td>
+                        <td ><a href="#">45638</a> <span className="badge border border-light">Quiz</span></td>
                         <td className="half-cell text-right"><span className="badge border border-danger">Closed 30/30</span></td>
                       </tr>
                       <tr>
@@ -294,9 +304,9 @@ class Preview extends React.Component {
                         </td>
                       </tr>
                       <tr>
-                        <td className="half-cell"><span className="tba">Instructor to be arranged</span></td>
-                        <td className="half-cell">
-                          <span className="add-code">Add/Faculty Code <i class="fa fa-lock"></i></span>
+                        <td ><span className="tba">Instructor to be arranged</span></td>
+                        <td >
+                          <span className="add-code">Add Code (required)</span>
                           <input type="text" className="form-control" />
                         </td>
                       </tr>
@@ -315,7 +325,7 @@ class Preview extends React.Component {
                     <tbody>
                       <tr>
                         <td rowspan="3"><span className="section-cell">A</span></td>
-                        <td className="half-cell"><a href="#">54321</a> <span className="badge border border-light">Lecture</span></td>
+                        <td ><a href="#">54321</a> <span className="badge border border-light">Lecture</span></td>
                         <td className="half-cell text-right"><span className="badge border border-warning">Suspended</span></td>
                       </tr>
                       <tr>
@@ -333,9 +343,9 @@ class Preview extends React.Component {
                         </td>
                       </tr>
                       <tr>
-                        <td className="half-cell">Mike John Anderson</td>
-                        <td className="half-cell">
-                          <span className="add-code">Add/Faculty Code</span>
+                        <td >Mike John Anderson</td>
+                        <td >
+                          <span className="add-code">Add Code</span>
                           <input type="text" className="form-control" />
                         </td>
                       </tr>
@@ -346,7 +356,7 @@ class Preview extends React.Component {
                     <tbody>
                       <tr>
                         <td rowspan="3"><span className="section-cell">AC</span></td>
-                        <td className="half-cell"><a href="#">45638</a> <span className="badge border border-light">Quiz</span></td>
+                        <td ><a href="#">45638</a> <span className="badge border border-light">Quiz</span></td>
                         <td className="half-cell text-right"><span className="badge border border-success">Open 25/30</span></td>
                       </tr>
                       <tr>
@@ -359,9 +369,9 @@ class Preview extends React.Component {
                         </td>
                       </tr>
                       <tr>
-                        <td className="half-cell"><span className="tba">Instructor to be arranged</span></td>
-                        <td className="half-cell">
-                          <span className="add-code">Add/Faculty Code</span>
+                        <td ><span className="tba">Instructor to be arranged</span></td>
+                        <td >
+                          <span className="add-code">Add Code</span>
                           <input type="text" className="form-control" />
                         </td>
                       </tr>
@@ -381,7 +391,7 @@ class Preview extends React.Component {
                     <tbody>
                       <tr>
                         <td rowspan="3"><span className="section-cell">A</span></td>
-                        <td className="half-cell"><a href="#">54321</a> <span className="badge border border-light">Lecture</span></td>
+                        <td ><a href="#">54321</a> <span className="badge border border-light">Lecture</span></td>
                         <td className="half-cell text-right"><span className="badge border border-success">Open 5/30</span></td>
                       </tr>
                       <tr>
@@ -399,9 +409,9 @@ class Preview extends React.Component {
                         </td>
                       </tr>
                       <tr>
-                        <td className="half-cell">Mike John Anderson</td>
-                        <td className="half-cell">
-                          <span className="add-code">Add/Faculty Code</span>
+                        <td >Mike John Anderson</td>
+                        <td >
+                          <span className="add-code">Add Code</span>
                           <input type="text" className="form-control" />
                         </td>
                       </tr>
@@ -412,7 +422,7 @@ class Preview extends React.Component {
                     <tbody>
                       <tr>
                         <td rowspan="3"><span className="section-cell">AC</span></td>
-                        <td className="half-cell"><a href="#">45638</a> <span className="badge border border-light">Quiz</span></td>
+                        <td ><a href="#">45638</a> <span className="badge border border-light">Quiz</span></td>
                         <td className="half-cell text-right"><span className="badge border border-success">Open 5/30</span></td>
                       </tr>
                       <tr>
@@ -425,9 +435,9 @@ class Preview extends React.Component {
                         </td>
                       </tr>
                       <tr>
-                        <td className="half-cell"><span className="tba">Instructor to be arranged</span></td>
-                        <td className="half-cell">
-                          <span className="add-code">Add/Faculty Code</span>
+                        <td ><span className="tba">Instructor to be arranged</span></td>
+                        <td >
+                          <span className="add-code">Add Code</span>
                           <input type="text" className="form-control" />
                         </td>
                       </tr>
@@ -446,17 +456,19 @@ class Preview extends React.Component {
                   <Table className="table table-condensed table-borderless table-sm mt-3">
                     <tbody>
                       <tr>
-                        <td rowspan="3"><span className="section-cell">A</span></td>
-                        <td className="half-cell"><a href="#">54321</a> <span className="badge border border-light">Independent Study</span></td>
+                        <td rowspan="3">
+                          <span className="section-cell">A <span className="add-code"><i class="fa fa-key"></i></span></span>
+                        </td>
+                        <td ><a href="#">54321</a> <span className="badge border border-light">Independent Study</span></td>
                         <td className="half-cell text-right"><span className="badge border border-success">Open 5/30</span></td>
                       </tr>
                       <tr>
                         <td colspan="2"><span className="tba">Meeting time to be arranged</span></td>
                       </tr>
                       <tr>
-                        <td className="half-cell"><span className="tba">Instructor to be arranged</span></td>
-                        <td className="half-cell">
-                          <span className="add-code">Add/Faculty Code <i class="fa fa-lock"></i> </span>
+                        <td ><span className="tba">Instructor to be arranged</span></td>
+                        <td >
+                          <span className="add-code">Faculty Code (required) </span>
                           <input type="text" className="form-control" /></td>
                       </tr>
                     </tbody>
@@ -493,14 +505,6 @@ class Preview extends React.Component {
                 </ListGroup.Item>
 
               </ListGroup>
-
-
-              <Card bg="light" className='border-danger shadow-sm'>
-                <Card.Body>
-                  <Card.Text><div>Pre-Registration Requirement<br/>
-                  Beginning one week prior to each quarter's registration period you can make all the required Notices and Insurance &amp; Optional Charges selections. You will then be able to go directly into Web Registration when your priority registration period begins. If you have not already done so, <a href="https://sdb.admin.uw.edu/students/uwnetid/op_charges.asp">go to the Insurance &amp; Optional Charges</a> services now to complete these requirements prior to registering for autumn quarter.</div></Card.Text>
-                </Card.Body>
-              </Card>
 
               <CardDeck className='mt-4'>
 

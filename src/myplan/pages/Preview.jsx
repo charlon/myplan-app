@@ -111,12 +111,12 @@ class Preview extends React.Component {
                             <tr>
                               <td align="left">MTWThF</td>
                               <td align="center">8:30am - 9:20am</td>
-                              <td align="right">BAG 154</td>
+                              <td align="right" className="nowrap">BAG 154</td>
                             </tr>
                             <tr>
                               <td align="left">W</td>
                               <td align="center">10:30am - 11:20am</td>
-                              <td align="right">TUL 301</td>
+                              <td align="right" className="nowrap">TUL 301</td>
                             </tr>
                           </table>
 
@@ -141,7 +141,7 @@ class Preview extends React.Component {
                             <tr>
                               <td align="left">W</td>
                               <td align="center">10:30am - 11:20am</td>
-                              <td align="right">TUL 301</td>
+                              <td align="right" className="nowrap">TUL 301</td>
                             </tr>
                           </table>
                         </td>
@@ -172,7 +172,7 @@ class Preview extends React.Component {
                           <tr>
                             <td align="left">MTWThF</td>
                             <td align="center">8:30am - 9:20am</td>
-                            <td align="right">BAG 154</td>
+                            <td align="right" className="nowrap">BAG 154</td>
                           </tr>
                         </table>
                       </td>
@@ -218,7 +218,7 @@ class Preview extends React.Component {
                             <tr>
                               <td align="left">MTWThF</td>
                               <td align="center">8:30am - 9:20am</td>
-                              <td align="right">BAG 154</td>
+                              <td align="right" className="nowrap">BAG 154</td>
                             </tr>
                           </table>
                         </td>
@@ -281,12 +281,12 @@ class Preview extends React.Component {
                             <tr>
                               <td align="left">MTWThF</td>
                               <td align="center">8:30am - 9:20am</td>
-                              <td align="right">BAG 154</td>
+                              <td align="right" className="nowrap">BAG 154</td>
                             </tr>
                             <tr>
                               <td align="left">W</td>
                               <td align="center">10:30am - 11:20am</td>
-                              <td align="right">TUL 301</td>
+                              <td align="right" className="nowrap">TUL 301</td>
                             </tr>
                           </table>
                         </td>
@@ -314,12 +314,12 @@ class Preview extends React.Component {
                             <tr>
                               <td align="left">MTWThF</td>
                               <td align="center">8:30am - 9:20am</td>
-                              <td align="right">BAG 154</td>
+                              <td align="right" className="nowrap">BAG 154</td>
                             </tr>
                             <tr>
                               <td align="left">W</td>
                               <td align="center">10:30am - 11:20am</td>
-                              <td align="right">TUL 301</td>
+                              <td align="right" className="nowrap">TUL 301</td>
                             </tr>
                           </table>
                         </td>
@@ -355,12 +355,12 @@ class Preview extends React.Component {
                             <tr>
                               <td align="left">MTWThF</td>
                               <td align="center">8:30am - 9:20am</td>
-                              <td align="right">BAG 154</td>
+                              <td align="right" className="nowrap">BAG 154</td>
                             </tr>
                             <tr>
                               <td align="left">W</td>
                               <td align="center">10:30am - 11:20am</td>
-                              <td align="right">TUL 301</td>
+                              <td align="right" className="nowrap">TUL 301</td>
                             </tr>
                           </table>
                         </td>
@@ -388,7 +388,7 @@ class Preview extends React.Component {
                             <tr>
                               <td align="left">W</td>
                               <td align="center">10:30am - 11:20am</td>
-                              <td align="right">TUL 301</td>
+                              <td align="right" className="nowrap">TUL 301</td>
                             </tr>
                           </table>
                         </td>
@@ -425,12 +425,12 @@ class Preview extends React.Component {
                             <tr>
                               <td align="left">MTWThF</td>
                               <td align="center">8:30am - 9:20am</td>
-                              <td align="right">BAG 154</td>
+                              <td align="right" className="nowrap">BAG 154</td>
                             </tr>
                             <tr>
                               <td align="left">W</td>
                               <td align="center">10:30am - 11:20am</td>
-                              <td align="right">TUL 301</td>
+                              <td align="right" className="nowrap">TUL 301</td>
                             </tr>
                           </table>
                         </td>
@@ -458,12 +458,12 @@ class Preview extends React.Component {
                             <tr>
                               <td align="left">MTWThF</td>
                               <td align="center">8:30am - 9:20am</td>
-                              <td align="right">BAG 154</td>
+                              <td align="right" className="nowrap">BAG 154</td>
                             </tr>
                             <tr>
                               <td align="left">W</td>
                               <td align="center">10:30am - 11:20am</td>
-                              <td align="right">TUL 301</td>
+                              <td align="right" className="nowrap">TUL 301</td>
                             </tr>
                           </table>
                         </td>

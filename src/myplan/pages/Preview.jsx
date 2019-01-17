@@ -107,7 +107,7 @@ class Preview extends React.Component {
                       <tr>
                         <td colspan="2">
 
-                          <table width="100%" className="table table-borderless">
+                          <table width="100%" className="table table-borderless m-0">
                             <tr>
                               <td align="left">MTWThF</td>
                               <td align="center">8:30am - 9:20am</td>
@@ -137,7 +137,7 @@ class Preview extends React.Component {
                       </tr>
                       <tr>
                         <td colspan="2">
-                          <table width="100%" className="table table-borderless">
+                          <table width="100%" className="table table-borderless m-0">
                             <tr>
                               <td align="left">W</td>
                               <td align="center">10:30am - 11:20am</td>
@@ -168,7 +168,7 @@ class Preview extends React.Component {
                     </tr>
                     <tr>
                       <td colspan="2">
-                        <table width="100%" className="table table-borderless">
+                        <table width="100%" className="table table-borderless m-0">
                           <tr>
                             <td align="left">MTWThF</td>
                             <td align="center">8:30am - 9:20am</td>
@@ -214,7 +214,7 @@ class Preview extends React.Component {
                       </tr>
                       <tr>
                         <td colspan="2">
-                          <table width="100%" className="table table-borderless">
+                          <table width="100%" className="table table-borderless m-0">
                             <tr>
                               <td align="left">MTWThF</td>
                               <td align="center">8:30am - 9:20am</td>
@@ -277,7 +277,7 @@ class Preview extends React.Component {
                       </tr>
                       <tr>
                         <td colspan="2">
-                          <table width="100%" className="table table-borderless">
+                          <table width="100%" className="table table-borderless m-0">
                             <tr>
                               <td align="left">MTWThF</td>
                               <td align="center">8:30am - 9:20am</td>
@@ -310,7 +310,7 @@ class Preview extends React.Component {
                       </tr>
                       <tr>
                         <td colspan="2">
-                          <table width="100%" className="table table-borderless">
+                          <table width="100%" className="table table-borderless m-0">
                             <tr>
                               <td align="left">MTWThF</td>
                               <td align="center">8:30am - 9:20am</td>
@@ -351,7 +351,7 @@ class Preview extends React.Component {
                       </tr>
                       <tr>
                         <td colspan="2">
-                          <table width="100%" className="table table-borderless">
+                          <table width="100%" className="table table-borderless m-0">
                             <tr>
                               <td align="left">MTWThF</td>
                               <td align="center">8:30am - 9:20am</td>
@@ -384,7 +384,7 @@ class Preview extends React.Component {
                       </tr>
                       <tr>
                         <td colspan="2">
-                          <table width="100%" className="table table-borderless">
+                          <table width="100%" className="table table-borderless m-0">
                             <tr>
                               <td align="left">W</td>
                               <td align="center">10:30am - 11:20am</td>
@@ -421,7 +421,7 @@ class Preview extends React.Component {
                       </tr>
                       <tr>
                         <td colspan="2">
-                          <table width="100%" className="table table-borderless">
+                          <table width="100%" className="table table-borderless m-0">
                             <tr>
                               <td align="left">MTWThF</td>
                               <td align="center">8:30am - 9:20am</td>
@@ -454,7 +454,7 @@ class Preview extends React.Component {
                       </tr>
                       <tr>
                         <td colspan="2">
-                          <table width="100%" className="table table-borderless">
+                          <table width="100%" className="table table-borderless m-0">
                             <tr>
                               <td align="left">MTWThF</td>
                               <td align="center">8:30am - 9:20am</td>

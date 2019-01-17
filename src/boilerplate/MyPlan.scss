@@ -23,11 +23,9 @@
 .com-container {
 
   margin: 0 auto;
-  padding: 0 16px;
-
-  @include breakpoint(desktop) {
+  padding: 0 15px;
     max-width: 1200px;
-  }
+
 }
 
 /** header section **/
@@ -66,7 +64,7 @@
       a { color: #fff;
         &:hover { text-decoration: none; }
       }
-      
+
       .com-title-button  { padding: 0; margin: 0; background: none; border: none; margin-right: 15px; }
       .com-title-button-icon { font-size: 14px; color: #ccc; vertical-align: middle; margin-top: -5px;}
 

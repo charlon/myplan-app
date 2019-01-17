@@ -22,14 +22,14 @@ class Preview extends React.Component {
 
     return (<div>
 
-      <Row className='mb-4'>
+      <Row className='mb-2'>
         <Col xs={6}>
           <span className="badge badge-light">Preview</span>
           <h1 className='mt-0 text-nowrap'>Winter 2019</h1>
         </Col>
         <Col xs={6}>
 
-          <Row>
+          <Row className="d-none">
             <Col xs={4}>&nbsp;</Col>
             <Col xs={4} className='text-right'>
               <span className="badge badge-light">Previous</span>
@@ -97,7 +97,7 @@ class Preview extends React.Component {
 
                   <div className="text-danger issues-alert">This is a problem with the course.</div>
 
-                  <Table className="table table-condensed table-borderless table-sm mt-3">
+                  <Table className="table table-condensed table-bordered table-sm mt-3">
                     <tbody>
                       <tr>
                         <td rowspan="3"><span className="section-cell">A</span></td>
@@ -106,16 +106,20 @@ class Preview extends React.Component {
                       </tr>
                       <tr>
                         <td colspan="2">
-                          <div className="meeting-time">
-                            <span className="boop">MTWThF</span>
-                            <span className="blah">8:30am - 9:20am</span>
-                            <span className="beep">BAG 154</span>
-                          </div>
-                          <div className="meeting-time">
-                            <span className="boop">W</span>
-                            <span className="blah">10:30am - 11:20am</span>
-                            <span className="beep">TUL 301</span>
-                          </div>
+
+                          <table width="100%" className="table table-borderless">
+                            <tr>
+                              <td align="left">MTWThF</td>
+                              <td align="center">8:30am - 9:20am</td>
+                              <td align="right">BAG 154</td>
+                            </tr>
+                            <tr>
+                              <td align="left">W</td>
+                              <td align="center">10:30am - 11:20am</td>
+                              <td align="right">TUL 301</td>
+                            </tr>
+                          </table>
+
                         </td>
                       </tr>
                       <tr>
@@ -124,7 +128,7 @@ class Preview extends React.Component {
                     </tbody>
                   </Table>
 
-                  <Table className="table table-condensed table-borderless table-sm mt-3">
+                  <Table className="table table-condensed table-bordered table-sm mt-3">
                     <tbody>
                       <tr>
                         <td rowspan="3"><span className="section-cell">AC</span></td>
@@ -133,11 +137,13 @@ class Preview extends React.Component {
                       </tr>
                       <tr>
                         <td colspan="2">
-                          <div className="meeting-time">
-                            <span className="boop">Th</span>
-                            <span className="blah">10:30am - 11:20am</span>
-                            <span className="beep">BAG 211</span>
-                          </div>
+                          <table width="100%" className="table table-borderless">
+                            <tr>
+                              <td align="left">W</td>
+                              <td align="center">10:30am - 11:20am</td>
+                              <td align="right">TUL 301</td>
+                            </tr>
+                          </table>
                         </td>
                       </tr>
                       <tr>
@@ -153,7 +159,7 @@ class Preview extends React.Component {
                       <div className="course-name">Preparation for General Chemistry <span class="badge badge-pill badge-light">5 CR</span></div>
                     </h5>
                   </div>
-                  <Table className="table table-condensed table-borderless table-sm mt-3">
+                  <Table className="table table-condensed table-bordered table-sm mt-3">
                     <tbody>
                     <tr>
                       <td rowspan="3"><span className="section-cell">A</span></td>
@@ -162,11 +168,13 @@ class Preview extends React.Component {
                     </tr>
                     <tr>
                       <td colspan="2">
-                        <div className="meeting-time">
-                          <span className="boop">MTWThF</span>
-                          <span className="blah">8:30am - 9:20am</span>
-                          <span className="beep">BAG 154</span>
-                        </div>
+                        <table width="100%" className="table table-borderless">
+                          <tr>
+                            <td align="left">MTWThF</td>
+                            <td align="center">8:30am - 9:20am</td>
+                            <td align="right">BAG 154</td>
+                          </tr>
+                        </table>
                       </td>
                     </tr>
                     <tr>
@@ -179,7 +187,9 @@ class Preview extends React.Component {
                       <td className="half-cell text-right"><span className="badge border border-success">Open 5/30</span></td>
                     </tr>
                     <tr>
-                      <td colspan="2"><span className="tba">Meeting time to be arranged</span></td>
+                      <td colspan="2">
+                        <span className="tba">Meeting time to be arranged</span>
+                      </td>
                     </tr>
                     <tr>
                       <td colspan="2" className="text-danger issues-alert">You haven't added a Quiz section to your plan. Add a Quiz section to register for this course.</td>
@@ -195,7 +205,7 @@ class Preview extends React.Component {
                       <div className="course-name">Introduction to Primates <span class="badge badge-pill badge-light">4 CR</span></div>
                     </h5>
                   </div>
-                  <Table className="table table-condensed table-borderless table-sm mt-3">
+                  <Table className="table table-condensed table-bordered table-sm mt-3">
                     <tbody>
                       <tr>
                         <td rowspan="3"><span className="section-cell">A</span></td>
@@ -204,11 +214,13 @@ class Preview extends React.Component {
                       </tr>
                       <tr>
                         <td colspan="2">
-                          <div className="meeting-time">
-                            <span className="boop">W</span>
-                            <span className="blah">10:30am - 11:20am</span>
-                            <span className="beep">TUL 301</span>
-                          </div>
+                          <table width="100%" className="table table-borderless">
+                            <tr>
+                              <td align="left">MTWThF</td>
+                              <td align="center">8:30am - 9:20am</td>
+                              <td align="right">BAG 154</td>
+                            </tr>
+                          </table>
                         </td>
                       </tr>
                       <tr>
@@ -256,7 +268,7 @@ class Preview extends React.Component {
                     <div class="course-name">Computer Programming I <span class="badge badge-pill badge-light">5 CR</span></div>
                   </h5>
 
-                  <Table className="table table-condensed table-borderless table-sm mt-3">
+                  <Table className="table table-condensed table-bordered table-sm mt-3">
                     <tbody>
                       <tr>
                         <td rowspan="3"><span className="section-cell">A</span></td>
@@ -265,21 +277,23 @@ class Preview extends React.Component {
                       </tr>
                       <tr>
                         <td colspan="2">
-                          <div className="meeting-time">
-                            <span className="boop">MTWThF</span>
-                            <span className="blah">8:30am - 9:20am</span>
-                            <span className="beep">BAG 154</span>
-                          </div>
-                          <div className="meeting-time">
-                            <span className="boop">W</span>
-                            <span className="blah">10:30am - 11:20am</span>
-                            <span className="beep">TUL 301</span>
-                          </div>
+                          <table width="100%" className="table table-borderless">
+                            <tr>
+                              <td align="left">MTWThF</td>
+                              <td align="center">8:30am - 9:20am</td>
+                              <td align="right">BAG 154</td>
+                            </tr>
+                            <tr>
+                              <td align="left">W</td>
+                              <td align="center">10:30am - 11:20am</td>
+                              <td align="right">TUL 301</td>
+                            </tr>
+                          </table>
                         </td>
                       </tr>
                       <tr>
-                        <td >Mike John Anderson</td>
-                        <td >
+                        <td className="instructor-cell">Mike John Anderson</td>
+                        <td>
                           <span className="add-code">Add Code</span>
                           <input type="text" className="form-control" />
                         </td>
@@ -287,7 +301,7 @@ class Preview extends React.Component {
                     </tbody>
                   </Table>
 
-                  <Table className="table table-condensed table-borderless table-sm mt-3">
+                  <Table className="table table-condensed table-bordered table-sm mt-3">
                     <tbody>
                       <tr>
                         <td rowspan="3"><span className="section-cell">AC</span></td>
@@ -296,16 +310,23 @@ class Preview extends React.Component {
                       </tr>
                       <tr>
                         <td colspan="2">
-                          <div className="meeting-time">
-                            <span className="boop">TTh</span>
-                            <span className="blah">10:30am - 11:20am</span>
-                            <span className="beep">KNE 130</span>
-                          </div>
+                          <table width="100%" className="table table-borderless">
+                            <tr>
+                              <td align="left">MTWThF</td>
+                              <td align="center">8:30am - 9:20am</td>
+                              <td align="right">BAG 154</td>
+                            </tr>
+                            <tr>
+                              <td align="left">W</td>
+                              <td align="center">10:30am - 11:20am</td>
+                              <td align="right">TUL 301</td>
+                            </tr>
+                          </table>
                         </td>
                       </tr>
                       <tr>
-                        <td ><span className="tba">Instructor to be arranged</span></td>
-                        <td >
+                        <td className="instructor-cell"><span className="tba">Instructor to be arranged</span></td>
+                        <td>
                           <span className="add-code">Add Code (required)</span>
                           <input type="text" className="form-control" />
                         </td>
@@ -321,7 +342,7 @@ class Preview extends React.Component {
                     <div className="course-name">Preparation for General Chemistry <span class="badge badge-pill badge-light">5 CR</span></div>
                   </h5>
 
-                  <Table className="table table-condensed table-borderless table-sm mt-3">
+                  <Table className="table table-condensed table-bordered table-sm mt-3">
                     <tbody>
                       <tr>
                         <td rowspan="3"><span className="section-cell">A</span></td>
@@ -330,21 +351,23 @@ class Preview extends React.Component {
                       </tr>
                       <tr>
                         <td colspan="2">
-                          <div className="meeting-time">
-                            <span className="boop">MTWThF</span>
-                            <span className="blah">8:30am - 9:20am</span>
-                            <span className="beep">BAG 154</span>
-                          </div>
-                          <div className="meeting-time">
-                            <span className="boop">W</span>
-                            <span className="blah">10:30am - 11:20am</span>
-                            <span className="beep">TUL 301</span>
-                          </div>
+                          <table width="100%" className="table table-borderless">
+                            <tr>
+                              <td align="left">MTWThF</td>
+                              <td align="center">8:30am - 9:20am</td>
+                              <td align="right">BAG 154</td>
+                            </tr>
+                            <tr>
+                              <td align="left">W</td>
+                              <td align="center">10:30am - 11:20am</td>
+                              <td align="right">TUL 301</td>
+                            </tr>
+                          </table>
                         </td>
                       </tr>
                       <tr>
-                        <td >Mike John Anderson</td>
-                        <td >
+                        <td className="instructor-cell">Mike John Anderson</td>
+                        <td>
                           <span className="add-code">Add Code</span>
                           <input type="text" className="form-control" />
                         </td>
@@ -352,7 +375,7 @@ class Preview extends React.Component {
                     </tbody>
                   </Table>
 
-                  <Table className="table table-condensed table-borderless table-sm mt-3">
+                  <Table className="table table-condensed table-bordered table-sm mt-3">
                     <tbody>
                       <tr>
                         <td rowspan="3"><span className="section-cell">AC</span></td>
@@ -361,16 +384,18 @@ class Preview extends React.Component {
                       </tr>
                       <tr>
                         <td colspan="2">
-                          <div className="meeting-time">
-                            <span className="boop">TTh</span>
-                            <span className="blah">10:30am - 11:20am</span>
-                            <span className="beep">TUL 301</span>
-                          </div>
+                          <table width="100%" className="table table-borderless">
+                            <tr>
+                              <td align="left">W</td>
+                              <td align="center">10:30am - 11:20am</td>
+                              <td align="right">TUL 301</td>
+                            </tr>
+                          </table>
                         </td>
                       </tr>
                       <tr>
-                        <td ><span className="tba">Instructor to be arranged</span></td>
-                        <td >
+                        <td className="instructor-cell"><span className="tba">Instructor to be arranged</span></td>
+                        <td>
                           <span className="add-code">Add Code</span>
                           <input type="text" className="form-control" />
                         </td>
@@ -387,7 +412,7 @@ class Preview extends React.Component {
                     <div className="course-name">Introduction to Primates <span class="badge badge-pill badge-light">4 CR</span></div>
                   </h5>
 
-                  <Table className="table table-condensed table-borderless table-sm mt-3">
+                  <Table className="table table-condensed table-bordered table-sm mt-3">
                     <tbody>
                       <tr>
                         <td rowspan="3"><span className="section-cell">A</span></td>
@@ -396,21 +421,23 @@ class Preview extends React.Component {
                       </tr>
                       <tr>
                         <td colspan="2">
-                          <div className="meeting-time">
-                            <span className="boop">MTWThF</span>
-                            <span className="blah">8:30am - 9:20am</span>
-                            <span className="beep">BAG 154</span>
-                          </div>
-                          <div className="meeting-time">
-                            <span className="boop">W</span>
-                            <span className="blah">10:30am - 11:20am</span>
-                            <span className="beep">TUL 301</span>
-                          </div>
+                          <table width="100%" className="table table-borderless">
+                            <tr>
+                              <td align="left">MTWThF</td>
+                              <td align="center">8:30am - 9:20am</td>
+                              <td align="right">BAG 154</td>
+                            </tr>
+                            <tr>
+                              <td align="left">W</td>
+                              <td align="center">10:30am - 11:20am</td>
+                              <td align="right">TUL 301</td>
+                            </tr>
+                          </table>
                         </td>
                       </tr>
                       <tr>
-                        <td >Mike John Anderson</td>
-                        <td >
+                        <td className="instructor-cell">Mike John Anderson</td>
+                        <td>
                           <span className="add-code">Add Code</span>
                           <input type="text" className="form-control" />
                         </td>
@@ -418,7 +445,7 @@ class Preview extends React.Component {
                     </tbody>
                   </Table>
 
-                  <Table className="table table-condensed table-borderless table-sm mt-3">
+                  <Table className="table table-condensed table-bordered table-sm mt-3">
                     <tbody>
                       <tr>
                         <td rowspan="3"><span className="section-cell">AC</span></td>
@@ -427,11 +454,18 @@ class Preview extends React.Component {
                       </tr>
                       <tr>
                         <td colspan="2">
-                          <div className="meeting-time">
-                            <span className="boop">MW</span>
-                            <span className="blah">8:30am - 9:20am</span>
-                            <span className="beep">BAG 154</span>
-                          </div>
+                          <table width="100%" className="table table-borderless">
+                            <tr>
+                              <td align="left">MTWThF</td>
+                              <td align="center">8:30am - 9:20am</td>
+                              <td align="right">BAG 154</td>
+                            </tr>
+                            <tr>
+                              <td align="left">W</td>
+                              <td align="center">10:30am - 11:20am</td>
+                              <td align="right">TUL 301</td>
+                            </tr>
+                          </table>
                         </td>
                       </tr>
                       <tr>
@@ -453,7 +487,7 @@ class Preview extends React.Component {
                     <div className="course-name">Honors Thesis <span class="badge badge-pill badge-light">4 CR</span></div>
                   </h5>
 
-                  <Table className="table table-condensed table-borderless table-sm mt-3">
+                  <Table className="table table-condensed table-bordered table-sm mt-3">
                     <tbody>
                       <tr>
                         <td rowspan="3">
@@ -463,7 +497,9 @@ class Preview extends React.Component {
                         <td className="half-cell text-right"><span className="badge border border-success">Open 5/30</span></td>
                       </tr>
                       <tr>
-                        <td colspan="2"><span className="tba">Meeting time to be arranged</span></td>
+                        <td colspan="2">
+                          <span className="tba">Meeting time to be arranged</span>
+                        </td>
                       </tr>
                       <tr>
                         <td className="instructor-cell"><span className="tba">Instructor to be arranged</span></td>

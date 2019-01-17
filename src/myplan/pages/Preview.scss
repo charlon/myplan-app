@@ -1,5 +1,6 @@
 /*** override rc-steps component ***/
-
+@import '../../boilerplate/_mixins.scss';
+@import '../../boilerplate/_variables.scss';
 
 .rc-steps-icon {
   display: none !important;
@@ -17,15 +18,11 @@
 .table {
 
   .badge { font-weight: normal; text-transform: uppercase;}
-  .section-cell { width: 30px; display: inline-block; white-space: nowrap; }
+  .section-cell { width: 23px; display: inline-block; white-space: nowrap; }
 
   .add-cell { width: 25%; }
-  .instructor-cell { width: 75%; }
+  .instructor-cell { width: 75%; vertical-align: bottom; }
 
-  .meeting-time { white-space: nowrap; }
-  .boop { display: inline-block; min-width: 60px; white-space: nowrap; }
-  .blah { display: inline-block; min-width: 55%; text-align: center; white-space: nowrap; }
-  .beep { display: inline-block; min-width: 60px; white-space: nowrap; color: #666; text-align: right; }
 }
 
 
@@ -43,7 +40,8 @@
   input[type=checkbox] {
     position: absolute;
     top: 14px;
-    right: 10px;
+    right: 0;
+    width: 16px;
   }
 
 }
@@ -54,10 +52,10 @@ input[type=text] {
 
 
 
-.course-requirements { position: absolute; top: 30px; right: 18px; font-size: 11px; }
+.course-requirements { position: absolute; top: 20px; right: 18px; font-size: 11px; }
 .code-required { display: inline-block; margin-left: 10px; }
 .add-code {
-  font-size: 11px;
+  font-size: 10px;
   font-weight: bold;
 }
 
@@ -71,7 +69,6 @@ input[type=text] {
 
 .issues-alert {
   font-size: 13px;
-
   a { color: #843534; font-weight: bold; }
 }
 

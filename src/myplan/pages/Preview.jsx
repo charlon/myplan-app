@@ -153,12 +153,12 @@ class Preview extends React.Component {
                   </Table>
                 </ListGroup.Item>
                 <ListGroup.Item as="li" className='pl-0 pr-0'>
-                  <div>
-                    <h5 className="mb-2 course-header">
-                      <input type="checkbox" /> CHEM 110
-                      <div className="course-name">Preparation for General Chemistry <span class="badge badge-pill badge-light">5 CR</span></div>
-                    </h5>
-                  </div>
+
+                  <h5 className="mb-2 course-header">
+                    <input type="checkbox" /> CHEM 110
+                    <div className="course-name">Preparation for General Chemistry <span class="badge badge-pill badge-light">5 CR</span></div>
+                  </h5>
+
                   <Table className="table table-condensed table-bordered table-sm mt-3">
                     <tbody>
                     <tr>
@@ -180,7 +180,10 @@ class Preview extends React.Component {
                     <tr>
                       <td colspan="2" className="text-danger issues-alert">You haven't added a Quiz section to your plan. Add a Quiz section to register for this course.</td>
                     </tr>
-
+                  </tbody>
+                </Table>
+                <Table className="table table-condensed table-bordered table-sm mt-3">
+                  <tbody>
                     <tr>
                       <td rowspan="3"><span className="section-cell">AC</span></td>
                       <td ><a href="#">54321</a> <span className="badge border border-light">Quiz</span></td>
@@ -569,7 +572,7 @@ class Preview extends React.Component {
 
           <Card className='shadow-sm mb-4'>
             <Card.Body>
-              <Card.Title as='h4'>Holds</Card.Title>
+              <Card.Title as='h3'>Holds</Card.Title>
               <Card.Text>Here is a list of your holds!</Card.Text>
               <Card.Link href="#">View MyUW</Card.Link>
             </Card.Body>
@@ -577,7 +580,7 @@ class Preview extends React.Component {
 
           <Card className='shadow-sm mb-4'>
             <Card.Body>
-              <Card.Title as='h4'>Scheduled</Card.Title>
+              <Card.Title as='h3'>Scheduled</Card.Title>
 
               <ListGroup variant='flush' as='ul' className='mb-4'>
                 <ListGroup.Item as="li" className='pl-0 pr-0 border-top-0'>
@@ -605,7 +608,7 @@ class Preview extends React.Component {
                 </ListGroup.Item>
               </ListGroup>
 
-              <h4 className='text-right'>Currently Enrolled: 17 credits</h4>
+              <div className='text-right'>Currently Enrolled: 17 credits</div>
 
               <Card.Link href="#">View MyUW</Card.Link>
             </Card.Body>

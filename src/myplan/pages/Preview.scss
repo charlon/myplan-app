@@ -36,7 +36,7 @@
 
 .course-header {
 
-  .course-name { font-size: 14px; font-weight: normal; }
+  .course-name { font-size: 14px; font-weight: normal; white-space: nowrap; }
 
   input[type=checkbox] {
     position: absolute;

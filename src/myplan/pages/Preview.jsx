@@ -29,17 +29,7 @@ class Preview extends React.Component {
         </Col>
         <Col xs={6}>
 
-          <Row className="d-none">
-            <Col xs={4}>&nbsp;</Col>
-            <Col xs={4} className='text-right'>
-              <span className="badge badge-light">Previous</span>
-              <h6 className='mt-0 font-weight-light text-nowrap'><a href='/'>Autumn 2018</a></h6>
-            </Col>
-            <Col xs={4}>
-              <span className="badge badge-light">Next</span>
-              <h6 className='mt-0 font-weight-light text-nowrap'><a href='/future'>Spring 2019</a></h6>
-            </Col>
-          </Row>
+
 
         </Col>
       </Row>
@@ -69,8 +59,9 @@ class Preview extends React.Component {
 
       <Row>
 
-
         <Col md={8} >
+
+          <h2 className="sr-only">Registration Preview</h2>
 
           <Card bg="light" className='shadow-sm mb-4 pre-reg'>
             <Card.Body>
@@ -92,7 +83,7 @@ class Preview extends React.Component {
 
                   <h5 className="mb-2 course-header">
                     <input type="checkbox" /> CSE 142
-                    <div class="course-name">Computer Programming I <span class="badge badge-pill badge-light">5 CR</span></div>
+                    <div class="course-name">Computer Programming I <span class="badge badge-light border">5 CR</span></div>
                   </h5>
 
                   <div className="text-danger issues-alert">This is a problem with the course.</div>
@@ -101,8 +92,11 @@ class Preview extends React.Component {
                     <tbody>
                       <tr>
                         <td rowspan="3"><span className="section-cell">A</span></td>
-                        <td ><a href="#">54321</a> <span className="badge border border-light">Lecture</span></td>
-                        <td className="half-cell text-right"><span className="badge border border-success">Open 5/30</span></td>
+                        <td ><a href="#">54321</a> <span className="badge badge-light border">Lecture</span></td>
+                        <td className="half-cell text-right">
+                          <span className="badge border border-success text-right">Open</span>&nbsp;
+                          <span class="badge badge-light border">5 of 30</span>
+                        </td>
                       </tr>
                       <tr>
                         <td colspan="2">
@@ -132,8 +126,11 @@ class Preview extends React.Component {
                     <tbody>
                       <tr>
                         <td rowspan="3"><span className="section-cell">AC</span></td>
-                        <td ><a href="#">54321</a> <span className="badge border border-light">Quiz</span></td>
-                        <td className="half-cell text-right"><span className="badge border border-success">Open 5/30</span></td>
+                        <td ><a href="#">54321</a> <span className="badge badge-light border">Quiz</span></td>
+                        <td className="half-cell text-right">
+                          <span className="badge border border-success">Open</span>&nbsp;
+                          <span class="badge badge-light border">5 of 30</span>
+                        </td>
                       </tr>
                       <tr>
                         <td colspan="2">
@@ -156,15 +153,18 @@ class Preview extends React.Component {
 
                   <h5 className="mb-2 course-header">
                     <input type="checkbox" /> CHEM 110
-                    <div className="course-name">Preparation for General Chemistry <span class="badge badge-pill badge-light">5 CR</span></div>
+                    <div className="course-name">Preparation for General Chemistry <span class="badge badge-light border">5 CR</span></div>
                   </h5>
 
                   <Table className="table table-condensed table-bordered table-sm mt-3">
                     <tbody>
                     <tr>
                       <td rowspan="3"><span className="section-cell">A</span></td>
-                      <td ><a href="#">54321</a> <span className="badge border border-light">Lecture</span></td>
-                      <td className="half-cell text-right"><span className="badge border border-success">Open 5/30</span></td>
+                      <td ><a href="#">54321</a> <span className="badge badge-light border">Lecture</span></td>
+                      <td className="half-cell text-right">
+                        <span className="badge border border-success">Open</span>&nbsp;
+                        <span className="badge badge-light border">5 of 30</span>
+                      </td>
                     </tr>
                     <tr>
                       <td colspan="2">
@@ -186,8 +186,11 @@ class Preview extends React.Component {
                   <tbody>
                     <tr>
                       <td rowspan="3"><span className="section-cell">AC</span></td>
-                      <td ><a href="#">54321</a> <span className="badge border border-light">Quiz</span></td>
-                      <td className="half-cell text-right"><span className="badge border border-success">Open 5/30</span></td>
+                      <td ><a href="#">54321</a> <span className="badge badge-light border">Quiz</span></td>
+                      <td className="half-cell text-right">
+                        <span className="badge border border-success">Open</span>&nbsp;
+                        <span className="badge badge-light border">5 of 30</span>
+                      </td>
                     </tr>
                     <tr>
                       <td colspan="2">
@@ -205,15 +208,18 @@ class Preview extends React.Component {
                   <div>
                     <h5 className="mb-2 course-header">
                       <input type="checkbox" /> BIO 370
-                      <div className="course-name">Introduction to Primates <span class="badge badge-pill badge-light">4 CR</span></div>
+                      <div className="course-name">Introduction to Primates <span class="badge badge-light border">4 CR</span></div>
                     </h5>
                   </div>
                   <Table className="table table-condensed table-bordered table-sm mt-3">
                     <tbody>
                       <tr>
                         <td rowspan="3"><span className="section-cell">A</span></td>
-                        <td ><a href="#">54321</a> <span className="badge border border-light">Lecture</span></td>
-                        <td className="half-cell text-right"><span className="badge border border-success">Open 5/30</span></td>
+                        <td ><a href="#">54321</a> <span className="badge badge-light border">Lecture</span></td>
+                        <td className="half-cell text-right">
+                          <span className="badge border border-success">Open</span>&nbsp;
+                          <span className="badge badge-light border">5 of 30</span>
+                        </td>
                       </tr>
                       <tr>
                         <td colspan="2">
@@ -236,7 +242,7 @@ class Preview extends React.Component {
                   <div className="d-flex w-100 justify-content-between">
                     <h5 className="mb-2 course-header">
                       <input type="checkbox" /> GEN ST 199
-                      <div className="course-name">A3 The University Community <span class="badge badge-pill badge-light">19 CR</span></div>
+                      <div className="course-name">A3 The University Community <span class="badge badge-light border">19 CR</span></div>
                     </h5>
                   </div>
                   <ul className='list-unstyled'>
@@ -268,7 +274,7 @@ class Preview extends React.Component {
 
                   <h5 className="mb-2 course-header">
                     <input type="checkbox" /> CSE 142
-                    <div class="course-name">Computer Programming I <span class="badge badge-pill badge-light">5 CR</span></div>
+                    <div class="course-name">Computer Programming I <span class="badge  badge-light">5 CR</span></div>
                   </h5>
 
                   <Table className="table table-condensed table-bordered table-sm mt-3">
@@ -276,7 +282,7 @@ class Preview extends React.Component {
                       <tr>
                         <td rowspan="3"><span className="section-cell">A</span></td>
                         <td ><a href="#">54321</a> <span className="badge border border-light">Lecture</span></td>
-                        <td className="half-cell text-right"><span className="badge border border-success">Open 5/30</span></td>
+                        <td className="half-cell text-right"><span className="badge border border-success">Open 5 of 30</span></td>
                       </tr>
                       <tr>
                         <td colspan="2">
@@ -308,8 +314,11 @@ class Preview extends React.Component {
                     <tbody>
                       <tr>
                         <td rowspan="3"><span className="section-cell">AC</span></td>
-                        <td ><a href="#">45638</a> <span className="badge border border-light">Quiz</span></td>
-                        <td className="half-cell text-right"><span className="badge border border-danger">Closed 30/30</span></td>
+                        <td ><a href="#">45638</a> <span className="badge badge-light border">Quiz</span></td>
+                        <td className="half-cell text-right">
+                          <span className="badge border border-danger">Closed</span>&nbsp;
+                          <span className="badge badge-light border">30 of 30</span>
+                        </td>
                       </tr>
                       <tr>
                         <td colspan="2">
@@ -342,7 +351,7 @@ class Preview extends React.Component {
 
                   <h5 className="mb-2 course-header">
                     <input type="checkbox" /> CHEM 110
-                    <div className="course-name">Preparation for General Chemistry <span class="badge badge-pill badge-light">5 CR</span></div>
+                    <div className="course-name">Preparation for General Chemistry <span class="badge  badge-light">5 CR</span></div>
                   </h5>
 
                   <Table className="table table-condensed table-bordered table-sm mt-3">
@@ -383,7 +392,7 @@ class Preview extends React.Component {
                       <tr>
                         <td rowspan="3"><span className="section-cell">AC</span></td>
                         <td ><a href="#">45638</a> <span className="badge border border-light">Quiz</span></td>
-                        <td className="half-cell text-right"><span className="badge border border-success">Open 25/30</span></td>
+                        <td className="half-cell text-right"><span className="badge border border-success text-right">Open<br/>25 of 30</span></td>
                       </tr>
                       <tr>
                         <td colspan="2">
@@ -412,7 +421,7 @@ class Preview extends React.Component {
 
                   <h5 className="mb-2 course-header">
                     <input type="checkbox" /> BIO 370
-                    <div className="course-name">Introduction to Primates <span class="badge badge-pill badge-light">4 CR</span></div>
+                    <div className="course-name">Introduction to Primates <span class="badge  badge-light">4 CR</span></div>
                   </h5>
 
                   <Table className="table table-condensed table-bordered table-sm mt-3">
@@ -420,7 +429,7 @@ class Preview extends React.Component {
                       <tr>
                         <td rowspan="3"><span className="section-cell">A</span></td>
                         <td ><a href="#">54321</a> <span className="badge border border-light">Lecture</span></td>
-                        <td className="half-cell text-right"><span className="badge border border-success">Open 5/30</span></td>
+                        <td className="half-cell text-right"><span className="badge border border-success">Open 5 of 30</span></td>
                       </tr>
                       <tr>
                         <td colspan="2">
@@ -453,7 +462,7 @@ class Preview extends React.Component {
                       <tr>
                         <td rowspan="3"><span className="section-cell">AC</span></td>
                         <td ><a href="#">45638</a> <span className="badge border border-light">Quiz</span></td>
-                        <td className="half-cell text-right"><span className="badge border border-success">Open 5/30</span></td>
+                        <td className="half-cell text-right"><span className="badge border border-success">Open 5 of 30</span></td>
                       </tr>
                       <tr>
                         <td colspan="2">
@@ -487,7 +496,7 @@ class Preview extends React.Component {
 
                   <h5 className="mb-2 course-header">
                     <input type="checkbox" /> COM 497
-                    <div className="course-name">Honors Thesis <span class="badge badge-pill badge-light">4 CR</span></div>
+                    <div className="course-name">Honors Thesis <span class="badge  badge-light">4 CR</span></div>
                   </h5>
 
                   <Table className="table table-condensed table-bordered table-sm mt-3">
@@ -497,7 +506,7 @@ class Preview extends React.Component {
                           <span className="section-cell">A <span className="add-code"><i class="fa fa-key"></i></span></span>
                         </td>
                         <td ><a href="#">54321</a> <span className="badge border border-light">Independent Study</span></td>
-                        <td className="half-cell text-right"><span className="badge border border-success">Open 5/30</span></td>
+                        <td className="half-cell text-right"><span className="badge border border-success">Open<br/>5 of 30</span></td>
                       </tr>
                       <tr>
                         <td colspan="2">
@@ -519,7 +528,7 @@ class Preview extends React.Component {
 
                   <h5 className="mb-2 course-header">
                     <input type="checkbox" /> GEN ST 199
-                    <div className="course-name">A3 The University Community <span class="badge badge-pill badge-light">19 CR</span></div>
+                    <div className="course-name">A3 The University Community <span class="badge  badge-light">19 CR</span></div>
                   </h5>
 
                   <ul className='list-unstyled'>
@@ -534,7 +543,7 @@ class Preview extends React.Component {
 
                   <h5 className="mb-2 course-header">
                     <input type="checkbox" /> ART 333
-                    <div className="course-name">New Materials and Processes in Glass <span class="badge badge-pill badge-light">x CR</span></div>
+                    <div className="course-name">New Materials and Processes in Glass <span class="badge  badge-light">x CR</span></div>
                   </h5>
 
                   <ul className='list-unstyled'>
@@ -550,7 +559,7 @@ class Preview extends React.Component {
                 <Card bg='light' className='shadow-sm mr-0'>
                   <Card.Body>
                     <Card.Title as='h4'>Registration</Card.Title>
-                    <div className="credit-total">Selected: <span class="badge badge-pill badge-light">9 CR</span></div>
+                    <div className="credit-total">Selected: <span class="badge  badge-light">9 CR</span></div>
                     <Card.Text>Your estimated priority registration date is <strong>November 4, 2018.</strong> at 6:00am.</Card.Text>
                     <Button variant="warning">Throw Over the Wall</Button>
                   </Card.Body>
@@ -569,6 +578,8 @@ class Preview extends React.Component {
         </Col>
 
         <Col md={4}>
+
+          <h2 className="sr-only">Quarter Info</h2>
 
           <Card className='shadow-sm mb-4'>
             <Card.Body>

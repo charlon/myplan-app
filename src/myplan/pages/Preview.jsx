@@ -61,11 +61,11 @@ class Preview extends React.Component {
 
         <Col md={8} >
 
-          <h2 className="sr-only">Registration Preview</h2>
+          <h2 className="sr-only">Registration Preview (sr-only)</h2>
 
           <Card bg="light" className='shadow-sm mb-4 pre-reg'>
             <Card.Body>
-              <Card.Title as='h3' className="sr-only">Acknowledgements</Card.Title>
+              <Card.Title as='h3' className="sr-only">Acknowledgements (sr-only)</Card.Title>
               <Card.Text><div><strong>Pre-Registration Requirement</strong><br/>
               Beginning one week prior to each quarter's registration period you can make all the required Notices and Insurance &amp; Optional Charges selections. You will then be able to go directly into SLN Registration when your priority registration period begins. If you have not already done so, <a href="https://sdb.admin.uw.edu/students/uwnetid/op_charges.asp">go to the Insurance &amp; Optional Charges</a> services now to complete these requirements prior to registering for <strong>Winter 2019</strong>.</div></Card.Text>
             </Card.Body>
@@ -81,10 +81,12 @@ class Preview extends React.Component {
 
                 <ListGroup.Item as="li" className='pl-0 pr-0 border-top-0'>
 
-                  <h5 className="mb-2 course-header">
-                    <input type="checkbox" /> CSE 142
-                    <div class="course-name">Computer Programming I <span class="badge badge-light border">5 CR</span></div>
-                  </h5>
+                  <h4 className="mb-2 course-header">
+                    <input type="checkbox" />
+                    <a href="#">CSE 142
+                      <div class="course-name">Computer Programming I <span class="badge badge-light border">5 CR</span></div>
+                    </a>
+                  </h4>
 
                   <div className="text-danger issues-alert">This is a problem with the course.</div>
 
@@ -151,10 +153,12 @@ class Preview extends React.Component {
                 </ListGroup.Item>
                 <ListGroup.Item as="li" className='pl-0 pr-0'>
 
-                  <h5 className="mb-2 course-header">
-                    <input type="checkbox" /> CHEM 110
-                    <div className="course-name">Preparation for General Chemistry <span class="badge badge-light border">5 CR</span></div>
-                  </h5>
+                  <h4 className="mb-2 course-header">
+                    <input type="checkbox" />
+                    <a href="#">CHEM 110
+                      <div className="course-name">Preparation for General Chemistry <span class="badge badge-light border">5 CR</span></div>
+                    </a>
+                  </h4>
 
                   <Table className="table table-condensed table-bordered table-sm mt-3">
                     <tbody>
@@ -206,10 +210,10 @@ class Preview extends React.Component {
 
                 <ListGroup.Item as="li" className='pl-0 pr-0'>
                   <div>
-                    <h5 className="mb-2 course-header">
+                    <h4 className="mb-2 course-header">
                       <input type="checkbox" /> BIO 370
                       <div className="course-name">Introduction to Primates <span class="badge badge-light border">4 CR</span></div>
-                    </h5>
+                    </h4>
                   </div>
                   <Table className="table table-condensed table-bordered table-sm mt-3">
                     <tbody>
@@ -240,10 +244,12 @@ class Preview extends React.Component {
                 </ListGroup.Item>
                 <ListGroup.Item as="li" className='pl-0 pr-0 '>
                   <div className="d-flex w-100 justify-content-between">
-                    <h5 className="mb-2 course-header">
-                      <input type="checkbox" /> GEN ST 199
-                      <div className="course-name">A3 The University Community <span class="badge badge-light border">19 CR</span></div>
-                    </h5>
+                    <h4 className="mb-2 course-header">
+                      <input type="checkbox" />
+                      <a href="#">GEN ST 199
+                        <div className="course-name">A3 The University Community <span class="badge badge-light border">19 CR</span></div>
+                      </a>
+                    </h4>
                   </div>
                   <ul className='list-unstyled'>
                     <li>GEN ST 199 A2: University Community TH 1:30-2:20</li>
@@ -272,10 +278,12 @@ class Preview extends React.Component {
               <ListGroup variant='flush' as="ul" className="list-unstyled">
                 <ListGroup.Item as="li" className='pl-0 pr-0'>
 
-                  <h5 className="mb-2 course-header">
-                    <input type="checkbox" /> CSE 142
-                    <div class="course-name">Computer Programming I <span class="badge badge-light border">5 CR</span></div>
-                  </h5>
+                  <h4 className="mb-2 course-header">
+                    <input type="checkbox" />
+                    <a href="#">CSE 142
+                      <div class="course-name">Computer Programming I <span class="badge badge-light border">5 CR</span></div>
+                    </a>
+                  </h4>
 
                   <Table className="table table-condensed table-bordered table-sm mt-3">
                     <tbody>
@@ -352,10 +360,12 @@ class Preview extends React.Component {
                 </ListGroup.Item>
                 <ListGroup.Item as="li" className='pl-0 pr-0'>
 
-                  <h5 className="mb-2 course-header">
-                    <input type="checkbox" /> CHEM 110
-                    <div className="course-name">Preparation for General Chemistry <span class="badge badge-light border">5 CR</span></div>
-                  </h5>
+                  <h4 className="mb-2 course-header">
+                    <input type="checkbox" />
+                    <a href="#">CHEM 110
+                      <div className="course-name">Preparation for General Chemistry <span class="badge badge-light border">5 CR</span></div>
+                    </a>
+                  </h4>
 
                   <Table className="table table-condensed table-bordered table-sm mt-3">
                     <tbody>
@@ -427,10 +437,12 @@ class Preview extends React.Component {
 
                 <ListGroup.Item as="li" className='pl-0 pr-0'>
 
-                  <h5 className="mb-2 course-header">
-                    <input type="checkbox" /> BIO 370
-                    <div className="course-name">Introduction to Primates <span class="badge badge-light border">4 CR</span></div>
-                  </h5>
+                  <h4 className="mb-2 course-header">
+                    <input type="checkbox" />
+                    <a href="#">BIO 370
+                      <div className="course-name">Introduction to Primates <span class="badge badge-light border">4 CR</span></div>
+                    </a>
+                  </h4>
 
                   <Table className="table table-condensed table-bordered table-sm mt-3">
                     <tbody>
@@ -508,16 +520,18 @@ class Preview extends React.Component {
 
                 <ListGroup.Item as="li" className='pl-0 pr-0'>
 
-                  <h5 className="mb-2 course-header">
-                    <input type="checkbox" /> COM 497
-                    <div className="course-name">Honors Thesis <span class="badge badge-light border">4 CR</span></div>
-                  </h5>
+                  <h4 className="mb-2 course-header">
+                    <input type="checkbox" />
+                    <a href="#">COM 497
+                      <div className="course-name">Honors Thesis <span class="badge badge-light border">4 CR</span></div>
+                    </a>
+                  </h4>
 
                   <Table className="table table-condensed table-bordered table-sm mt-3">
                     <tbody>
                       <tr>
                         <td rowspan="3">
-                          <span className="section-cell">A <span className="add-code"><i class="fa fa-key"></i></span></span>
+                          <span className="section-cell">A <span className="add-code" title="This course has enrollment restrictions."><i class="fa fa-key"></i></span></span>
                         </td>
                         <td ><a href="#">54321</a> <span className="badge badge-light border">Independent Study</span></td>
                         <td className="half-cell text-right">
@@ -543,10 +557,12 @@ class Preview extends React.Component {
 
                 <ListGroup.Item as="li" className='pl-0 pr-0 '>
 
-                  <h5 className="mb-2 course-header">
-                    <input type="checkbox" /> GEN ST 199
-                    <div className="course-name">A3 The University Community <span class="badge badge-light border">19 CR</span></div>
-                  </h5>
+                  <h4 className="mb-2 course-header">
+                    <input type="checkbox" />
+                    <a href="#">GEN ST 199
+                      <div className="course-name">A3 The University Community <span class="badge badge-light border">19 CR</span></div>
+                    </a>
+                  </h4>
 
                   <ul className='list-unstyled'>
                     <li>GEN ST 199 A2: University Community TH 1:30-2:20</li>
@@ -558,10 +574,12 @@ class Preview extends React.Component {
 
                 <ListGroup.Item as="li" className='pl-0 pr-0 border-bottom-0'>
 
-                  <h5 className="mb-2 course-header">
-                    <input type="checkbox" /> ART 333
-                    <div className="course-name">New Materials and Processes in Glass <span class="badge badge-light border">x CR</span></div>
-                  </h5>
+                  <h4 className="mb-2 course-header">
+                    <input type="checkbox" />
+                    <a href="#">ART 333
+                      <div className="course-name">New Materials and Processes in Glass <span class="badge badge-light border">x CR</span></div>
+                    </a>
+                  </h4>
 
                   <ul className='list-unstyled'>
                     <li>ART 333 A: (STUDIO) <a href="#">10448</a> New Materials and Processes in Glass TH 1:30-2:20</li>
@@ -583,7 +601,7 @@ class Preview extends React.Component {
                 </Card>
                 <Card className='border-0'>
                   <Card.Body className="p-0">
-                    <Card.Title as='h4' className="sr-only">SLN Registration</Card.Title>
+                    <Card.Title as='h4' className="sr-only">SLN Registration (sr-only)</Card.Title>
                     <Card.Text>Visit the <strong><a href="#">SLN Registration</a></strong> page to add courses by SLN, drop courses, and more.</Card.Text>
                   </Card.Body>
                 </Card>
@@ -596,7 +614,7 @@ class Preview extends React.Component {
 
         <Col md={4}>
 
-          <h2 className="sr-only">Quarter Info</h2>
+          <h2 className="sr-only">Quarter Info (sr-only)</h2>
 
           <Card className='shadow-sm mb-4'>
             <Card.Body>
@@ -613,7 +631,7 @@ class Preview extends React.Component {
               <ListGroup variant='flush' as='ul' className='mb-4'>
                 <ListGroup.Item as="li" className='pl-0 pr-0 border-top-0'>
                   <div className="d-flex w-100 justify-content-between">
-                    <h5 className="mb-1">CSE 142 Computer Programming I </h5>
+                    <h4 className="mb-1">CSE 142 Computer Programming I </h4>
                   </div>
                   <ul className='list-unstyled'>
                     <li>A KNE 130 Tue/Thur 8:30-9:50</li>
@@ -622,7 +640,7 @@ class Preview extends React.Component {
                 </ListGroup.Item>
                 <ListGroup.Item as="li" className='pl-0 pr-0'>
                   <div className="d-flex w-100 justify-content-between">
-                    <h5 className="mb-1">GEN ST 199 <span>A2: University Community</span></h5>
+                    <h4 className="mb-1">GEN ST 199 <span>A2: University Community</span></h4>
                   </div>
                   <ul className='list-unstyled'>
                     <li>GEN ST 199 A2: University Community TH 1:30-2:20</li>

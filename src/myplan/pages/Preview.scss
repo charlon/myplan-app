@@ -45,6 +45,8 @@
     width: 16px;
   }
 
+  a { display: block; }
+
 }
 
 input[type=text] {
@@ -53,7 +55,7 @@ input[type=text] {
 
 
 
-.course-requirements { position: absolute; top: 20px; right: 18px; font-size: 11px; }
+.course-requirements { position: absolute; top: 25px; right: 18px; font-size: 11px; }
 .code-required { display: inline-block; margin-left: 10px; }
 .add-code {
   font-size: 10px;
